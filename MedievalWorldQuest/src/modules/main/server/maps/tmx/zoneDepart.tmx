@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="32" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="3">
+ <tileset firstgid="1" name="zoneDepart" tilewidth="32" tileheight="32" tilecount="550" columns="22">
+  <image source="../../../client/characters/maps/assets/tuilesRpgMaker.png" width="704" height="800"/>
+  <tile id="60">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="61">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="62">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="64">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="-0.0909091" width="32.1818" height="31.9091"/>
+   </objectgroup>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="-0.363636" y="0" width="32.7273" height="32"/>
+   </objectgroup>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0.0909091" y="0.181818" width="32.0909" height="31.8182"/>
+   </objectgroup>
+  </tile>
+  <tile id="82">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="83">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="84">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="85">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="86">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="95">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="-0.545455" y="-0.363636" width="32.9091" height="32.4545"/>
+   </objectgroup>
+  </tile>
+  <tile id="96">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0.0909091" y="0" width="32.0909" height="31.8182"/>
+   </objectgroup>
+  </tile>
+  <tile id="97">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="-0.181818" y="-0.272727" width="32.4545" height="32.2727"/>
+   </objectgroup>
+  </tile>
+  <tile id="98">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0" y="7.09091" width="31.9091" height="24.6364"/>
+   </objectgroup>
+  </tile>
+  <tile id="105">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="106">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="107">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="108">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="129">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="130">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="152">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="10.8182" y="0.0909091" width="10.2727" height="31.7273">
+     <properties>
+      <property name="collision" type="bool" value="true"/>
+     </properties>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="153">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="0.181818" y="-0.181818" width="32.0909" height="32.4545">
+     <properties>
+      <property name="collision" type="bool" value="true"/>
+     </properties>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="162">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="163">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="164">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="165">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="166">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="167">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="168">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="169">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="174">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="10.8182" y="-0.181818" width="21.0909" height="32"/>
+   </objectgroup>
+  </tile>
+  <tile id="175">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="-0.181818" y="0" width="21" height="32.0909">
+     <properties>
+      <property name="collision" type="bool" value="true"/>
+     </properties>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="196">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="10.9091" y="0" width="21.0909" height="32"/>
+   </objectgroup>
+  </tile>
+  <tile id="197">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+   <objectgroup draworder="index" id="3">
+    <object id="5" x="-0.0909091" y="-0.181818" width="21.0909" height="32.1818"/>
+   </objectgroup>
+  </tile>
+  <tile id="280">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="5" name="Calque de Tuiles 3" width="32" height="20">
+  <data encoding="csv">
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,47,47,47,47,47,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,47,47,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,47,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68
+</data>
+ </layer>
+ <layer id="2" name="Calque de Tuiles 2" width="32" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,108,0,108,281,108,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,131,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="1" name="Calque de Tuiles 1" width="32" height="20">
+  <properties>
+   <property name="collision" type="bool" value="true"/>
+  </properties>
+  <data encoding="csv">
+46,46,46,46,46,46,46,46,24,24,24,24,24,24,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,
+46,46,175,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,176,46,46,
+46,46,153,46,46,46,46,46,46,46,46,46,46,46,165,170,169,109,167,167,46,46,46,46,61,64,65,61,84,153,46,46,
+46,46,153,46,46,52,53,54,46,46,46,46,47,46,130,170,130,284,130,168,46,46,46,46,61,86,87,61,84,153,46,46,
+46,46,153,46,46,74,75,76,46,24,46,46,47,46,164,170,131,306,131,168,46,46,46,46,83,46,46,83,84,153,46,46,
+46,46,153,46,46,96,97,98,46,46,99,46,47,46,46,46,49,46,46,46,46,46,46,46,61,46,46,61,84,153,46,46,
+46,46,153,46,46,46,49,46,46,46,49,46,47,46,46,46,49,46,46,46,46,46,46,46,83,46,46,83,84,153,46,46,
+46,46,153,46,46,46,49,46,46,46,49,46,47,46,46,46,49,49,46,46,46,46,46,46,46,46,49,46,84,153,46,46,
+46,46,153,46,46,46,49,46,46,46,49,46,47,46,46,46,46,49,46,46,46,46,46,46,46,46,49,46,46,153,46,46,
+175,154,198,46,46,46,49,46,46,46,49,46,47,46,46,46,46,49,46,46,46,46,46,46,46,46,49,46,46,153,46,46,
+46,46,46,46,46,46,49,46,46,46,49,46,47,46,46,46,46,49,46,46,46,46,46,46,46,46,49,46,46,153,46,46,
+46,46,46,46,46,46,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,46,46,153,46,46,
+175,154,176,46,46,46,46,46,46,46,46,46,46,49,49,49,49,46,46,46,46,49,46,46,46,46,46,46,46,153,46,46,
+46,46,153,46,46,46,46,46,46,46,46,46,46,46,46,49,49,46,46,46,46,49,46,46,46,46,46,46,46,153,46,46,
+46,46,153,46,46,46,46,46,46,46,46,46,46,46,46,49,49,46,46,46,46,49,46,46,46,106,106,106,106,153,46,46,
+46,46,153,46,46,46,46,46,46,46,46,46,46,46,46,49,49,46,46,46,46,49,49,49,49,106,106,106,106,153,46,46,
+46,46,153,46,46,46,46,46,46,46,46,46,46,46,46,49,49,46,46,46,46,46,46,46,46,106,106,106,106,153,46,46,
+46,46,197,154,154,154,154,154,154,154,154,154,154,154,176,49,49,175,154,154,154,154,154,154,154,154,154,154,154,198,46,46,
+46,46,46,46,46,46,46,46,46,46,46,46,46,46,153,49,49,153,46,46,46,46,46,46,46,46,46,46,46,46,46,46,
+46,46,46,46,46,46,46,46,46,46,46,46,46,46,153,49,49,153,46,46,46,46,46,46,46,46,46,46,46,46,46,46
+</data>
+ </layer>
+ <objectgroup id="3" name="Calque d'Objets 1">
+  <object id="1" name="Start Position" type="start" x="207" y="208">
+   <point/>
+  </object>
+ </objectgroup>
+</map>
