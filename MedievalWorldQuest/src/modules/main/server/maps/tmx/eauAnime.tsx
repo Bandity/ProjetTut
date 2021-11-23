@@ -5,6 +5,24 @@
   <properties>
    <property name="collision" type="bool" value="true"/>
   </properties>
+  <animation>
+   <frame tileid="1606" duration="100"/>
+   <frame tileid="1614" duration="100"/>
+   <frame tileid="1622" duration="100"/>
+   <frame tileid="1630" duration="100"/>
+   <frame tileid="1638" duration="100"/>
+   <frame tileid="1646" duration="100"/>
+   <frame tileid="1654" duration="100"/>
+   <frame tileid="1662" duration="100"/>
+   <frame tileid="94" duration="100"/>
+   <frame tileid="86" duration="100"/>
+   <frame tileid="78" duration="100"/>
+   <frame tileid="102" duration="100"/>
+   <frame tileid="110" duration="100"/>
+   <frame tileid="118" duration="100"/>
+   <frame tileid="126" duration="100"/>
+   <frame tileid="70" duration="100"/>
+  </animation>
  </tile>
  <tile id="1">
   <properties>

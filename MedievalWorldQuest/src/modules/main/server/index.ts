@@ -5,6 +5,7 @@ import { player } from './player'
 
 
 @RpgModule<RpgServer>({
+    
     maps: [
         ZoneDepartMap
     ],

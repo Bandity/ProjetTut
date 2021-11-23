@@ -176,6 +176,11 @@
    <object id="4" x="1" y="11" width="31.25" height="20.5"/>
   </objectgroup>
  </tile>
+ <tile id="257">
+  <properties>
+   <property name="collision" type="bool" value="true"/>
+  </properties>
+ </tile>
  <tile id="309">
   <properties>
    <property name="collision" type="bool" value="true"/>
