@@ -12,7 +12,7 @@ export class Barde_1 extends RpgEvent {
         this.speed = 2
         this.frequency = 200
         this.setGraphic('barde')
-        this.infiniteMoveRoute([ Move.tileRandom() ])
+        this.moveRoutes([ Move.tileRandom() ])
     }
 
 

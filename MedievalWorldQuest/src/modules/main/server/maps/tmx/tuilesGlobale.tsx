@@ -1516,7 +1516,7 @@
  </tile>
  <tile id="564">
   <properties>
-   <property name="z" type="int" value="0"/>
+   <property name="z" type="int" value="2"/>
   </properties>
  </tile>
  <tile id="565">

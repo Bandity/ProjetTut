@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="11">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="13">
  <tileset firstgid="1" source="tuilesGlobale.tsx"/>
  <tileset firstgid="1001" source="zoneDepart.tsx"/>
  <tileset firstgid="1551" source="eauAnime.tsx"/>
@@ -1198,10 +1198,16 @@
   <object id="3" name="Barde_1" type="event" x="2102.34" y="1946.42">
    <point/>
   </object>
-  <object id="5" name="Start Position" type="start" x="1789.28" y="3679.01">
+  <object id="5" name="Start Position" type="start" x="2125.28" y="2159.01">
    <point/>
   </object>
   <object id="10" name="Stele_1" type="event" x="1789.62" y="3611.71">
+   <point/>
+  </object>
+  <object id="11" name="Pnj-2" type="event" x="1795.83" y="2063.8">
+   <point/>
+  </object>
+  <object id="12" name="Pnj-3" type="event" x="2339.83" y="2051.8">
    <point/>
   </object>
  </objectgroup>
