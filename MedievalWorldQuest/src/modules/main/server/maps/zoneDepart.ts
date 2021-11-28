@@ -18,7 +18,7 @@ import { PnjGlobal } from '../events/pnjGlobal'
         PnjGlobal({
             name: 'Pnj-3',
             text: ["Je ne me lasserais jamais de voir cette place, elle est le c\u0153ur de cette ville.",
-            "La voir me rapelle ce qu'il s'est passé il y a 50ans ...", 
+            "La voir me rapelle ce qu'il s'est passé il y a 50 ans ...", 
             "... Oh? Tu ne sais pas ce qu'il s'est passé ? Tu devrais aller lire les stèles dissimulées un peu partout dans la ville, un morceau de la tragédie y est écrit." 
             ],
             graphic: 'female19',

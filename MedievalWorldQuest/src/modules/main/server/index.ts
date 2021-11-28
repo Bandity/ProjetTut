@@ -5,11 +5,11 @@ import { player } from './player'
 
 
 @RpgModule<RpgServer>({
-    
+    player,
     maps: [
         ZoneDepartMap
     ],
-    player,
+    
 
     
 })

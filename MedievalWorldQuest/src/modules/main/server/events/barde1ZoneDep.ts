@@ -8,17 +8,18 @@ import { RpgEvent, EventData, RpgPlayer,Move } from '@rpgjs/server'
     }
 })
 export class Barde_1 extends RpgEvent {
-    onInit() {
+    onInit(player: RpgPlayer) {
         this.speed = 2
         this.frequency = 200
         this.setGraphic('barde')
         this.moveRoutes([ Move.tileRandom() ])
-    }
+        //this.moveRoutes([Move.tileDown(2)]);
 
+    }
 
     async onAction(player: RpgPlayer) {
         let texts = [
-            "Salut ... ? Tu m'as l'air complétement perdu, dis-moi ! La ville est assez grande, fais attention !",
+            "Salut ... ? Tu m'as l'air complètement perdu, dis-moi ! La ville est assez grande, fais attention !",
             "Au pire, n'oublies pas que tu as des panneaux dissimulés un peu partout dans la ville pour t'indiquer où tu te situes.",
             "Allez, salut !"
         ]
@@ -30,3 +31,5 @@ export class Barde_1 extends RpgEvent {
        // here, the controls on the player
     }
 }
+
+

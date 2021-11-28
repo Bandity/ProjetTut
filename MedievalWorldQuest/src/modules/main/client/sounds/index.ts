@@ -2,7 +2,7 @@ import { Sound } from '@rpgjs/client'
 
 @Sound({
     sounds: {
-        town: require('./assets/Town_Theme.ogg'),
+        town: require('./assets/MenestrelTown.ogg'),
     },
     loop: true
 })
