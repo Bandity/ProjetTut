@@ -3,24 +3,25 @@ import { Input, Control } from '@rpgjs/client'
 export const inputs = {
     [Control.Up]: {
         repeat: true,
-        bind: Input.Up
+        bind: [Input.Up, Input.Z, Input.W]
     },
     [Control.Down]: {
         repeat: true,
-        bind: Input.Down
+        bind: [Input.Down, Input.S]
     },
     [Control.Right]: {
         repeat: true,
-        bind: Input.Right
+        bind: [Input.Right, Input.D]
     },
     [Control.Left]: {
         repeat: true,
-        bind: Input.Left
+        bind: [Input.Left, Input.A, Input.Q]
     },
     [Control.Action]: {
         bind: [Input.Space, Input.Enter]
     },
     [Control.Back]: {
-        bind: Input.Escape
+        bind: [Input.Escape]
+
     }
 }
