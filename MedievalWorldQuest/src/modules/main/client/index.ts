@@ -4,10 +4,14 @@ import { sceneMap } from './map'
 import { Tilesets } from './characters/zoneDepart'
 import { TownMusic } from './sounds'
 import Characters from './characters'
+import { ShieldAnimations } from './animations/ShieldAnimation'
+import { DarkLightAnimation } from './animations/DarkLightAnimation'
 
 @RpgModule<RpgClient>({ 
     spritesheets: [
         Tilesets,
+        ShieldAnimations,
+        DarkLightAnimation,
         ...Characters,
     ],
     sprite,

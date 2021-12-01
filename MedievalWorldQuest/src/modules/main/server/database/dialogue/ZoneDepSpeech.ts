@@ -1,3 +1,6 @@
+﻿import { player } from "../../player"
+
+
 
 export const speech = {
     textcinematic1: [
@@ -16,4 +19,15 @@ export const speech = {
         "La voir me rapelle ce qu'il s'est passé il y a 50 ans ...", 
         "... Oh? Tu ne sais pas ce qu'il s'est passé ? Tu devrais aller lire les stèles dissimulées un peu partout dans la ville, un morceau de la tragédie y est écrit." 
     ],
+    textWitchNotGoodClasses: [
+        "Bonjour jeune aventurier, ce batiment derrière moi est l'académie de magie, également appelé la Sagesse du royaume.",
+        "Tu ne sembles pas être un mage ni un prêtre... Être ici ne te sera d'aucune utilité, reviens quand tu auras l'une de ses vocations.",
+    ],
+    textWitchGoodClasses: [
+        "Bonjour mon petit :kuf: kuf:",
+        "Ce batiment derrière moi est l'académie de magie, également appelé la Guilde des mages. :kuf: :kuf:",
+        "Si tu veux apprendre des choses sur tes compétences, ou en apprendre certaines, ou encore prendre des missions spécialisé pour ta vocation tu es au bon endroit !",
+        "La Guilde des mages offre également des choses pour les néophytes, n'hésites pas à aller voir ! :kuf: ... Je devrais vraiment prendre quelque chose contre la toux, moi :kuf:"
+    ],
+
 } 

@@ -3,12 +3,14 @@ import { Barde_1 } from '../events/barde1ZoneDep'
 import { SteleEvent } from '../events/stele'
 import { PnjGlobal } from '../events/pnjGlobal'
 import { speech } from '../database/dialogue/ZoneDepSpeech'
+import { Witch } from '../events/WitchZoneDep'
 
 @MapData({
     id: 'zoneDepart',
     file: require('./tmx/zoneDepart.tmx'),
     name : 'zoneDepart',
     events: [
+        Witch,
         Barde_1,
         PnjGlobal({ 
             name: 'Pnj-2',

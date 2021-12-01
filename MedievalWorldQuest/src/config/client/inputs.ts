@@ -23,5 +23,12 @@ export const inputs = {
     [Control.Back]: {
         bind: [Input.Escape]
 
+    },
+
+    Spell1 :{
+        bind: [Input.T]
+    },
+    Spell2 :{
+        bind: [Input.R]
     }
-}
+} 

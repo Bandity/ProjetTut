@@ -12,6 +12,7 @@ const { RMSpritesheet } = Presets
         male12: require('./assets/Male 12-2.png'),
         male17: require('./assets/Male 17-2.png'),
         male1_2: require('./assets/Male 01-2.png'),
+        witch: require('./assets/witch.png'),
     },
     width: 96,
     height: 128,
