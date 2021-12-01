@@ -4,6 +4,7 @@ import { SteleEvent } from '../events/stele'
 import { PnjGlobal } from '../events/pnjGlobal'
 import { speech } from '../database/dialogue/ZoneDepSpeech'
 import { Witch } from '../events/WitchZoneDep'
+import { Skin } from '../events/Skins'
 
 @MapData({
     id: 'zoneDepart',
@@ -12,6 +13,22 @@ import { Witch } from '../events/WitchZoneDep'
     events: [
         Witch,
         Barde_1,
+        Skin({
+            name: 'Skin1',
+            graphic: 'warrior'
+        }),
+        Skin({
+            name: 'Skin2',
+            graphic: 'thief'
+        }),
+        Skin({
+            name: 'Skin3',
+            graphic: 'prest'
+        }),
+        Skin({
+            name: 'Skin4',
+            graphic: 'mage'
+        }),
         PnjGlobal({ 
             name: 'Pnj-2',
             text: speech.textPnj2,
