@@ -1,15 +1,15 @@
-import { RpgClient, RpgModule } from "@rpgjs/client";
-import {sprite} from "./sprite";
-import chatGui from "./gui/chat.vue";
-import {sceneMap} from "./map";
+import { RpgClient, RpgModule } from '@rpgjs/client'
+import { sprite } from './sprite'
+import chatGui from './gui/chat.vue'
+import { sceneMap } from './map'
 
-@RpgModule<RpgClient>({
+@RpgModule<RpgClient>({ 
     sprite,
-    scenes:{
+    scenes: {
         map: sceneMap
     },
     gui: [
-        chatGui,
+        chatGui
     ]
 })
-export default class RpgClientEngine{}
+export default class RpgClientEngine {}
