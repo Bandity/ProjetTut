@@ -1,5 +1,6 @@
 import { RpgPlayer, RpgPlayerHooks, Control, Move } from '@rpgjs/server'
 import { Mage } from './database/classes/Mage';
+import { Warrior } from './database/classes/Warrior';
 import { speech } from './database/dialogue/ZoneDepSpeech'
 //import { Barde_1 } from './events/barde1ZoneDep'
 const timeout = (ms) =>  new Promise(resolve => setTimeout(resolve, ms));

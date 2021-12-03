@@ -4,6 +4,7 @@ import { SteleEvent } from '../events/stele'
 import { PnjGlobal } from '../events/pnjGlobal'
 import { speech } from '../database/dialogue/ZoneDepSpeech'
 import { Witch } from '../events/WitchZoneDep'
+import { Craftman } from '../events/CraftmanZoneDep'
 import { Skin } from '../events/Skins'
 
 @MapData({
@@ -12,6 +13,7 @@ import { Skin } from '../events/Skins'
     name : 'zoneDepart',
     events: [
         Witch,
+        Craftman,
         Barde_1,
         Skin({
             name: 'Skin1',

@@ -26,9 +26,9 @@ export const inputs = {
     },
 
     Spell1 :{
-        bind: [Input.T]
+        bind: [Input.One]
     },
     Spell2 :{
-        bind: [Input.R]
+        bind: [Input.Two]
     }
 } 

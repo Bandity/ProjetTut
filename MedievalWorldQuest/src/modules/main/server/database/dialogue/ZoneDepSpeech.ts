@@ -20,7 +20,7 @@ export const speech = {
         "... Oh? Tu ne sais pas ce qu'il s'est passé ? Tu devrais aller lire les stèles dissimulées un peu partout dans la ville, un morceau de la tragédie y est écrit." 
     ],
     textWitchNotGoodClasses: [
-        "Bonjour jeune aventurier, ce batiment derrière moi est l'académie de magie, également appelé la Sagesse du royaume.",
+        "Bonjour jeune aventurier, ce batiment derrière moi est l'académie de magie, également appelé la Guilde des mages.",
         "Tu ne sembles pas être un mage ni un prêtre... Être ici ne te sera d'aucune utilité, reviens quand tu auras l'une de ses vocations.",
     ],
     textWitchGoodClasses: [
@@ -28,6 +28,17 @@ export const speech = {
         "Ce batiment derrière moi est l'académie de magie, également appelé la Guilde des mages. :kuf: :kuf:",
         "Si tu veux apprendre des choses sur tes compétences, ou en apprendre certaines, ou encore prendre des missions spécialisé pour ta vocation tu es au bon endroit !",
         "La Guilde des mages offre également des choses pour les néophytes, n'hésites pas à aller voir ! :kuf: ... Je devrais vraiment prendre quelque chose contre la toux, moi :kuf:"
+    ],
+
+    textCraftmanNotGoodClasses: [
+        "Salutation jeune pousse... On est où? Tu m'demandes alors que tu te tiens devant moi ? Pouahaha...",
+        "Tu te trouves ici devant l'Institut du Royaume, pour faire simple c'est là où on t'apprends à te battre en tant que Guerrier ou Assassin.",
+        "J'ai l'impression qu't'es pas au bon endroit ma p'tite pousse, reviens quand tu seras un guerrier ou un assassin.",
+    ],
+    textCraftmanGoodClasses: [
+        "Salutation jeune pousse... On est où? Tu m'demandes alors que tu te tiens devant moi ? Pouahaha...",
+        "Tu te trouves ici devant l'Institut du Royaume, pour faire simple c'est là où on t'apprends à te battre en tant que Guerrier ou Assassin.",
+        "Bon, assez parler, rentres donc avant d'attraper quelque chose... Pouhahaha"
     ],
 
 } 
