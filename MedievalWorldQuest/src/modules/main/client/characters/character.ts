@@ -15,7 +15,7 @@ const { RMSpritesheet } = Presets
         witch: require('./assets/witch.png'),
         warrior: require('./assets/warrior.png'),
         thief: require('./assets/thief.png'),
-        prest: require('./assets/prest.png'),
+        priest: require('./assets/priest.png'),
         mage: require('./assets/mage.png'),
         craftman: require('./assets/craftman.png'),
 

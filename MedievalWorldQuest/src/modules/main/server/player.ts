@@ -23,6 +23,10 @@ export const player: RpgPlayerHooks = {
     async onConnected(player: RpgPlayer) {
         player.name = "Test"
         player.setClass(Mage);
+        console.log(player._class.skillsToLearn[0])
+        console.log(player._class.skillsToLearn[1])
+        console.log(player._class.skillsToLearn[2])
+        console.log(player._class.skillsToLearn[3])
         await player.setHitbox(20, 16) 
         await player.setGraphic('heroBlueHair');
         await player.changeMap('zoneDepart');

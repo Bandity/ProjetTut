@@ -1,5 +1,6 @@
 import { Class } from '@rpgjs/database'
-import { Fire } from '../skills/fire'
+import SpellWarrior  from '../skills/warrior/index'
+
 
 @Class({
     name: 'Warrior',
@@ -7,8 +8,13 @@ import { Fire } from '../skills/fire'
 
     ],
     skillsToLearn: [
-        { level: 1, skill: Fire }
-    ]
+        { level: 1, skill: SpellWarrior.HirondelleNoire },
+        { level: 3, skill: SpellWarrior.CroixSanglante },
+        { level: 5, skill: SpellWarrior.PointeFuneste },
+        { level: 8, skill: SpellWarrior.JugementDivin }
+    ],
+
+
 })
 export class Warrior {
    

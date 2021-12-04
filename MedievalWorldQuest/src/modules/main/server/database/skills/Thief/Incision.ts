@@ -1,23 +1,25 @@
 import { RpgPlayer } from '@rpgjs/server'
 import { Skill } from '@rpgjs/database'
 import { Presets } from '@rpgjs/server'
-const { ATK } = Presets
+
+const { STR,AGI } = Presets
 @Skill({  
-    name: 'Boule_de_feu',
-    description: 'Boule de feu basique',
+    name: "Incision",
+    description: "Compétence 1ere de l'assassin ",
     spCost: 10,
-    power: 100,
-    variance: 10,
+    power: 75,
+    variance: 0,
     hitRate: 1,
     
     addStates: [],
     removeStates: [],
     elements: [],
     coefficient: {
-      [ATK]: 2
+        [STR]: 2,
+        [AGI]: 3,
  }
 })
-export class Fire {
+export class Incision {
     onLearn(player: RpgPlayer) {
 
     }

@@ -25,7 +25,7 @@ import { Skin } from '../events/Skins'
         }),
         Skin({
             name: 'Skin3',
-            graphic: 'prest'
+            graphic: 'priest'
         }),
         Skin({
             name: 'Skin4',
