@@ -4,6 +4,7 @@ import { sceneMap } from './map'
 import { Tilesets } from './characters/zoneDepart'
 import { TownMusic } from './sounds'
 import Characters from './characters'
+import Monsters  from './characters'
 import { ShieldAnimations } from './animations/ShieldAnimation'
 import { DarkLightAnimation } from './animations/DarkLightAnimation'
 
@@ -13,6 +14,7 @@ import { DarkLightAnimation } from './animations/DarkLightAnimation'
         ShieldAnimations,
         DarkLightAnimation,
         ...Characters,
+        ...Monsters,
     ],
     sprite,
     scenes: {
