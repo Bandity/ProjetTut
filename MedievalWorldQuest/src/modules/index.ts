@@ -4,6 +4,7 @@ import defaultGui from '@rpgjs/default-gui'
 import mobileGui from '@rpgjs/mobile-gui'
 import gamepad from '@rpgjs/gamepad'
 import chat from '../assets/chat/index'
+import {Combats} from './main/server/events/Combats';
 
 export default [
     main,
@@ -11,5 +12,7 @@ export default [
     defaultGui,
     mobileGui,
     gamepad, 
-    chat
+    chat,
+    Combats
+    
 ]
