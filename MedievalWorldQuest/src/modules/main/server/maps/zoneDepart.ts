@@ -6,6 +6,7 @@ import { speech } from '../database/dialogue/ZoneDepSpeech'
 import { Witch } from '../events/WitchZoneDep'
 import { Craftman } from '../events/CraftmanZoneDep'
 import { Skin } from '../events/Skins'
+import { Monster } from '../events/Monsters'
 
 @MapData({
     id: 'zoneDepart',
@@ -15,6 +16,10 @@ import { Skin } from '../events/Skins'
         Witch,
         Craftman,
         Barde_1,
+        Monster({
+            name: 'Slime1',
+            graphic: 'slime'
+        }),
         Skin({
             name: 'Skin1',
             graphic: 'warrior'

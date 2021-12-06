@@ -6,8 +6,8 @@ const { RMSpritesheet } = Presets
     images: {
         slime: require('./assets/slime.png'),
     },
-    width: 96,
-    height: 128,
-    ...RMSpritesheet(3, 4)
+    width: 112,
+    height: 22,
+    ...RMSpritesheet(1, 4)
 })
 export class Monsters { }
