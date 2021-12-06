@@ -1,5 +1,7 @@
 import { RpgEvent, EventData, RpgPlayer,Move } from '@rpgjs/server'
 import {speech} from '../database/dialogue/ZoneDepSpeech'
+
+
 @EventData({
     name: 'Barde_1',
     hitbox: {
@@ -17,7 +19,6 @@ export class Barde_1 extends RpgEvent {
     }
 
     async onAction(player: RpgPlayer) {
-        
         for (let msg of speech.textBarde) {
             await player.showText(msg, {
                 talkWith: this

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset version="1.5" tiledversion="1.7.2" name="tuilesGlobale" tilewidth="32" tileheight="32" tilecount="1000" columns="8">
- <image source="../../../client/characters/maps/assets/tuilesGlobale.png" width="256" height="4000"/>
+ <image source="../../../client/maps/assets/tuilesGlobale.png" width="256" height="4000"/>
  <tile id="8">
   <properties>
    <property name="z" type="int" value="1"/>
