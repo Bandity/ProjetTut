@@ -1,8 +1,12 @@
 import { RpgEvent, EventData, RpgPlayer} from "@rpgjs/server";
-import { BattleManager } from "@rpgjs/server/lib/Player/BattleManager";
-import {player} from "../player";
-import  {Monster} from "../database/monsters/Enemy";
-class Combats{
-    @BattleManager.applyDamage(Monster,null);
+
+class Combats extends   RpgEvent {
+    onAction(player: RpgPlayer, otherPlayer: RpgPlayer, skill:any){
+        let damage = player.applyDamage(otherPlayer, skill);
+        otherPlayer.hp = otherPlayer.hp - damage.damage;
+        if (otherPlayer.hp <=0){
+            otherPlayer.teleport("0,0");
+        }
+    }
 }
 export{Combats}

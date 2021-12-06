@@ -40,5 +40,13 @@ export const speech = {
         "Tu te trouves ici devant l'Institut du Royaume, pour faire simple c'est là où on t'apprends à te battre en tant que Guerrier ou Assassin.",
         "Bon, assez parler, rentres donc avant d'attraper quelque chose... Pouhahaha"
     ],
+    textQuest1: [
+        "Mince mince mince !... Quoi ? Pourquoi est ce que je râle?",
+        "Je n'ai plus de potion de soin, et j'en ai besoin mon petit chat qui s'est blessé en tombant d'un arbre...",
+        "Sans oublier que je doit apporter un manuscrit à mon mentor... S'il te plaît , aides moi à trouver une potion et je te récompenserai !"
+    ],
+    textRecompQuest1: [
+        "Merci beaucoup petit aventurier, voilà ta récompense !"
+    ],
 
 } 

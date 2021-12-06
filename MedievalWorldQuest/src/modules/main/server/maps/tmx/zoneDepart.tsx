@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset version="1.5" tiledversion="1.7.2" name="zoneDepart" tilewidth="32" tileheight="32" tilecount="550" columns="22">
- <image source="../../../client/characters/maps/assets/tuilesRpgMaker.png" width="704" height="800"/>
+ <image source="../../../client/maps/assets/tuilesRpgMaker.png" width="704" height="800"/>
  <tile id="73">
   <properties>
    <property name="collision" type="bool" value="true"/>

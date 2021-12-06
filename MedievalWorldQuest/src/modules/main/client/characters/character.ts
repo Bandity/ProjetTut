@@ -18,6 +18,7 @@ const { RMSpritesheet } = Presets
         priest: require('./assets/priest.png'),
         mage: require('./assets/mage.png'),
         craftman: require('./assets/craftman.png'),
+        noble: require('./assets/noble.png'),
 
     },
     width: 96,
