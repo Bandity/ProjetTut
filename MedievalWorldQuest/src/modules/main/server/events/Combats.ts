@@ -6,6 +6,7 @@ class Combats extends   RpgEvent {
         otherPlayer.hp = otherPlayer.hp - damage.damage;
         if (otherPlayer.hp <=0){
             otherPlayer.teleport("0,0");
+            otherPlayer.hp = 100;
         }
     }
 }

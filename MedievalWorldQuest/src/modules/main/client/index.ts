@@ -8,6 +8,7 @@ import Characters from './characters'
 import Monsters  from './characters'
 import { ShieldAnimations } from './animations/ShieldAnimation'
 import { DarkLightAnimation } from './animations/DarkLightAnimation'
+import hpbar from '../../../assets/hpbar/client/gui/hpbar.vue';
 
 @RpgModule<RpgClient>({ 
     spritesheets: [
@@ -24,8 +25,10 @@ import { DarkLightAnimation } from './animations/DarkLightAnimation'
     },
     sounds: [
         TownMusic
+    ],
+    gui: [
+        hpbar
     ]
-
 
 })
 export default class RpgClientEngine {}
