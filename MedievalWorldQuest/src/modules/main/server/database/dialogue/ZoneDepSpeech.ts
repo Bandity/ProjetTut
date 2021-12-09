@@ -13,11 +13,62 @@ export const speech = {
         "Au pire, n'oublies pas que tu as des panneaux dissimulés un peu partout dans la ville pour t'indiquer où tu te situes.",
         "Allez, salut !"
     ],
-    textPnj2: "Cette ville me paraît si belle mais la vallée qui l'entoure est désolante.",
+    textPnj2: [
+        "Cette ville me paraît si belle mais la vallée qui l'entoure est désolante."
+    ],
     textPnj3: [
         "Je ne me lasserais jamais de voir cette place, elle est le c\u0153ur de cette ville.",
         "La voir me rapelle ce qu'il s'est passé il y a 50 ans ...", 
         "... Oh? Tu ne sais pas ce qu'il s'est passé ? Tu devrais aller lire les stèles dissimulées un peu partout dans la ville, un morceau de la tragédie y est écrit." 
+    ],
+    textPnj4: [
+        "Je sais plus ou j'ai garé ma voiture.",
+        "Comment ça \"C'est pas encore inventé.\" ?",
+    ],
+    textPnj5: [
+        "Les monstres rodent de plus en plus autour de la ville ces derniers temps.",
+        "Je crains le pire pour l'avenir de notre royaume."
+    ],
+    textPnj6: [
+        "Je devais acheter quoi déjà ?",
+        "Hmm...",
+        "Hmm...",
+        "Hmm...",
+        "Hmm...",
+        "J'ai oublié, tant pis..."
+    ],
+    textPnj7: [
+        "Une petite pièce s'il-vous-plaît."
+    ],
+    textPnj8: [
+        "J'ai des bons champignons hallucinogènes, t'en veux ?",
+        "Si tu vois les gardes, leur dis pas que je suis ici."
+    ],
+    textPnj9: [
+        "Quel temps merveilleux pour aller au marché."
+    ],
+    textPnj10: [
+        "Bonjour jeune homme."
+    ],
+    textPnj11: [
+        "Le panneau derrière moi te permet de voir l'avancée de tes quêtes.",
+        "Ou pas, ça dépend Quentin tu fais comme tu veux :)"
+    ],
+    textPnj12: [
+        "Bienvenue à la ville des Ménestrels !",
+        "Tu y trouveras de tout pour t'aider dans ton aventure."
+    ],
+    textChat: [
+        "Miaou"
+    ],
+    textChatTroll: [
+        "Je miaule : *miaou*"
+    ],
+    textChien1: [
+        "Wouaf"
+    ],
+    textChien2: [
+        "Wouf"
     ],
     textWitchNotGoodClasses: [
         "Bonjour jeune aventurier, ce batiment derrière moi est l'académie de magie, également appelé la Guilde des mages.",
@@ -26,8 +77,8 @@ export const speech = {
     textWitchGoodClasses: [
         "Bonjour mon petit :kuf: kuf:",
         "Ce batiment derrière moi est l'académie de magie, également appelé la Guilde des mages. :kuf: :kuf:",
-        "Si tu veux apprendre des choses sur tes compétences, ou en apprendre certaines, ou encore prendre des missions spécialisé pour ta vocation tu es au bon endroit !",
-        "La Guilde des mages offre également des choses pour les néophytes, n'hésites pas à aller voir ! :kuf: ... Je devrais vraiment prendre quelque chose contre la toux, moi :kuf:"
+        "Si tu veux apprendre des choses sur tes compétences, ou en apprendre certaines, ou encore prendre des missions spécialisées pour ta vocation, tu es au bon endroit !",
+        "La Guilde des mages offre également des choses pour les néophytes, n'hésites pas à aller voir ! :kuf: ... Je devrais vraiment prendre quelque chose contre la toux, moi. :kuf:"
     ],
 
     textCraftmanNotGoodClasses: [
@@ -41,9 +92,9 @@ export const speech = {
         "Bon, assez parler, rentres donc avant d'attraper quelque chose... Pouhahaha"
     ],
     textQuest1: [
-        "Mince mince mince !... Quoi ? Pourquoi est ce que je râle?",
-        "Je n'ai plus de potion de soin, et j'en ai besoin mon petit chat qui s'est blessé en tombant d'un arbre...",
-        "Sans oublier que je doit apporter un manuscrit à mon mentor... S'il te plaît , aides moi à trouver une potion et je te récompenserai !"
+        "Mince mince mince !... Quoi ? Pourquoi est-ce que je râle?",
+        "Je n'ai plus de potion de soin, et j'en ai besoin pour mon petit chat qui s'est blessé en tombant d'un arbre...",
+        "Sans oublier que je dois apporter un manuscrit à mon mentor... S'il te plaît, aide-moi à trouver une potion et je te récompenserai !"
     ],
     textRecompQuest1: [
         "Merci beaucoup petit aventurier, voilà ta récompense !"

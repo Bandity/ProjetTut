@@ -5,13 +5,8 @@ const { RMSpritesheet } = Presets
 @Spritesheet({
     images: {
         heroBlueHair: require('./assets/heroBlueHair.png'),
-        female13: require('./assets/Female 13-2.png'),
-        female19: require('./assets/Female 19-3.png'),
-        male1_1: require('./assets/Male 01-1.png'),
+        
         barde: require('./assets/barde.png'),
-        male12: require('./assets/Male 12-2.png'),
-        male17: require('./assets/Male 17-2.png'),
-        male1_2: require('./assets/Male 01-2.png'),
         witch: require('./assets/witch.png'),
         warrior: require('./assets/warrior.png'),
         thief: require('./assets/thief.png'),
@@ -19,6 +14,20 @@ const { RMSpritesheet } = Presets
         mage: require('./assets/mage.png'),
         craftman: require('./assets/craftman.png'),
         noble: require('./assets/noble.png'),
+
+        man1: require('./assets/man1.png'),
+        man2: require('./assets/man2.png'),
+        oldMan1: require('./assets/oldMan1.png'),
+        oldMan2: require('./assets/oldMan2.png'),
+        youngLady: require('./assets/youngLady.png'),
+        oldLady: require('./assets/oldLady.png'),
+
+        blackCat: require('./assets/blackCat.png'),
+        whiteCat: require('./assets/whiteCat.png'),
+        yellowCat: require('./assets/yellowCat.png'),
+        blackDog: require('./assets/blackDog.png'),
+        whiteDog: require('./assets/whiteDog.png'),
+        yellowDog: require('./assets/yellowDog.png'),
 
     },
     width: 96,

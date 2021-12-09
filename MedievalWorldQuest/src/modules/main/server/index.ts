@@ -1,10 +1,12 @@
 import { RpgServer, RpgModule } from '@rpgjs/server'
+import { MaisonZoneDepMap } from './maps/maisonZoneDep'
 import { ZoneDepartMap } from './maps/zoneDepart'
 import { player } from './player'
 
 @RpgModule<RpgServer>({
     maps: [
-        ZoneDepartMap
+        ZoneDepartMap,
+        MaisonZoneDepMap
     ],
     player
 })

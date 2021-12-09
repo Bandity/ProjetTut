@@ -5,7 +5,7 @@ const { MAXHP, STR } = Presets
 
 @Enemy({
     name: 'Monster',
-    graphic: 'bird',
+    graphic: 'slime',
     parameters: {
        [MAXHP]: { start: 540, end: 1000},
        [STR]: { start: 41, end: 1000 }
