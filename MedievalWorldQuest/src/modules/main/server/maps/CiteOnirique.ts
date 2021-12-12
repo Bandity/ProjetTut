@@ -5,7 +5,7 @@ import { RpgMap, MapData } from '@rpgjs/server'
     id: 'citeOnirique',
     file: require('./tmx/CiteOnirique.tmx'),
     name : 'citeOnirique',       
-    //sounds: ['town']
+    sounds: ['citeOnirique']
 })
 export class CiteOnirique extends RpgMap { }
 

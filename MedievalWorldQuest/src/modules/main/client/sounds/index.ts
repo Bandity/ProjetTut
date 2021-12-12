@@ -1,9 +1,8 @@
-import { Sound } from '@rpgjs/client'
+import { TownMusic } from './TownMusic'
+import { CiteOniriqueMusic } from './CiteOniriqueMusic'
 
-@Sound({
-    sounds: {
-        town: require('./assets/MenestrelTown.ogg'),
-    },
-    loop: true
-})
-export class TownMusic {}
+export default {
+    CiteOniriqueMusic,
+    TownMusic,
+
+}

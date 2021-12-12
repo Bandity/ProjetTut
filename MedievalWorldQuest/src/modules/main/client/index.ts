@@ -3,7 +3,7 @@ import { sprite } from './sprite'
 import { sceneMap } from './map'
 import Tilesets  from './maps/'
 
-import { TownMusic } from './sounds'
+import Musics from './sounds'
 import Characters from './characters'
 import Monsters  from './characters'
 import { ShieldAnimations } from './animations/ShieldAnimation'
@@ -26,7 +26,8 @@ import hpbar from '../../../assets/hpbar/client/gui/hpbar.vue';
         map: sceneMap
     },
     sounds: [
-        TownMusic
+        Musics.CiteOniriqueMusic,
+        Musics.TownMusic       
     ],
     gui: [
         hpbar
