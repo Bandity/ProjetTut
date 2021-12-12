@@ -35,7 +35,7 @@ export const player: RpgPlayerHooks = {
 
     async onJoinMap(player: RpgPlayer){
         await timeout(500);
-        player.gui('barre_de_vie').open() // Here, open the HUD after loading the map
+        player.gui('hpbar').open()
         for (let msg of speech.textcinematic1) {
             await player.showText(msg);
         }

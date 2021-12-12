@@ -9,7 +9,8 @@ import { sceneMap } from './map'
         map: sceneMap
     },
     gui: [
-        chatGui
+        chatGui,
+
     ]
 })
 export default class RpgClientEngine {}
