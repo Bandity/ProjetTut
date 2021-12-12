@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="44">
  <tileset firstgid="1" source="tuilesGlobale.tsx"/>
- <tileset firstgid="1001" source="zoneDepart.tsx"/>
+ <tileset firstgid="1001" source="MenestrelTown.tsx"/>
  <tileset firstgid="1551" source="eauAnime.tsx"/>
  <layer id="6" name="Terrain" width="128" height="128">
   <data encoding="csv">
@@ -1228,7 +1228,7 @@
   <object id="24" name="Craftman" type="event" x="3646.83" y="1036.8">
    <point/>
   </object>
-  <object id="25" name="Noble_1" type="event" x="1834.5" y="1429.13">
+  <object id="25" name="quest1" type="event" x="1834.5" y="1429.13">
    <point/>
   </object>
   <object id="27" name="Cat-1" type="event" x="2761.83" y="745.799">

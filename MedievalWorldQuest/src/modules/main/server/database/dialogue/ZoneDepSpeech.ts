@@ -58,6 +58,20 @@ export const speech = {
         "Bienvenue à la ville des Ménestrels !",
         "Tu y trouveras de tout pour t'aider dans ton aventure."
     ],
+    textPnj13: [
+        "Il paraît que la maison à ma droite cache un trésor,",
+        "mais je n'ai jamais eu de preuves de son existence."
+    ],
+    textPnj14: [
+        "Bonjour !"
+    ],
+    textPnj15: [
+        "Approchez ! Approchez ! Les meilleurs melons du royaume !"
+    ],
+    textPnj16: [
+        "La gérante de l'auberge est magnifique.",
+        "Mais j'ai trop peur pour aller lui parler..." 
+    ],
     textChat: [
         "Miaou"
     ],
@@ -91,13 +105,18 @@ export const speech = {
         "Tu te trouves ici devant l'Institut du Royaume, pour faire simple c'est là où on t'apprends à te battre en tant que Guerrier ou Assassin.",
         "Bon, assez parler, rentres donc avant d'attraper quelque chose... Pouhahaha"
     ],
-    textQuest1: [
+    textStartQuest1: [
         "Mince mince mince !... Quoi ? Pourquoi est-ce que je râle?",
         "Je n'ai plus de potion de soin, et j'en ai besoin pour mon petit chat qui s'est blessé en tombant d'un arbre...",
         "Sans oublier que je dois apporter un manuscrit à mon mentor... S'il te plaît, aide-moi à trouver une potion et je te récompenserai !"
     ],
-    textRecompQuest1: [
-        "Merci beaucoup petit aventurier, voilà ta récompense !"
+    textEndQuest1: [
+        "Ha...Bon bah une prochaine fois...",
+        "N'oublies pas de m'apporter une potion de soin !",
+        "...!!! Oh tu en as trouvé une ! Voudrais-tu me la donner, s'il te plaît !",
+        "Merci beaucoup petit aventurier, voilà ta récompense !",
+        "Merci encore pour la potion, mon chat va bien mieux !"
+        
     ],
 
 } 

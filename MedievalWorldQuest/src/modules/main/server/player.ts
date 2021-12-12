@@ -27,7 +27,7 @@ export const player: RpgPlayerHooks = {
         player.setClass(Mage);
         await player.setHitbox(20, 16) 
         await player.setGraphic('heroBlueHair');
-        await player.changeMap('zoneDepart');
+        await player.changeMap('citeOnirique');
         console.log(player.position.x);
         console.log(player.position);
         
@@ -35,6 +35,7 @@ export const player: RpgPlayerHooks = {
 
     async onJoinMap(player: RpgPlayer){
         await timeout(500);
+        player.gui('barre_de_vie').open() // Here, open the HUD after loading the map
         for (let msg of speech.textcinematic1) {
             await player.showText(msg);
         }

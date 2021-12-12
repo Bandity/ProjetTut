@@ -5,19 +5,27 @@ import { PnjGlobal } from '../events/pnjGlobal'
 import { speech } from '../database/dialogue/ZoneDepSpeech'
 import { Witch } from '../events/WitchZoneDep'
 import { Craftman } from '../events/CraftmanZoneDep'
-import { Noble_1 } from '../events/Noble_1'
+import { QuestSimple } from '../events/ItemRequiredQuest'
 import { Skin } from '../events/Skins'
 import { Monster } from '../events/Monsters'
-
+import Items from '../database/items'
 @MapData({
-    id: 'zoneDepart',
-    file: require('./tmx/zoneDepart.tmx'),
-    name : 'zoneDepart',
+    id: 'MenestrelTown',
+    file: require('./tmx/MenestrelTown.tmx'),
+    name : 'MenestrelTown',
     events: [
         Witch,
         Craftman,
         Barde_1,
-        Noble_1,
+        //Noble_1,
+        QuestSimple({ 
+            name: 'quest1',
+            textStart: speech.textStartQuest1,
+            textEnd: speech.textEndQuest1,
+            itemRequired: Items.Potion,
+            graphic: 'noble',
+            gain: { gold: 300, exp: 15},
+        }),
         Monster({
             name: 'Slime1',
             graphic: 'slime'
@@ -105,6 +113,27 @@ import { Monster } from '../events/Monsters'
             moveRandom: true
         }),
         PnjGlobal({
+            name: 'Pnj-13',
+            text: speech.textPnj13,
+            graphic: 'oldLady',
+        }),
+        PnjGlobal({
+            name: 'Pnj-14',
+            text: speech.textPnj14,
+            graphic: 'youngLady',
+            moveRandom: true
+        }),
+        PnjGlobal({
+            name: 'Pnj-15',
+            text: speech.textPnj15,
+            graphic: 'oldMan1',
+        }),
+        PnjGlobal({
+            name: 'Pnj-16',
+            text: speech.textPnj16,
+            graphic: 'man1',
+        }),
+        PnjGlobal({
             name: 'Cat-1',
             text: speech.textChat,
             graphic: 'whiteCat',
@@ -141,10 +170,11 @@ import { Monster } from '../events/Monsters'
             moveRandom: true
         
     }),
+    
         SteleEvent({
             name: 'Stele_1',
         }),
     ],
     sounds: ['town']
 })
-export class ZoneDepartMap extends RpgMap { }
+export class MenestrelTown extends RpgMap { }

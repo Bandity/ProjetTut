@@ -9,7 +9,6 @@ const { INT } = Presets
     power: 250,
     variance: 10,
     hitRate: 1,
-    
     addStates: [],
     removeStates: [],
     elements: [],

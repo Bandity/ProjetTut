@@ -9,4 +9,4 @@ import { Spritesheet } from '@rpgjs/client'
         // here, you can add other tileset
     }
 })
-export class Tilesets { }
+export class TilesetsMenestrelTown { }

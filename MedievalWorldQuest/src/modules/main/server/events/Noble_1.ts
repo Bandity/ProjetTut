@@ -22,7 +22,6 @@ export class Noble_1 extends RpgEvent {
         if (player.getVariable("quest1") == 2){ // si quete deja fini
             return 
         }
-        console.log(player.getVariable("quest1"))
         if (player.getVariable("quest1") == 1){ // si quete en cours
             if (player.getItem(Potion) != null){ // si le joueur possede l'objet demande
                 await (player.showText("...!!! Oh tu en as trouvé une ! Voudrais-tu me la donner, s'il te plaît !"));
