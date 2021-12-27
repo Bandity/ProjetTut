@@ -1,7 +1,4 @@
-﻿import { player } from "../../player"
-
-
-
+﻿
 export const speech = {
     textcinematic1: [
         "De la main du héros naitra l'avenir.",

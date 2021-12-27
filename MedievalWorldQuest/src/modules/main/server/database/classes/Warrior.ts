@@ -3,7 +3,7 @@ import SpellWarrior  from '../skills/Warrior/index'
 
 
 @Class({
-    name: 'Warrior',
+    name: 'Guerrier',
     equippable: [
 
     ],

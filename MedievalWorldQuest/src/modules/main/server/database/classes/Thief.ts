@@ -2,7 +2,7 @@ import { Class } from '@rpgjs/database'
 import ThiefSpell  from '../skills/thief/index'
 
 @Class({
-    name: 'Thief',
+    name: 'Assassin',
     equippable: [
 
     ],

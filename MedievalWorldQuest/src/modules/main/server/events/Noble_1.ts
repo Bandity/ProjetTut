@@ -1,5 +1,9 @@
+/*  Class inutile pour le moment puisque ItemRequiredQuest fait exactement pareil que celle ci
+mais permet d'avoir une idée beaucoup plus claire de comment fonctionne les quêtes 
+*/
+
 import { RpgEvent, EventData, RpgPlayer,Move, EventMode } from '@rpgjs/server'
-import {speech} from '../database/dialogue/ZoneDepSpeech'
+import {speech} from '../database/dialogue/MenestrelTownSpeech'
 import { Potion } from '../database/items/potion';
 
 @EventData({
@@ -35,7 +39,7 @@ export class Noble_1 extends RpgEvent {
                     player.gold += 300; // la recompense est de l'experience et de l'argent
                     player.exp +=15;
                     let reward = ["Vous avez reÃ§u : 300 or", "Vous avez reÃ§u : 50 points d'experience"] 
-                    for (let msg of speech.textRecompQuest1) {
+                    for (let msg of speech.textEndQuest1) {
                         await player.showText(msg, {talkWith: this }) // on affiche les remerciements
                     }
 
@@ -52,7 +56,7 @@ export class Noble_1 extends RpgEvent {
         if (player.getVariable("quest1") == null || player.getVariable("quest1") == 0){
             player.setVariable("quest1",0); 
 
-            for (let msg of speech.textQuest1) {
+            for (let msg of speech.textStartQuest1) {
                 await player.showText(msg, {
                 talkWith: this
                 })

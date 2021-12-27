@@ -2,7 +2,7 @@ import { Class } from '@rpgjs/database'
 import PriestSpell  from '../skills/Priest/index'
 
 @Class({
-    name: 'Priest',
+    name: 'Prêtre',
     equippable: [
 
     ],

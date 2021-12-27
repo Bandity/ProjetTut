@@ -1,23 +1,28 @@
 import { RpgMap, MapData } from '@rpgjs/server'
-import { Barde_1 } from '../events/barde1ZoneDep'
-import { SteleEvent } from '../events/stele'
+
+import { speech } from '../database/dialogue/MenestrelTownSpeech'
+import Items from '../database/items'
+
 import { PnjGlobal } from '../events/pnjGlobal'
-import { speech } from '../database/dialogue/ZoneDepSpeech'
-import { Witch } from '../events/WitchZoneDep'
-import { Craftman } from '../events/CraftmanZoneDep'
+import mainEvent  from '../events/MenestrelTown/index'
+
 import { QuestSimple } from '../events/ItemRequiredQuest'
 import { Skin } from '../events/Skins'
 import { Monster } from '../events/Monsters'
-import Items from '../database/items'
+
 @MapData({
     id: 'MenestrelTown',
     file: require('./tmx/MenestrelTown.tmx'),
     name : 'MenestrelTown',
     events: [
-        Witch,
-        Craftman,
-        Barde_1,
-        //Noble_1,
+        mainEvent.Witch,
+        mainEvent.Craftman,
+        mainEvent.Barde_1,
+
+        mainEvent.SteleEvent({
+            name: 'Stele_1',
+        }),
+
         QuestSimple({ 
             name: 'quest1',
             textStart: speech.textStartQuest1,
@@ -29,22 +34,6 @@ import Items from '../database/items'
         Monster({
             name: 'Slime1',
             graphic: 'slime'
-        }),
-        Skin({
-            name: 'Skin1',
-            graphic: 'warrior'
-        }),
-        Skin({
-            name: 'Skin2',
-            graphic: 'thief'
-        }),
-        Skin({
-            name: 'Skin3',
-            graphic: 'priest'
-        }),
-        Skin({
-            name: 'Skin4',
-            graphic: 'mage'
         }),
         PnjGlobal({ 
             name: 'Pnj-2',
@@ -170,10 +159,6 @@ import Items from '../database/items'
             moveRandom: true
         
     }),
-    
-        SteleEvent({
-            name: 'Stele_1',
-        }),
     ],
     sounds: ['town']
 })

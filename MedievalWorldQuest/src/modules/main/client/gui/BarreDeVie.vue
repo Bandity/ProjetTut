@@ -1,7 +1,7 @@
 <template>
     <div class="health-bar">
         <p>{{ hp }} / {{ maxHp }}</p>
-        <div class="bordureBar">
+        <div class="bordureBarVie">
             <div class="inner-bar" :style="{ width }"></div>
         </div>
     </div>
@@ -50,7 +50,7 @@ export default {
     font-weight: bold;
 }
 
-.bordureBar {
+.bordureBarVie {
     border: 2px solid black;
     border-radius: 5px;
     position: relative;

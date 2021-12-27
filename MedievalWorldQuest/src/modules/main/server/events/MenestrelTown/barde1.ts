@@ -1,5 +1,5 @@
 import { RpgEvent, EventData, RpgPlayer,Move } from '@rpgjs/server'
-import {speech} from '../database/dialogue/ZoneDepSpeech'
+import {speech} from '../../database/dialogue/MenestrelTownSpeech'
 
 
 @EventData({

@@ -5,6 +5,8 @@ const { RMSpritesheet } = Presets
 @Spritesheet({
     images: {
         heroBlueHair: require('./assets/heroBlueHair.png'),
+        moderator: require('./assets/moderator.png'),
+        base : require('./assets/base.png'),
         
         barde: require('./assets/barde.png'),
         witch: require('./assets/witch.png'),
