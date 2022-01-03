@@ -1,5 +1,5 @@
 import { Class } from '@rpgjs/database'
-import ThiefSpell  from '../skills/thief/index'
+import ThiefSpell  from '../skills/Thief/index'
 
 @Class({
     name: 'Assassin',
