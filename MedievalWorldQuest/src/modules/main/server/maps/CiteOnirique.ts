@@ -16,7 +16,7 @@ import events from '../events/CiteOnirique/index'
         events.Teleporteur,
         events.GeneratorClass({
             name: 'mageClass',
-            graphic: 'mage',
+            graphic: 'mageF',
             classe: classes.Mage,
             textInit: speech.textInitMage,
             textAccept: speech.textAcceptMage,
@@ -24,7 +24,7 @@ import events from '../events/CiteOnirique/index'
         }) ,
         events.GeneratorClass({
             name: 'priestClass',
-            graphic: 'priest',
+            graphic: 'priestF',
             classe: classes.Priest,
             textInit: speech.textInitPriest,
             textAccept: speech.textAcceptPriest,
@@ -32,7 +32,7 @@ import events from '../events/CiteOnirique/index'
         }),
         events.GeneratorClass({
             name: 'thiefClass',
-            graphic: 'thief',
+            graphic: 'thiefG',
             classe: classes.Thief,
             textInit: speech.textInitThief,
             textAccept: speech.textAcceptThief,
@@ -40,7 +40,7 @@ import events from '../events/CiteOnirique/index'
         }),
         events.GeneratorClass({
             name: 'warriorClass',
-            graphic: 'warrior',
+            graphic: 'warriorG',
             classe: classes.Warrior,
             textInit: speech.textInitWarrior,
             textAccept: speech.textAcceptWarrior,
