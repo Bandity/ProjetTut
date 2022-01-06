@@ -23,13 +23,13 @@ export default {
     props: {
         goldName: {
             type: String,
-            default: 'Or'
+            default: 'Gold'
         }
     },
     inject: ['rpgCurrentPlayer', 'rpgKeypress', 'rpgEngine', 'rpgStage', 'rpgGuiClose', 'rpgGui'],
     data() {
         const menu = [{
-            text: 'Objets ',
+            text: 'Items',
             value: 'item',
             layout: 'ItemsLayout'
         }, 

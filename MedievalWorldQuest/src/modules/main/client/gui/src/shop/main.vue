@@ -53,18 +53,18 @@ export default {
             inventory: [],
             menuActive: true,
             menu: [{
-                text: 'Acheter',
+                text: 'Buy',
                 value: 'buy'
             }, {
-                text: 'Vendre',
+                text: 'Sell',
                 value: 'sell'
             }, {
-                text: 'Quitter',
+                text: 'Cancel',
                 value: 'cancel'
             }],
             currentItem: {},
             mode: '',
-            goldName: 'Or',
+            goldName: 'Gold',
             step: 0,
             quantity: 1,
             indexSelected: 0,

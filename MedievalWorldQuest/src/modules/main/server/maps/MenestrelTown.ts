@@ -6,12 +6,12 @@ import Items from '../database/items'
 import { PnjGlobal } from '../events/pnjGlobal'
 import mainEvent  from '../events/MenestrelTown/index'
 
-import { QuestSimple } from '../events/ItemRequiredQuest' 
+import { QuestSimple } from '../events/ItemRequiredQuest'
+import { Skin } from '../events/Skins'
 import { Monster } from '../events/Monsters'
-import { PnjShop } from '../events/PnjShop'
 
 @MapData({
-    id: 'MenestrelTown',  
+    id: 'MenestrelTown',
     file: require('./tmx/MenestrelTown.tmx'),
     name : 'MenestrelTown',
     events: [
@@ -22,12 +22,7 @@ import { PnjShop } from '../events/PnjShop'
         mainEvent.SteleEvent({
             name: 'Stele_1',
         }),
-        PnjShop({
-            name: 'ArmesMagieShop',
-            graphic: 'bucheron',
-            items: [Items.Potion],
-            text: speech.ArmesMagieShop
-        }),
+
         QuestSimple({ 
             name: 'quest1',
             textStart: speech.textStartQuest1,
