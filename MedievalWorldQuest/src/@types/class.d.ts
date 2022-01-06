@@ -35,3 +35,4 @@ interface ClassOptions extends EfficiencyOptions, Data {
 }
 export declare function Class(options: ClassOptions): (target: any) => void;
 export {};
+
