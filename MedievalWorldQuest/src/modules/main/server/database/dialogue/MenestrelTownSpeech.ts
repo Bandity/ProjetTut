@@ -49,7 +49,6 @@ export const speech = {
     ],
     textPnj11: [
         "Le panneau derrière moi te permet de voir l'avancée de tes quêtes.",
-        "Ou pas, ça dépend Quentin tu fais comme tu veux :)"
     ],
     textPnj12: [
         "Bienvenue à la ville des Ménestrels !",
@@ -115,5 +114,6 @@ export const speech = {
         "Merci encore pour la potion, mon chat va bien mieux !"
         
     ],
+    ArmesMagieShop: "Salut p'tite pousse, je vend des sceptres pour les mages et pour les prêtres, tu veux y jeter un oeil ?"
 
 } 

@@ -1,5 +1,5 @@
 <template>
-    <rpg-dialog message="Oups, tu as été déconnecté. Veuillez vous attendre!" position="middle" :autoClose="true" />
+    <rpg-dialog message="Oups, vous avez été déconnecté. Veuillez patienter!" position="middle" :autoClose="true" />
 </template>
 
 <script>

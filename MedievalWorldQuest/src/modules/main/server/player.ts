@@ -19,6 +19,7 @@ export const player: RpgPlayerHooks = {
         }
     },
     async onConnected(player: RpgPlayer) {
+        player.gold += 6000;
         player.speed = 2;
         player.name = "Olgus"
         player.addItem(Potion);
@@ -26,7 +27,8 @@ export const player: RpgPlayerHooks = {
         await player.setGraphic('heroBlueHair');
         if (player.getVariable("maitreClasses_speech") == null) { // debut du jeu
             await player.setGraphic('base');
-            await player.changeMap('citeOnirique');
+            //await player.changeMap('citeOnirique');
+            await player.changeMap('MenestrelTown');
         }
 
     },
