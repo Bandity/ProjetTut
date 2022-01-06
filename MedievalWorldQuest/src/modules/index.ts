@@ -1,6 +1,7 @@
 import main from './main'
 //import starterKit from '@rpgjs/starter-kit'
-import defaultGui from '@rpgjs/default-gui' 
+import defaultGui from './main/client/gui/src'
+//import  
 import mobileGui from '@rpgjs/mobile-gui'
 import gamepad from '@rpgjs/gamepad'
 import chat from '../assets/chat/index'
@@ -13,6 +14,7 @@ export default [
     main,
     //starterKit,
     defaultGui,
+
     mobileGui,
     gamepad, 
     chat,
