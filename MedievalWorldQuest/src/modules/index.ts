@@ -1,6 +1,6 @@
 import main from './main'
 //import starterKit from '@rpgjs/starter-kit'
-import defaultGui from './main/client/gui/src'
+import defaultGui from './main/client/gui/guiParDefault/src'
 //import  
 import mobileGui from '@rpgjs/mobile-gui'
 import gamepad from '@rpgjs/gamepad'
