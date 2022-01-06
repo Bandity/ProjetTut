@@ -2,7 +2,6 @@ import { RpgEvent, EventData, RpgPlayer, Move, EventMode } from '@rpgjs/server'
 
 export function GeneratorClass(options): object {
     const { name,graphic,classe, textInit, textAccept, textReject } = options
-
     @EventData({
         name: name,
         hitbox: {
@@ -11,22 +10,16 @@ export function GeneratorClass(options): object {
 
         }
     }) 
+    
+
     class Class extends RpgEvent {
+
         async onInit(player: RpgPlayer) {
             this.setGraphic(graphic)
             this.speed = 2
             this.frequency = 0
         }
-
         async onAction(player: RpgPlayer) {
-            if (player._class != null && player._class.name == classe.name) { // si le joueur est deja un mage
-                for (let msg of textAccept) {
-                    await player.showText(msg, {
-                        talkWith: this
-                    })
-                }
-                return;
-            }
             await player.showText(textInit[0], {
                 talkWith: this
             });
@@ -36,7 +29,20 @@ export function GeneratorClass(options): object {
                 { text: 'Non', value: 'non' },
             ]);
             if (choice != null && choice.value == 'oui') {
-                player.setGraphic(graphic);
+                const choice2 = await player.showChoices("Choisir une fille ou un garçon ?", [
+                    { text: 'Fille', value: 'f' },
+                    { text: 'Garçon', value: 'g' },
+                ]);
+                if (choice2 != null && choice2.value == 'f') {
+                    let graphicPerso = graphic.slice(0,graphic.length-1); // on prend le nom complet exemple mageF, on retire la lettre du sexe (la derniere) et on garde ca : mage
+                    graphicPerso = graphicPerso.concat("F"); // on rajoute le sexe en 1 lettre majuscule : F si femme 
+                    player.setGraphic(graphicPerso); // on change le visuel du perso
+                }
+                else if (choice2 != null && choice2.value == 'g') {
+                    let graphicPerso = graphic.slice(0,graphic.length-1); // on prend le nom complet exemple mageF, on retire la lettre du sexe (la derniere) et on garde ca : mage
+                    graphicPerso = graphicPerso.concat("G"); // on rajoute le sexe en 1 lettre majuscule : F si femme 
+                    player.setGraphic(graphicPerso); // on change le visuel du perso
+                }
                 player.setClass(classe);
                 for (let msg of textAccept) {
                     await player.showText(msg, {
