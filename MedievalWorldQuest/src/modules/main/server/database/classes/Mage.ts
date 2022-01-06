@@ -1,7 +1,8 @@
 import { Class } from '@rpgjs/database'
+//import { Class } from '../../../../../@types'
 import  MageSpell  from '../skills/Mage/index'
 
-@Class({
+Class({
     name: 'Mage',
     equippable: [
 

@@ -1,4 +1,5 @@
-import { Class } from '@rpgjs/database'
+//import { Class } from '@rpgjs/database'
+import { Class } from '../../../../../@types'
 import PriestSpell  from '../skills/Priest/index'
 
 @Class({
