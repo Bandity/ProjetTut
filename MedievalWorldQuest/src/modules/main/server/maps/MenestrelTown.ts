@@ -9,6 +9,7 @@ import mainEvent  from '../events/MenestrelTown/index'
 import { QuestSimple } from '../events/ItemRequiredQuest'
 import { Skin } from '../events/Skins'
 import { Monster } from '../events/Monsters'
+import { PnjShop } from '../events/PnjShop'
 
 @MapData({
     id: 'MenestrelTown',
@@ -21,6 +22,12 @@ import { Monster } from '../events/Monsters'
 
         mainEvent.SteleEvent({
             name: 'Stele_1',
+        }),
+        PnjShop({
+        name: 'ArmesMagieShop',
+        graphic: 'bucheron',
+        items: [Items.Potion],
+        text: speech.ArmesMagieShop      
         }),
 
         QuestSimple({ 

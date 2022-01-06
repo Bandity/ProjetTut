@@ -29,7 +29,7 @@ export default {
     inject: ['rpgCurrentPlayer', 'rpgKeypress', 'rpgEngine', 'rpgStage', 'rpgGuiClose', 'rpgGui'],
     data() {
         const menu = [{
-            text: 'Items',
+            text: 'Objets',
             value: 'item',
             layout: 'ItemsLayout'
         }, 
@@ -48,7 +48,7 @@ export default {
         } */]
         if (!__RPGJS_MMORPG__ && this.rpgGui.exists('rpg-save')) {
             menu.push({
-                text: 'Save',
+                text: 'Sauvegarder',
                 value: 'save',
                 layout: 'SaveLayout'
             })
