@@ -13,7 +13,10 @@ import events from '../events/CiteOnirique/index'
     events : [
         events.Pnj_info,
         events.MaitreClasses,
-        events.Teleporteur,
+        events.Teleporteur({
+            name: 'Teleporteur',
+            nameMap: "MenestrelTown",
+        }),
         events.GeneratorClass({
             name: 'mageClass',
             graphic: 'mageF',

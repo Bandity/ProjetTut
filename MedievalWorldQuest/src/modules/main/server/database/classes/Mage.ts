@@ -2,7 +2,8 @@
 import { Class } from '../../../../../@types'
 import  MageSpell  from '../skills/Mage/index'
 
-Class({
+@Class({
+    id: "Mage",
     name: 'Mage',
     equippable: [
 

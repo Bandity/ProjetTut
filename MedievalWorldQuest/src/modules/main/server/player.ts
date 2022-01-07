@@ -1,4 +1,5 @@
 import { RpgPlayer, RpgPlayerHooks, Control, Move } from '@rpgjs/server'
+import { Mage } from './database/classes/Mage';
 import { speech } from './database/dialogue/MenestrelTownSpeech'
 import { Potion } from './database/items/potion'
 
@@ -28,8 +29,9 @@ export const player: RpgPlayerHooks = {
         if (player.getVariable("maitreClasses_speech") == null) { // debut du jeu
             await player.setGraphic('base');
             //await player.changeMap('citeOnirique');
-            //await player.changeMap('MenestrelTown');
-            await player.changeMap('Eglise_carte')
+            player.setClass(Mage);
+            await player.changeMap('MenestrelTown');
+            //await player.changeMap('Eglise_carte')
         }
 
     },

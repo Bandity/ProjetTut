@@ -7,7 +7,7 @@ import { player } from './player'
         Maps.CiteOnirique,
         Maps.MenestrelTown,
         Maps.MaisonZoneDepMap,
-        Maps.Eglise_carte
+        Maps.Eglise
     ],
     player
 })
