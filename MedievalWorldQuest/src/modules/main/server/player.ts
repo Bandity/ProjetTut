@@ -28,9 +28,9 @@ export const player: RpgPlayerHooks = {
         await player.setGraphic('heroBlueHair');
         if (player.getVariable("maitreClasses_speech") == null) { // debut du jeu
             await player.setGraphic('base');
-            //await player.changeMap('citeOnirique');
+            await player.changeMap('citeOnirique');
             player.setClass(Mage);
-            await player.changeMap('MenestrelTown');
+           // await player.changeMap('MenestrelTown');
             //await player.changeMap('Eglise_carte')
         }
 

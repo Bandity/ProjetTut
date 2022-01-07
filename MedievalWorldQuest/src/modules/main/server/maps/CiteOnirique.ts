@@ -1,7 +1,6 @@
 import { RpgMap, MapData } from '@rpgjs/server'
 import { speech } from '../database/dialogue/CiteOniriqueSpeech'
 import classes from '../database/classes/index'
-
 import events from '../events/CiteOnirique/index'
 
 @MapData({
@@ -49,7 +48,7 @@ import events from '../events/CiteOnirique/index'
             textAccept: speech.textAcceptWarrior,
             textReject: speech.textRejectWarrior
         }),
-
+        events.Combat
 
     ],
 })
