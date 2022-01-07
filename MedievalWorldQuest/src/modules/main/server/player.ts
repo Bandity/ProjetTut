@@ -28,7 +28,8 @@ export const player: RpgPlayerHooks = {
         if (player.getVariable("maitreClasses_speech") == null) { // debut du jeu
             await player.setGraphic('base');
             //await player.changeMap('citeOnirique');
-            await player.changeMap('MenestrelTown');
+            //await player.changeMap('MenestrelTown');
+            await player.changeMap('Eglise_carte')
         }
 
     },

@@ -6,7 +6,8 @@ import { player } from './player'
     maps: [
         Maps.CiteOnirique,
         Maps.MenestrelTown,
-        Maps.MaisonZoneDepMap
+        Maps.MaisonZoneDepMap,
+        Maps.Eglise_carte
     ],
     player
 })

@@ -16,6 +16,7 @@ import hpbar from '../../../assets/hpbar/client/gui/hpbar.vue';
         Tilesets.TilesetsMenestrelTown,
         Tilesets.TilesetMaison,
         Tilesets.TilesetsCiteOnirique, 
+        Tilesets.TilesetsEglise,
         ShieldAnimations,
         DarkLightAnimation,
         ...Characters,
