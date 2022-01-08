@@ -23,11 +23,10 @@ export function QuestSimple(options): object {
             await player.showText(textEnd[4]);
             return 
         }
-        console.log(player.getVariable(name))
         if (player.getVariable(name) == 1){ // si quete en cours
             if (player.getItem(itemRequired) != null && player.getItem(itemRequired).nb == options.quantity){ // si le joueur possede l'objet demande
                 await (player.showText(textEnd[2]));
-                const choice = await player.showChoices("Donner " +  itemRequired.name  + "?", [
+                const choice = await player.showChoices("Donner " +  itemRequired.id  + "?", [
                     { text: 'Oui', value: 'oui' },
                     { text: 'Non', value: 'non' },
                 ]);

@@ -32,11 +32,13 @@ export default {
     },
     computed: {
         mapItems() {
-            return this.items.map(it => ({
-                text: it.item.name,
-                nb: it.nb,
-                consumable: it.item.consumable
-            }))
+            if (this.items[0] != null){
+                return this.items.map(it => ({
+                    text: it.item.name,
+                    nb: it.nb,
+                    consumable: it.item.consumable
+                }))
+        }
         }
     },
     mounted() {

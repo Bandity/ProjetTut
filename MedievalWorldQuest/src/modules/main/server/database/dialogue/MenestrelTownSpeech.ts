@@ -128,6 +128,24 @@ export const speech = {
         "Merci encore pour les potions !"
         
     ],
-    ArmesMagieShop: "Salut p'tite pousse, je vend des sceptres pour les mages et pour les prÃªtres, tu veux y jeter un oeil ?"
+
+    textStartQuest3: [
+        "Hey p'tit bébé, j'aurais b'soin de toi !",
+        "Tu vois, j'ère à droite à gauche et j'ai entendu parler de l'Ambroisie, apparement c'une boisson vachement bonne.",
+        "T'as capté p'tit bébé? Ca me mettrait bien que t'ailles m'en chercher 3 jarres."
+    ],
+    textEndQuest3: [
+        "T'veux pas me faire cette fleur? Ha bah tant pis pour toi.",
+        "Quoi ? T'as déjà zappé ? 3 jarres d'ambroisie j'avais dit.",
+        "Ha ? Tu les as récupéré ? ",
+        "Parfait, tiens prends ça pour la peine, p'tit bébé.",
+        "C'était vachement bon, la prochaine fois je t'en demanderais plus, p'tit bébé."
+    ],
+
+    ArmesMagieShop: "Salut p'tite pousse, je vend des sceptres pour les mages et pour les prÃªtres, tu veux y jeter un oeil ?",
+    GardeEntree : "Faîte attention à l'extérieur, ça grouille de monstre.",
+    GardePalais: "Halte là ! Interdiction formelle de pénétrer dans le palais, veuillez faire demi-tour",
+    GardeVilleInterne : "Si vous remarquez quoi que ce soit de suspect, prévenez nous.",
+
 
 } 

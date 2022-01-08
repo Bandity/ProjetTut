@@ -7,7 +7,7 @@ import events from '../events/CiteOnirique/index'
     id: 'citeOnirique',
     file: require('./tmx/CiteOnirique.tmx'),
     name : 'citeOnirique',       
-    sounds: ['citeOnirique'],
+    sounds: ['musicCiteOnirique'],
     events : [
         events.Pnj_info,
         events.MaitreClasses,

@@ -17,9 +17,8 @@ export default [
 
     mobileGui,
     gamepad, 
-    //chat,
+    chat,
     //Combats,
-    //titleScreen,
     save
     
 ]

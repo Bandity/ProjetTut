@@ -1,4 +1,4 @@
-import { RpgEvent, EventData, RpgPlayer, Move } from '@rpgjs/server'
+import { RpgEvent, EventData, RpgPlayer, Move, EventMode } from '@rpgjs/server'
 
 const timeout = (ms) =>  new Promise(resolve => setTimeout(resolve, ms));
 
@@ -11,7 +11,7 @@ export function Teleporteur(options): object {
             width: 10,
             height: 10
 
-        }
+        },
     })
 
     class Teleporteur extends RpgEvent {
@@ -19,7 +19,8 @@ export function Teleporteur(options): object {
         }
 
         async onPlayerTouch(player: RpgPlayer) {
-                await player.changeMap(options.nameMap);
+            await player.changeMap(options.nameMap);
+            await timeout(100)  
 
         }
 

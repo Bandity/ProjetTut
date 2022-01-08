@@ -12,6 +12,7 @@ import { Monster } from '../events/Monsters'
     id: 'MenestrelTown',
     file: require('./tmx/MenestrelTown.tmx'),
     name : 'MenestrelTown',
+    sounds: ['musicTown'],
     events: [
         events.Witch,
         events.Craftman,
@@ -26,7 +27,7 @@ import { Monster } from '../events/Monsters'
         events.PnjShop({ 
         name: 'ArmesMagieShop', 
         graphic: 'bucheron',
-        items: [ Items.PotionSoin,Items.PotionMana ],
+        items: [ Items.Ambroisie, Items.Biere, Items.Bois, Items.Corde, Items.Lavande, Items.PotionMana, Items.PotionSoin, Items.Truite, Items.Vin ],
         text: speech.ArmesMagieShop      
         }),
 
@@ -45,9 +46,30 @@ import { Monster } from '../events/Monsters'
             textEnd: speech.textEndQuest2,
             itemRequired: Items.PotionMana,
             quantity : 5,
-            graphic: 'noble',
-            gain: { gold: 300, exp: 15},
+            graphic: 'man4',
+            gain: { gold: 100, exp: 25},
         }),
+        events.QuestSimple({ 
+            name: 'quest3',
+            textStart: speech.textStartQuest3,
+            textEnd: speech.textEndQuest3,
+            itemRequired: Items.Ambroisie,
+            quantity : 3,
+            graphic: 'man3',
+            gain: { gold: 1500, exp: 60},
+        }),
+        events.Garde({ name: 'garde1', text: speech.GardeEntree}),
+        events.Garde({ name: 'garde2', text: speech.GardeEntree}),
+
+        events.Garde({ name: 'garde3', text: speech.GardePalais}),
+        events.Garde({ name: 'garde4', text: speech.GardePalais}),
+
+        events.Garde({ name: 'garde5', text: speech.GardeVilleInterne, moove: true}),
+        events.Garde({ name: 'garde6', text: speech.GardeVilleInterne, moove: true}),
+        events.Garde({ name: 'garde7', text: speech.GardeVilleInterne, moove: true}),
+        events.Garde({ name: 'garde8', text: speech.GardeVilleInterne, moove: true}),
+        events.Garde({ name: 'garde9', text: speech.GardeVilleInterne, moove: true}),
+        events.Garde({ name: 'garde10', text: speech.GardeVilleInterne, moove: true}),
 
         Monster({
             name: 'Slime1',
@@ -178,8 +200,5 @@ import { Monster } from '../events/Monsters'
         
     }),
     ],
-    sounds: ['town']
 })
-export class MenestrelTown extends RpgMap {
-
- }
+export class MenestrelTown extends RpgMap { }

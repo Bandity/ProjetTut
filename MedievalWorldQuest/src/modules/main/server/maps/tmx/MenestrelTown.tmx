@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="50">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="65">
  <tileset firstgid="1" source="tuilesGlobale.tsx"/>
  <tileset firstgid="1001" source="MenestrelTown.tsx"/>
  <tileset firstgid="1551" source="eauAnime.tsx"/>
@@ -1063,7 +1063,7 @@
   <object id="3" name="Barde_1" type="event" x="2102.34" y="1946.42">
    <point/>
   </object>
-  <object id="5" name="Start Position" type="start" x="3251.54" y="3663.48">
+  <object id="5" name="Start Position" type="start" x="1984.03" y="553.541">
    <point/>
   </object>
   <object id="10" name="Stele_1" type="event" x="1789.62" y="3611.71">
@@ -1120,9 +1120,6 @@
   <object id="39" name="Pnj-9" type="event" x="2881.83" y="3553.8">
    <point/>
   </object>
-  <object id="40" x="2345.83" y="3701.8">
-   <point/>
-  </object>
   <object id="41" name="Pnj-10" type="event" x="1103.83" y="2407.8">
    <point/>
   </object>
@@ -1132,10 +1129,10 @@
   <object id="43" name="Pnj-12" type="event" x="2083.83" y="3127.8">
    <point/>
   </object>
-  <object id="44" name="garde1" type="event" x="2017.83" y="291.799">
+  <object id="44" name="garde3" type="event" x="2021.83" y="289.799">
    <point/>
   </object>
-  <object id="45" name="garde2" type="event" x="2135.83" y="291.799">
+  <object id="45" name="garde4" type="event" x="2107.83" y="291.799">
    <point/>
   </object>
   <object id="47" name="geolier" type="event" x="3793.83" y="281.799">
@@ -1145,6 +1142,36 @@
    <point/>
   </object>
   <object id="49" name="egliseTp" type="event" x="483.829" y="1082.47">
+   <point/>
+  </object>
+  <object id="51" name="quest2" type="event" x="957.405" y="3236.16">
+   <point/>
+  </object>
+  <object id="52" name="quest3" type="event" x="3805.89" y="3460.41">
+   <point/>
+  </object>
+  <object id="53" name="garde1" type="event" x="1858.37" y="3756.16">
+   <point/>
+  </object>
+  <object id="54" name="garde2" type="event" x="2279.47" y="3757.5">
+   <point/>
+  </object>
+  <object id="55" name="garde5" type="event" x="1175.59" y="2711.92">
+   <point/>
+  </object>
+  <object id="56" name="garde6" type="event" x="2521.04" y="3048.28">
+   <point/>
+  </object>
+  <object id="59" name="garde7" type="event" x="2811.95" y="948.284">
+   <point/>
+  </object>
+  <object id="61" name="garde8" type="event" x="1299.83" y="939.193">
+   <point/>
+  </object>
+  <object id="63" name="garde9" type="event" x="2505.89" y="1751.31">
+   <point/>
+  </object>
+  <object id="64" name="garde10" type="event" x="1657.4" y="1793.74">
    <point/>
   </object>
  </objectgroup>

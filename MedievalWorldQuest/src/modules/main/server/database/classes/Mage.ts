@@ -15,8 +15,4 @@ import  MageSpell  from '../skills/Mage/index'
         { level: 8, skill: MageSpell.CoeurDeGlace }
     ]
 })
-export class Mage {
-   onSet(player: RpgPlayer) {
-    player.getSkill(MageSpell.BouleDeFeu);
-}
-}
+export class Mage {}

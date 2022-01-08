@@ -44,7 +44,6 @@ export const player: RpgPlayerHooks = {
     },
 
     async onJoinMap(player: RpgPlayer){
-        await player.breakRoutes();
         //await timeout(500);
         //player.gui('hpbar').open()
         for (let msg of speech.textcinematic1) {

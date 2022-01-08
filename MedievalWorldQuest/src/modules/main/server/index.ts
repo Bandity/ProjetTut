@@ -10,7 +10,7 @@ import databaseList from './database'
         Maps.Eglise
     ],
     database : databaseList,
-    player
+    player,
 })
 export default class RpgServerEngine { }
 

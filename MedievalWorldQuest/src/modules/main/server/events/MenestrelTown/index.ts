@@ -6,6 +6,7 @@ import { Teleporteur } from '../Teleporteur'
 import { QuestSimple } from '../ItemRequiredQuest'
 import { PnjShop } from '../PnjShop'
 import { PnjGlobal } from '../pnjGlobal'
+import { Garde } from './Garde'
 
 export default {
     Craftman,
@@ -16,4 +17,5 @@ export default {
     PnjGlobal,
     Teleporteur,
     SteleEvent,
+    Garde,
 }
