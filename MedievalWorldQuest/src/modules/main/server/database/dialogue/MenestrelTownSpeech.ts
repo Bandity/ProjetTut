@@ -114,6 +114,20 @@ export const speech = {
         "Merci encore pour la potion, mon chat va bien mieux !"
         
     ],
+
+    textStartQuest2: [
+        "Oh, vous !",
+        "Je dois aller aider mon père tout l'après midi mais je n'ai quasiment pas dormi de la nuit...",
+        "Vous pourriez donc m'apporter 5 potions de mana s'il vous plaît ?"
+    ],
+    textEndQuest2: [
+        "D'accord... Je suppose que ça m'apprendra à espionner mon voisin...",
+        "N'oubliez pas les 5 potions de mana s'il vous plaît !",
+        "Vous les avez récupéré ?! Donnez les moi s'il vous plaît !",
+        "Merci infiniment, avec ça je pourrais tenir jusqu'à ce soir, tenez voici un cadeau !",
+        "Merci encore pour les potions !"
+        
+    ],
     ArmesMagieShop: "Salut p'tite pousse, je vend des sceptres pour les mages et pour les prÃªtres, tu veux y jeter un oeil ?"
 
 } 

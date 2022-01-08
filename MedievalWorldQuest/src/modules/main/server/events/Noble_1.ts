@@ -4,7 +4,7 @@ mais permet d'avoir une idée beaucoup plus claire de comment fonctionne les quêt
 
 import { RpgEvent, EventData, RpgPlayer,Move, EventMode } from '@rpgjs/server'
 import {speech} from '../database/dialogue/MenestrelTownSpeech'
-import { Potion } from '../database/items/potion';
+import { PotionSoin } from '../database/items/PotionSoin';
 
 @EventData({
     name: 'Noble_1',
@@ -27,14 +27,14 @@ export class Noble_1 extends RpgEvent {
             return 
         }
         if (player.getVariable("quest1") == 1){ // si quete en cours
-            if (player.getItem(Potion) != null){ // si le joueur possede l'objet demande
+            if (player.getItem(PotionSoin) != null){ // si le joueur possede l'objet demande
                 await (player.showText("...!!! Oh tu en as trouvÃ© une ! Voudrais-tu me la donner, s'il te plaÃ®t !"));
                 const choice = await player.showChoices("Donner la potion de soin ?", [
                     { text: 'Oui', value: 'oui' },
                     { text: 'Non', value: 'non' },
                 ]);
                 if (choice != null && choice.value == 'oui') { // si on donne l'objet, on valide la quete
-                    player.removeItem(Potion,1);
+                    player.removeItem(PotionSoin,1);
                     player.setVariable("quest1",2) // on dit que la quete est terminee
                     player.gold += 300; // la recompense est de l'experience et de l'argent
                     player.exp +=15;

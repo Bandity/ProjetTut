@@ -1,4 +1,4 @@
-//import { Class } from '@rpgjs/database'
+import { RpgPlayer } from '@rpgjs/server'
 import { Class } from '../../../../../@types'
 import  MageSpell  from '../skills/Mage/index'
 
@@ -16,5 +16,7 @@ import  MageSpell  from '../skills/Mage/index'
     ]
 })
 export class Mage {
-   
+   onSet(player: RpgPlayer) {
+    player.getSkill(MageSpell.BouleDeFeu);
+}
 }

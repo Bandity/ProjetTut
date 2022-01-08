@@ -1,7 +1,7 @@
 import { Item } from '@rpgjs/database'
 
 @Item({  
-    id: "potion",
+    id: "potionSoin",
     name: 'Potion de soin',
     description: 'Redonne 20 PV au joueur',
     price: 200,
@@ -9,4 +9,4 @@ import { Item } from '@rpgjs/database'
     hitRate: 1,
     consumable: true
 })
-export class Potion { }
+export class PotionSoin { }

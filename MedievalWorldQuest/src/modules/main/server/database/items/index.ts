@@ -1,5 +1,7 @@
-import { Potion } from './potion'
+import { PotionMana } from './PotionMana'
+import { PotionSoin } from './PotionSoin'
 
 export default {
-    Potion
+    PotionSoin,
+    PotionMana
 }

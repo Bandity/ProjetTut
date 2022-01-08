@@ -3,7 +3,7 @@ import { RpgEvent, EventData, RpgPlayer } from '@rpgjs/server'
 export function PnjShop(options: {
     name: string,
     graphic: string,
-    items: [Object],
+    items: Array<Object>,
     text: string
 }):object {
     

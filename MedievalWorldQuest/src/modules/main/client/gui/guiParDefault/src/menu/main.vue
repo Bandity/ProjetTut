@@ -12,6 +12,7 @@ import StatusLayout from './layouts/status.vue'
 import EquipmentLayout from './layouts/equipment.vue'
 import SaveLayout from './layouts/save.vue'
 import BackButton from '../components/back.vue'
+import SkillLayout from './layouts/skill.vue'
 
 export default {
     name: 'rpg-main-menu',
@@ -36,9 +37,13 @@ export default {
         MainLayout,
         ItemsLayout,
         StatusLayout,
+         
+        SkillLayout,
+
         BackButton,
         EquipmentLayout,
-        SaveLayout
+        SaveLayout,
+
     }
 }
 </script>

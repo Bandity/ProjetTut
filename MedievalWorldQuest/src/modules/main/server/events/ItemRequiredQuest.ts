@@ -1,7 +1,7 @@
 import { RpgEvent, EventData, RpgPlayer,Move, EventMode } from '@rpgjs/server'
 
 export function QuestSimple(options): object {
-    const { name, textStart, textEnd, itemRequired, graphic, gain } = options
+    const { name, textStart, textEnd, itemRequired,quantity, graphic, gain } = options
 
     @EventData({
         name: options.name,
@@ -25,7 +25,7 @@ export function QuestSimple(options): object {
         }
         console.log(player.getVariable(name))
         if (player.getVariable(name) == 1){ // si quete en cours
-            if (player.getItem(itemRequired) != null){ // si le joueur possede l'objet demande
+            if (player.getItem(itemRequired) != null && player.getItem(itemRequired).nb == options.quantity){ // si le joueur possede l'objet demande
                 await (player.showText(textEnd[2]));
                 const choice = await player.showChoices("Donner " +  itemRequired.name  + "?", [
                     { text: 'Oui', value: 'oui' },

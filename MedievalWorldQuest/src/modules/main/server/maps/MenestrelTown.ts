@@ -24,9 +24,9 @@ import { Monster } from '../events/Monsters'
             name: 'Stele_1',
         }),
         events.PnjShop({ 
-        name: 'ArmesMagieShop',
+        name: 'ArmesMagieShop', 
         graphic: 'bucheron',
-        items: [Items.Potion],
+        items: [ Items.PotionSoin,Items.PotionMana ],
         text: speech.ArmesMagieShop      
         }),
 
@@ -34,10 +34,21 @@ import { Monster } from '../events/Monsters'
             name: 'quest1',
             textStart: speech.textStartQuest1,
             textEnd: speech.textEndQuest1,
-            itemRequired: Items.Potion,
+            itemRequired: Items.PotionSoin,
+            quantity : 1 ,
             graphic: 'noble',
             gain: { gold: 300, exp: 15},
         }),
+        events.QuestSimple({ 
+            name: 'quest2',
+            textStart: speech.textStartQuest2,
+            textEnd: speech.textEndQuest2,
+            itemRequired: Items.PotionMana,
+            quantity : 5,
+            graphic: 'noble',
+            gain: { gold: 300, exp: 15},
+        }),
+
         Monster({
             name: 'Slime1',
             graphic: 'slime'

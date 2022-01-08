@@ -21,6 +21,6 @@ export default {
     opacity: 0.8;
     top: 10px;
     position: absolute;
-    right: 10px;
+    right: -30px;
 }
 </style>

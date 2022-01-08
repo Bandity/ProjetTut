@@ -33,10 +33,13 @@ export default {
             value: 'item',
             layout: 'ItemsLayout'
         }, 
-        /*  {
+        /*
+        {
             text: 'Skills',
-            value: 'skill'
-        },  {
+            value: 'skill',
+            layout: 'SkillLayout'
+        },
+          {
             text: 'Equipment',
             value: 'equipment',
             layout: 'EquipmentLayout'
@@ -45,7 +48,8 @@ export default {
             text: 'Status',
             value: 'status',
             layout: 'StatusLayout'
-        } */]
+        }
+        */ ]
         if (!__RPGJS_MMORPG__ && this.rpgGui.exists('rpg-save')) {
             menu.push({
                 text: 'Sauvegarder',
