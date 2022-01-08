@@ -1,4 +1,5 @@
-import { RpgMap, MapData } from '@rpgjs/server'
+import { RpgSound } from '@rpgjs/client'
+import { RpgMap, MapData,RpgPlayer } from '@rpgjs/server'
 
 import { speech } from '../database/dialogue/MenestrelTownSpeech'
 import Items from '../database/items'
@@ -168,4 +169,6 @@ import { Monster } from '../events/Monsters'
     ],
     sounds: ['town']
 })
-export class MenestrelTown extends RpgMap { }
+export class MenestrelTown extends RpgMap {
+
+ }

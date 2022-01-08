@@ -4,7 +4,6 @@ import classes from '../database/classes/index'
 import events from '../events/CiteOnirique/index'
 
 @MapData({
-
     id: 'citeOnirique',
     file: require('./tmx/CiteOnirique.tmx'),
     name : 'citeOnirique',       
@@ -14,7 +13,7 @@ import events from '../events/CiteOnirique/index'
         events.MaitreClasses,
         events.Teleporteur({
             name: 'Teleporteur',
-            nameMap: "MenestrelTown",
+            nameMap: 'MenestrelTown',
         }),
         events.GeneratorClass({
             name: 'mageClass',
@@ -48,7 +47,7 @@ import events from '../events/CiteOnirique/index'
             textAccept: speech.textAcceptWarrior,
             textReject: speech.textRejectWarrior
         }),
-        events.Combat
+        //events.Combat
 
     ],
 })

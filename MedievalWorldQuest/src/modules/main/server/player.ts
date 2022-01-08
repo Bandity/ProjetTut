@@ -1,3 +1,4 @@
+import { RpgSound } from '@rpgjs/client/lib/Sound/RpgSound';
 import { RpgPlayer, RpgPlayerHooks, Control, Move } from '@rpgjs/server'
 import { Mage } from './database/classes/Mage';
 import { speech } from './database/dialogue/MenestrelTownSpeech'
@@ -25,13 +26,12 @@ export const player: RpgPlayerHooks = {
         player.name = "Olgus"
         player.addItem(Potion);
         await player.setHitbox(20, 16) 
-        await player.setGraphic('heroBlueHair');
         if (player.getVariable("maitreClasses_speech") == null) { // debut du jeu
             await player.setGraphic('base');
-            await player.changeMap('citeOnirique');
+            //await player.changeMap('citeOnirique');
+            //await player.changeMap('MenestrelTown');
             player.setClass(Mage);
-           // await player.changeMap('MenestrelTown');
-            //await player.changeMap('Eglise_carte')
+            await player.changeMap('Eglise')
         }
 
     },

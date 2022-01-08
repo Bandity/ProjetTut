@@ -20,10 +20,7 @@ export function Teleporteur(options): object {
 
         async onPlayerTouch(player: RpgPlayer) {
                 await player.changeMap(options.nameMap);
-                await timeout(1000);
-                for (let msg of text) {
-                    await player.showText(msg);
-                }
+
         }
 
     }
