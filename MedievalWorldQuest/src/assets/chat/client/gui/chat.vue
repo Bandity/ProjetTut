@@ -5,7 +5,7 @@
       </ul>
       <input 
         type="text" 
-        placeholder="Écris ton message ici et appuie sur entré"
+        placeholder="Écris ton message ici et appuie sur entrée"
         @focus="stopMove" 
         @blur="startMove" 
         v-model="text" 
