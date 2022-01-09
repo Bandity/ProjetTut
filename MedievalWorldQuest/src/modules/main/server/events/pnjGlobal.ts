@@ -26,7 +26,7 @@ export function PnjGlobal(options: {
             let text = options.text
             if (typeof text == 'string') text = [text]
             for (let msg of text) {
-                await player.showText(msg, {
+                await player.showText(msg, { 
                     talkWith: this
                 })
             }

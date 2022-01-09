@@ -142,7 +142,11 @@ export const speech = {
         "C'était vachement bon, la prochaine fois je t'en demanderais plus, p'tit bébé."
     ],
 
-    ArmesMagieShop: "Salut p'tite pousse, je vend des sceptres pour les mages et pour les prÃªtres, tu veux y jeter un oeil ?",
+    ArmesMagieShop: "Salut p'tite pousse, je vends surtout des équipements pour la magie, quelques potions entre autres, tu veux y jeter un oeil ?",
+    TavernierShop: "Quoi ? T'un client ? Bah... Je vends quelques bouteilles si tu veux.",
+    MarchandRareShop: "Toi là... J'ai avec moi quelques objets que même le roi tuerait pour avoir, tu veux voir ?",
+    AlchimisteShop: "Nous vendons toutes sortes d'objets ou d'aliments nécéssaires à l'alchimie ou pour la cuisine, celà vous intéresse ?",
+
     GardeEntree : "Faîte attention à l'extérieur, ça grouille de monstre.",
     GardePalais: "Halte là ! Interdiction formelle de pénétrer dans le palais, veuillez faire demi-tour",
     GardeVilleInterne : "Si vous remarquez quoi que ce soit de suspect, prévenez nous.",

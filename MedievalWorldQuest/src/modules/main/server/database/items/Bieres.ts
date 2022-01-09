@@ -5,8 +5,7 @@ import { RpgPlayer } from '@rpgjs/server';
     id: "Biere",
     name: 'Biere',
     description: 'Redonne 5 SP au joueur',
-    price: 1000,
-    hpValue: 600,
+    price: 10,
     hitRate: 1,
     consumable: true
 })

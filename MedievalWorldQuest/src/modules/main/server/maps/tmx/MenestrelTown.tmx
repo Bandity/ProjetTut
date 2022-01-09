@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="65">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="68">
  <tileset firstgid="1" source="tuilesGlobale.tsx"/>
  <tileset firstgid="1001" source="MenestrelTown.tsx"/>
  <tileset firstgid="1551" source="eauAnime.tsx"/>
@@ -1063,7 +1063,7 @@
   <object id="3" name="Barde_1" type="event" x="2102.34" y="1946.42">
    <point/>
   </object>
-  <object id="5" name="Start Position" type="start" x="1984.03" y="553.541">
+  <object id="5" name="Start Position" type="start" x="2998.03" y="3625.54">
    <point/>
   </object>
   <object id="10" name="Stele_1" type="event" x="1789.62" y="3611.71">
@@ -1172,6 +1172,15 @@
    <point/>
   </object>
   <object id="64" name="garde10" type="event" x="1657.4" y="1793.74">
+   <point/>
+  </object>
+  <object id="65" name="TavernierShop" type="event" x="3295.83" y="2533.13">
+   <point/>
+  </object>
+  <object id="66" name="AlchimisteShop" type="event" x="319.496" y="2694.13">
+   <point/>
+  </object>
+  <object id="67" name="MarchandRareShop" type="event" x="385.162" y="2308.47">
    <point/>
   </object>
  </objectgroup>

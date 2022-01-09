@@ -13,7 +13,6 @@ export function Garde(options): object {
     class Garde extends RpgEvent {
     async onInit(player: RpgPlayer) {
         this.setGraphic('soldat1')
-        console.log(options.moove);
         if (options.moove){
             this.speed = options.speed || 1
             this.frequency = options.frequency || 200

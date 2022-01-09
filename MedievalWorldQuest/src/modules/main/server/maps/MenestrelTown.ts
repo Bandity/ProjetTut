@@ -24,13 +24,35 @@ import { Monster } from '../events/Monsters'
         events.SteleEvent({
             name: 'Stele_1',
         }),
+
+        //////////////////////////////////////////// BOUTIQUES
         events.PnjShop({ 
-        name: 'ArmesMagieShop', 
-        graphic: 'bucheron',
-        items: [ Items.Ambroisie, Items.Biere, Items.Bois, Items.Corde, Items.Lavande, Items.PotionMana, Items.PotionSoin, Items.Truite, Items.Vin ],
-        text: speech.ArmesMagieShop      
+            name: 'ArmesMagieShop', 
+            graphic: 'bucheron',
+            items: [Items.Bois, Items.Corde, Items.PotionMana, Items.PotionSoin ],
+            text: speech.ArmesMagieShop      
         }),
 
+        events.PnjShop({ 
+            name: 'AlchimisteShop', 
+            graphic: 'femme_agee',
+            items: [Items.Lavande,Items.Truite],
+            text: speech.AlchimisteShop       
+            }),
+        events.PnjShop({ 
+            name: 'TavernierShop', 
+            graphic: 'tavernier',
+            items: [Items.Biere,Items.Vin],
+            text: speech.TavernierShop       
+            }),
+        events.PnjShop({ 
+            name: 'MarchandRareShop', 
+            graphic: 'bucheron',
+            items: [Items.Ambroisie],
+            text: speech.MarchandRareShop       
+            }),    
+        ////////////////////////////////////////////
+        //////////////////////////////////////////// QUETES
         events.QuestSimple({ 
             name: 'quest1',
             textStart: speech.textStartQuest1,
@@ -58,6 +80,8 @@ import { Monster } from '../events/Monsters'
             graphic: 'man3',
             gain: { gold: 1500, exp: 60},
         }),
+        ////////////////////////////////////////////
+        ////////////////////////////////////////////GARDES
         events.Garde({ name: 'garde1', text: speech.GardeEntree}),
         events.Garde({ name: 'garde2', text: speech.GardeEntree}),
 
@@ -70,11 +94,12 @@ import { Monster } from '../events/Monsters'
         events.Garde({ name: 'garde8', text: speech.GardeVilleInterne, moove: true}),
         events.Garde({ name: 'garde9', text: speech.GardeVilleInterne, moove: true}),
         events.Garde({ name: 'garde10', text: speech.GardeVilleInterne, moove: true}),
-
+        ////////////////////////////////////////////
         Monster({
             name: 'Slime1',
             graphic: 'slime'
         }),
+        //////////////////////////////////////////// PNJ BOURRAGE
         events.PnjGlobal({ 
             name: 'Pnj-2',
             text: speech.textPnj2,
@@ -198,7 +223,9 @@ import { Monster } from '../events/Monsters'
             graphic: 'blackDog',
             moveRandom: true
         
-    }),
+        }),
+        ////////////////////////////////////////////
+
     ],
 })
 export class MenestrelTown extends RpgMap { }
