@@ -2,7 +2,7 @@ import { RpgEvent, EventData, RpgPlayer,Move, EventMode } from '@rpgjs/server'
 import {speech} from '../../database/dialogue/MenestrelTownSpeech'
 @EventData({
     name: 'Witch',
-    mode: EventMode.Scenario,
+    //mode: EventMode.Scenario,
     hitbox: {
         width: 32,
         height: 16
@@ -18,7 +18,7 @@ export class Witch extends RpgEvent {
 
     async onAction(player: RpgPlayer) {
         let push = 0;
-        if (player._class != null && (player._class.name === "Mage" || player._class.name === "prest")){
+        if (player._class != null && (player._class.id === "Mage" || player._class.id === "Priest")){
             for (let msg of speech.textWitchGoodClasses) {
                 await player.showText(msg, {
                     talkWith: this

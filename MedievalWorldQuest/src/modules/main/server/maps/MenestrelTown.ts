@@ -11,7 +11,6 @@ import { Monster } from '../events/Monsters'
 @MapData({
     id: 'MenestrelTown',
     file: require('./tmx/MenestrelTown.tmx'),
-    name : 'MenestrelTown',
     sounds: ['musicTown'],
     events: [
         events.Witch,

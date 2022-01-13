@@ -4,16 +4,15 @@ export function GeneratorClass(options): object {
     const { name,graphic,classe, textInit, textAccept, textReject } = options
     @EventData({
         name: name,
+        //mode: EventMode.Scenario,
         hitbox: {
             width: 32,
             height: 16
-
         }
     }) 
     
 
-    class Class extends RpgEvent {
-
+     class Class extends RpgEvent {
         async onInit(player: RpgPlayer) {
             this.setGraphic(graphic)
             this.speed = 2

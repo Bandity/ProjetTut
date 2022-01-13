@@ -3,17 +3,18 @@ import { speech } from '../database/dialogue/CiteOniriqueSpeech'
 import classes from '../database/classes/index'
 import events from '../events/CiteOnirique/index'
 
+const maitre = events.MaitreClasses
 @MapData({
     id: 'citeOnirique',
-    file: require('./tmx/CiteOnirique.tmx'),
-    name : 'citeOnirique',       
+    file: require('./tmx/CiteOnirique.tmx'),    
     sounds: ['musicCiteOnirique'],
     events : [
         events.Pnj_info,
-        events.MaitreClasses,
+        maitre,
         events.Teleporteur({
             name: 'Teleporteur',
             nameMap: 'MenestrelTown',
+            pnjs : [ maitre ]
         }),
         events.GeneratorClass({
             name: 'mageClass',

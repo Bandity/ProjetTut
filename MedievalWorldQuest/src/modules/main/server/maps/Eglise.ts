@@ -7,8 +7,11 @@ import events  from '../events/Eglise/index'
     name : 'Eglise',       
     events :[ 
         events.Teleporteur({
-        name: "egliseSortie",
+        name: "sortie",
         nameMap: "MenestrelTown", 
+        widthHitbox: 1000,
+        teleportX: 493,
+        teleportY:1110
         }),
     ],
 })

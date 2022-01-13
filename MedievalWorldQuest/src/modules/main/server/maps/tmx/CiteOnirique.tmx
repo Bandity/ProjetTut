@@ -17457,7 +17457,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="2" name="evenements" visible="0">
+ <objectgroup id="2" name="evenements">
   <object id="5" name="mageClass" type="event" x="1151" y="1284">
    <point/>
   </object>
@@ -17473,7 +17473,7 @@
   <object id="12" name="maitreDesClasses" type="event" x="1567" y="135.75" visible="0">
    <point/>
   </object>
-  <object id="13" name="Start_position" type="start" x="146.091" y="1696.51">
+  <object id="13" name="Start_position" type="start" x="1586.09" y="190.51">
    <point/>
   </object>
   <object id="14" name="Pnj-info" type="event" x="465.667" y="1496.33">

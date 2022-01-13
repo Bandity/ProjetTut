@@ -1,9 +1,10 @@
-import { RpgEvent, EventData, RpgPlayer, Move } from '@rpgjs/server'
+import { RpgEvent, EventData, RpgPlayer, Move, EventMode } from '@rpgjs/server'
 import { speech } from '../../database/dialogue/CiteOniriqueSpeech'
 
 
 @EventData({
     name: 'Pnj-info',
+    //mode: EventMode.Scenario,
     hitbox: {
         width: 32,
         height: 16
@@ -29,6 +30,5 @@ export class Pnj_info extends RpgEvent {
             await this.moveRoutes([Move.left(), Move.tileLeft(2)]);
             await this.moveRoutes(Move.down());
         }
-
     }
 }

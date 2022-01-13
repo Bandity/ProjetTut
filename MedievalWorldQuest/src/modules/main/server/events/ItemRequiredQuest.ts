@@ -24,14 +24,14 @@ export function QuestSimple(options): object {
             return 
         }
         if (player.getVariable(name) == 1){ // si quete en cours
-            if (player.getItem(itemRequired) != null && player.getItem(itemRequired).nb == options.quantity){ // si le joueur possede l'objet demande
+            if (player.getItem(itemRequired) != null && player.getItem(itemRequired).nb >= options.quantity){ // si le joueur possede l'objet demande
                 await (player.showText(textEnd[2]));
                 const choice = await player.showChoices("Donner " +  itemRequired.id  + "?", [
                     { text: 'Oui', value: 'oui' },
                     { text: 'Non', value: 'non' },
                 ]);
                 if (choice != null && choice.value == 'oui') { // si on donne l'objet, on valide la quete
-                    player.removeItem(itemRequired,1);
+                    player.removeItem(itemRequired,options.quantity);
                     player.setVariable(name,2) // on dit que la quete est terminee
                     player.gold += gain.gold; // la recompense est de l'experience et de l'argent
                     player.exp +=gain.exp;

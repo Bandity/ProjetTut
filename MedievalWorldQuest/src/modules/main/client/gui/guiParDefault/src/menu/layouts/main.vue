@@ -97,7 +97,8 @@ export default {
 $hero-face: none !default;
 
 .hero-face .face-column > div {
-    background-image: $hero-face;
+    margin-left : 80px;
+    background-image: url("./mage.png");
 }
 </style>
 

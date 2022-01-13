@@ -3,6 +3,7 @@ import { Class } from '../../../../../@types'
 import PriestSpell  from '../skills/Priest/index'
 
 @Class({
+    id: "Priest",
     name: 'Prêtre',
     equippable: [
 
