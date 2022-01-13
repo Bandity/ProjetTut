@@ -1063,7 +1063,7 @@
   <object id="3" name="Barde_1" type="event" x="2102.34" y="1946.42">
    <point/>
   </object>
-  <object id="5" name="Start Position" type="start" x="542.03" y="1161.54">
+  <object id="5" name="Start Position" type="start" x="368.03" y="3699.54">
    <point/>
   </object>
   <object id="10" name="Stele_1" type="event" x="1789.62" y="3611.71">
@@ -1111,7 +1111,7 @@
   <object id="36" name="Pnj-7" type="event" x="1495.83" y="3973.8">
    <point/>
   </object>
-  <object id="37" name="Pnj-8" type="event" x="2297.83" y="693.799">
+  <object id="37" name="Pnj-8" type="event" x="275.83" y="223.799">
    <point/>
   </object>
   <object id="38" name="Cat-4" type="event" x="2073.83" y="397.799">
