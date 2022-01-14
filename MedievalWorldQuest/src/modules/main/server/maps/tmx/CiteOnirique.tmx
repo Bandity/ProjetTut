@@ -17473,7 +17473,7 @@
   <object id="12" name="maitreDesClasses" type="event" x="1567" y="135.75" visible="0">
    <point/>
   </object>
-  <object id="13" name="Start_position" type="start" x="1586.09" y="190.51">
+  <object id="13" name="Start_position" type="start" x="149.726" y="1690.51">
    <point/>
   </object>
   <object id="14" name="Pnj-info" type="event" x="465.667" y="1496.33">

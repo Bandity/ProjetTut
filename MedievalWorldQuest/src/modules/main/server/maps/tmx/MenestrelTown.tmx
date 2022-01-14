@@ -1063,7 +1063,7 @@
   <object id="3" name="Barde_1" type="event" x="2102.34" y="1946.42">
    <point/>
   </object>
-  <object id="5" name="Start Position" type="start" x="512.03" y="1531.54">
+  <object id="5" name="Start Position" type="start" x="345.363" y="3695.18">
    <point/>
   </object>
   <object id="10" name="Stele_1" type="event" x="1789.62" y="3611.71">
