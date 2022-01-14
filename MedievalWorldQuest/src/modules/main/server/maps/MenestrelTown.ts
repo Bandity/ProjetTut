@@ -59,7 +59,7 @@ import { Monster } from '../events/Monsters'
             itemRequired: Items.PotionSoin,
             quantity : 1 ,
             graphic: 'noble',
-            gain: { gold: 300, exp: 15},
+            gain: { gold: 300, exp: 5},
         }),
         events.QuestSimple({ 
             name: 'quest2',
@@ -68,7 +68,7 @@ import { Monster } from '../events/Monsters'
             itemRequired: Items.PotionMana,
             quantity : 5,
             graphic: 'man4',
-            gain: { gold: 100, exp: 25},
+            gain: { gold: 100, exp: 15},
         }),
         events.QuestSimple({ 
             name: 'quest3',
@@ -77,7 +77,7 @@ import { Monster } from '../events/Monsters'
             itemRequired: Items.Ambroisie,
             quantity : 3,
             graphic: 'man3',
-            gain: { gold: 1500, exp: 60},
+            gain: { gold: 1500, exp: 20},
         }),
         ////////////////////////////////////////////
         ////////////////////////////////////////////GARDES

@@ -47,7 +47,7 @@ export const player: RpgPlayerHooks = {
         //await timeout(500);
         //player.gui('hpbar').open()
         for (let msg of speech.textcinematic1) {
-            //await player.showText(msg);
+            await player.showText(msg);
         }
     },
 }
