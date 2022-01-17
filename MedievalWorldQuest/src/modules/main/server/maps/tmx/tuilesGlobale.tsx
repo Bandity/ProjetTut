@@ -493,8 +493,16 @@
  </tile>
  <tile id="229">
   <properties>
+   <property name="collision" type="bool" value="true"/>
    <property name="z" type="int" value="0"/>
   </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="9" width="30" height="23">
+    <properties>
+     <property name="collision" type="bool" value="true"/>
+    </properties>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="230">
   <properties>
@@ -1494,6 +1502,130 @@
    <property name="collision" type="bool" value="true"/>
   </properties>
  </tile>
+ <tile id="544">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0.125" y="0.03125" width="9" height="31.9375"/>
+  </objectgroup>
+ </tile>
+ <tile id="545">
+  <properties>
+   <property name="z" type="int" value="1"/>
+  </properties>
+ </tile>
+ <tile id="546">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="23.0625" y="0" width="9" height="31.9375"/>
+  </objectgroup>
+ </tile>
+ <tile id="547">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="9" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="548">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="7" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="549">
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="25.0625" y="0" width="4.9375" height="32">
+    <properties>
+     <property name="collision" type="bool" value="false"/>
+    </properties>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="550">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0.125" y="10" width="3.8125" height="21.9375"/>
+   <object id="2" x="28.0625" y="9.9375" width="3.875" height="22.0625"/>
+  </objectgroup>
+ </tile>
+ <tile id="552">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="0"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="30"/>
+  </objectgroup>
+ </tile>
+ <tile id="553">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="0"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="29">
+    <properties>
+     <property name="collision" type="bool" value="false"/>
+    </properties>
+   </object>
+   <object id="2" x="0" y="0" width="32" height="29"/>
+  </objectgroup>
+ </tile>
+ <tile id="554">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="0"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="30"/>
+  </objectgroup>
+ </tile>
+ <tile id="555">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="23" y="0" width="9" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="556">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="9" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="557">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="23.125" y="0" width="8.875" height="32"/>
+  </objectgroup>
+ </tile>
+ <tile id="558">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="0"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="4.0625" height="28"/>
+   <object id="2" x="27.875" y="0" width="4.125" height="27.9375"/>
+  </objectgroup>
+ </tile>
  <tile id="560">
   <properties>
    <property name="z" type="int" value="0"/>
@@ -1521,7 +1653,7 @@
  </tile>
  <tile id="565">
   <properties>
-   <property name="z" type="int" value="0"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="566">
@@ -1754,9 +1886,29 @@
    <property name="collision" type="bool" value="true"/>
   </properties>
  </tile>
+ <tile id="644">
+  <properties>
+   <property name="collision" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="645">
+  <properties>
+   <property name="collision" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="652">
+  <properties>
+   <property name="collision" type="bool" value="true"/>
+  </properties>
+ </tile>
+ <tile id="653">
+  <properties>
+   <property name="collision" type="bool" value="true"/>
+  </properties>
+ </tile>
  <tile id="656">
   <properties>
-   <property name="z" type="int" value="0"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="657">
@@ -1796,7 +1948,7 @@
  </tile>
  <tile id="664">
   <properties>
-   <property name="z" type="int" value="0"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="665">
@@ -2374,11 +2526,13 @@
  </tile>
  <tile id="886">
   <properties>
+   <property name="collision" type="bool" value="true"/>
    <property name="z" type="int" value="0"/>
   </properties>
  </tile>
  <tile id="887">
   <properties>
+   <property name="collision" type="bool" value="true"/>
    <property name="z" type="int" value="0"/>
   </properties>
  </tile>
@@ -2479,8 +2633,12 @@
  </tile>
  <tile id="907">
   <properties>
+   <property name="collision" type="bool" value="false"/>
    <property name="z" type="int" value="0"/>
   </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="6" width="32" height="26"/>
+  </objectgroup>
  </tile>
  <tile id="908">
   <properties>
@@ -2558,6 +2716,14 @@
    <property name="z" type="int" value="1"/>
   </properties>
  </tile>
+ <tile id="927">
+  <properties>
+   <property name="collision" type="bool" value="true"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="1" y="2" width="30" height="30"/>
+  </objectgroup>
+ </tile>
  <tile id="928">
   <properties>
    <property name="collision" type="bool" value="true"/>
@@ -2572,6 +2738,11 @@
   <properties>
    <property name="collision" type="bool" value="true"/>
   </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="7" width="30" height="25"/>
+   <object id="2" x="0" y="7" width="30" height="25"/>
+   <object id="3" x="0" y="7" width="30" height="25"/>
+  </objectgroup>
  </tile>
  <tile id="931">
   <properties>
@@ -2641,8 +2812,14 @@
  </tile>
  <tile id="945">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
   </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0" width="32" height="24"/>
+   <object id="2" x="0.260248" y="22.0395" width="31.9228" height="8.55378" rotation="359.718">
+    <ellipse/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="946">
   <properties>

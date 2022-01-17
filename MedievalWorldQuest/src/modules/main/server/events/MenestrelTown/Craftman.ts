@@ -2,7 +2,7 @@ import { RpgEvent, EventData, RpgPlayer,Move, EventMode } from '@rpgjs/server'
 import {speech} from '../../database/dialogue/MenestrelTownSpeech'
 @EventData({
     name: 'Craftman',
-    mode: EventMode.Scenario,
+    //mode: EventMode.Scenario,
     hitbox: {
         width: 32,
         height: 16
@@ -18,7 +18,7 @@ export class Craftman extends RpgEvent {
 
     async onAction(player: RpgPlayer) {
         let push = 0;
-        if (player._class != null && (player._class.name === "Warrior" || player._class.name === "Thief")){
+        if (player._class != null && (player._class.name === "Guerrier" || player._class.name === "Assassin")){
             for (let msg of speech.textCraftmanGoodClasses) {
                 await player.showText(msg, {
                     talkWith: this

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.5" tiledversion="1.7.2" name="Testforgerie" tilewidth="32" tileheight="32" tilecount="300" columns="20">
+<tileset version="1.5" tiledversion="1.7.2" name="forge_tuiles" tilewidth="32" tileheight="32" tilecount="300" columns="20">
  <image source="../../../client/maps/assets/Testforgerie.png" width="640" height="480"/>
  <tile id="88">
   <properties>
@@ -69,4 +69,6 @@
    <property name="collision" type="bool" value="true"/>
   </properties>
  </tile>
+</tileset>
+
 </tileset>

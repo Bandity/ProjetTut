@@ -7,7 +7,8 @@ import databaseList from './database'
         Maps.CiteOnirique,
         Maps.MenestrelTown,
         Maps.MaisonZoneDepMap,
-        Maps.Eglise
+        Maps.Eglise,
+        Maps.Forge
     ],
     database : databaseList,
     player,

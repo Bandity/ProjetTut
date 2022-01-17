@@ -1,5 +1,6 @@
 import { RpgSound } from '@rpgjs/client/lib/Sound/RpgSound';
 import { RpgPlayer, RpgPlayerHooks, Control, Move } from '@rpgjs/server'
+import { Thief } from './database/classes/Thief';
 import { Mage } from './database/classes/Mage';
 import { speech } from './database/dialogue/MenestrelTownSpeech'
 import { PotionSoin } from './database/items/PotionSoin'
@@ -28,7 +29,8 @@ export const player: RpgPlayerHooks = {
         player.gold += 6000;
         player.speed = 4;
         player.name = "Olgus"
-        player.setClass(Mage)
+        player.setClass(Thief)
+        console.log(player._class.name)
         //player.skills.push(BouleDeFeu);
         //console.log(player.skills[0])
 
@@ -36,8 +38,8 @@ export const player: RpgPlayerHooks = {
         await player.setHitbox(20, 16) 
         if (player.getVariable("maitreClasses_speech") == null) { // debut du jeu
             await player.setGraphic('base');
-            await player.changeMap('citeOnirique');
-            //await player.changeMap('MenestrelTown');
+            //await player.changeMap('citeOnirique');
+            await player.changeMap('MenestrelTown');
             //await player.changeMap('Eglise')
         }
 

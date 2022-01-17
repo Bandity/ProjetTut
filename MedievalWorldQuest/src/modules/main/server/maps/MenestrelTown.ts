@@ -20,6 +20,10 @@ import { Monster } from '../events/Monsters'
             name: "egliseTp",
             nameMap: "Eglise", 
         }),
+        events.Teleporteur({
+            name: "forgeTp",
+            nameMap: "Forge", 
+        }),
         events.SteleEvent({
             name: 'Stele_1',
         }),

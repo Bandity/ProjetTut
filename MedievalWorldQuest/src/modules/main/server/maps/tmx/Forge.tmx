@@ -1,75 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="1">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="3">
  <tileset firstgid="1" source="forge1.tsx"/>
  <tileset firstgid="97" source="forge2.tsx"/>
- <tileset firstgid="353" name="Testforgerie" tilewidth="32" tileheight="32" tilecount="300" columns="20">
-  <image source="Testforgerie.png" width="640" height="480"/>
-  <tile id="88">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-   </properties>
-  </tile>
-  <tile id="89">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-   </properties>
-  </tile>
-  <tile id="90">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-   </properties>
-  </tile>
-  <tile id="91">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-   </properties>
-  </tile>
-  <tile id="102">
-   <properties>
-    <property name="collision" type="bool" value="false"/>
-   </properties>
-  </tile>
-  <tile id="110">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-   </properties>
-  </tile>
-  <tile id="111">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-   </properties>
-  </tile>
-  <tile id="145">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-   </properties>
-  </tile>
-  <tile id="188">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-   </properties>
-  </tile>
-  <tile id="189">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-   </properties>
-  </tile>
-  <tile id="208">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-   </properties>
-  </tile>
-  <tile id="228">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-   </properties>
-  </tile>
-  <tile id="248">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-   </properties>
-  </tile>
- </tileset>
+ <tileset firstgid="353" source="forge_tuiles.tsx"/>
  <tileset firstgid="653" source="Armure.tsx"/>
  <tileset firstgid="781" source="maison2.tsx"/>
  <layer id="1" name="Sol" width="20" height="20">
@@ -123,6 +56,14 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="13" name="evenement">
+  <object id="1" name="sortie" type="event" x="399.441" y="618.537">
+   <point/>
+  </object>
+  <object id="2" name="Start Position" type="start" x="391" y="577">
+   <point/>
+  </object>
+ </objectgroup>
  <layer id="7" name="Armure" width="20" height="20">
   <properties>
    <property name="Collision" type="bool" value="true"/>
