@@ -4303,6 +4303,16 @@
   <properties>
    <property name="collision" type="bool" value="false"/>
   </properties>
+  <animation>
+   <frame tileid="838" duration="100"/>
+   <frame tileid="846" duration="100"/>
+   <frame tileid="854" duration="100"/>
+   <frame tileid="862" duration="100"/>
+   <frame tileid="870" duration="100"/>
+   <frame tileid="878" duration="100"/>
+   <frame tileid="886" duration="100"/>
+   <frame tileid="894" duration="100"/>
+  </animation>
  </tile>
  <tile id="839">
   <properties>

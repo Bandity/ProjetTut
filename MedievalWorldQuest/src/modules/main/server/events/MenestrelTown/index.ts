@@ -7,6 +7,7 @@ import { QuestSimple } from '../ItemRequiredQuest'
 import { PnjShop } from '../PnjShop'
 import { PnjGlobal } from '../pnjGlobal'
 import { Garde } from './Garde'
+import { CombatTest} from './CombatTest'
 
 export default {
     Craftman,
@@ -18,4 +19,5 @@ export default {
     Teleporteur,
     SteleEvent,
     Garde,
+    CombatTest,
 }

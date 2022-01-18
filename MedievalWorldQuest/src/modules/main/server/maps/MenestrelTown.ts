@@ -13,6 +13,7 @@ import { Monster } from '../events/Monsters'
     file: require('./tmx/MenestrelTown.tmx'),
     sounds: ['musicTown'],
     events: [
+        events.CombatTest,
         events.Witch,
         events.Craftman,
         events.Barde_1,
