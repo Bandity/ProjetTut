@@ -1,4 +1,5 @@
-import { RpgEvent, EventData, RpgPlayer} from "@rpgjs/server";
+import { RpgEvent, RpgPlayer} from "@rpgjs/server";
+import {Monster} from "./Monsters"
 
 class Combats extends   RpgEvent {
     onAction(player: RpgPlayer, otherPlayer: RpgPlayer, skill:any){
@@ -9,5 +10,14 @@ class Combats extends   RpgEvent {
             otherPlayer.hp = 100;
         }
     }
+
+    async isHeDead(player: RpgPlayer){
+        let monster = new Monster();
+        monster.onInit(player);
+        if(player.hp<=0){
+            player.teleport({x:300,y:300,z:0})
+            player.hp = Math.round( player.param.maxHp * 0.10)
+        }
+    }
 }
-export{Combats}
+export default new Combats()

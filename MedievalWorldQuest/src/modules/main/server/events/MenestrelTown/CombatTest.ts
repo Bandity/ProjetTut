@@ -1,5 +1,6 @@
 import { RpgEvent, EventData, RpgPlayer,Move, EventMode } from '@rpgjs/server'
 import {speech} from '../../database/dialogue/MenestrelTownSpeech'
+import Combats from '../Combats'
 @EventData({
     name: 'combatTest',
     //mode: EventMode.Scenario,
@@ -17,7 +18,9 @@ export class CombatTest extends RpgEvent {
     }
 
     async onAction(player: RpgPlayer) {
-       
+       player.hp =-1
+       Combats.isHeDead(player)
+
     }
 
 

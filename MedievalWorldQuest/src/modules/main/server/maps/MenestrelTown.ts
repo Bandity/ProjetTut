@@ -6,7 +6,6 @@ import Items from '../database/items'
 
 import events  from '../events/MenestrelTown/index'
 
-import { Monster } from '../events/Monsters'
 
 @MapData({
     id: 'MenestrelTown',
@@ -99,10 +98,7 @@ import { Monster } from '../events/Monsters'
         events.Garde({ name: 'garde9', text: speech.GardeVilleInterne, moove: true}),
         events.Garde({ name: 'garde10', text: speech.GardeVilleInterne, moove: true}),
         ////////////////////////////////////////////
-        Monster({
-            name: 'Slime1',
-            graphic: 'slime'
-        }),
+        events.Monster,
         //////////////////////////////////////////// PNJ BOURRAGE
         events.PnjGlobal({ 
             name: 'Pnj-2',
