@@ -8,7 +8,7 @@ import { PnjShop } from '../PnjShop'
 import { PnjGlobal } from '../pnjGlobal'
 import { Garde } from './Garde'
 import { CombatTest} from './CombatTest'
-import {Monster} from '../Monsters'
+import {Monster} from '../Monster/Monsters'
 
 export default {
     Craftman,
@@ -21,5 +21,5 @@ export default {
     SteleEvent,
     Garde,
     CombatTest,
-    Monster
+    //Monster
 }
