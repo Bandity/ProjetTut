@@ -30,5 +30,8 @@ export const inputs = {
     },
     Spell2 :{
         bind: [Input.Two]
+    },
+    Speed:{
+        bind: [Input.Shift]
     }
 } 

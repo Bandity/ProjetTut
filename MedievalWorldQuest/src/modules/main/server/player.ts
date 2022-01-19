@@ -10,7 +10,7 @@ import { BouleDeFeu }  from './database/skills/Mage/BouleDeFeu'
 
 
 const timeout = (ms) =>  new Promise(resolve => setTimeout(resolve, ms));
-
+var movement = false;
 export const player: RpgPlayerHooks = {
     async onInput(player: RpgPlayer, { input }) {
         if (input == Control.Back) {
@@ -22,6 +22,15 @@ export const player: RpgPlayerHooks = {
             }
             if (input == "Spell2") {
                 if (player._class.name == "Mage") await player.showAnimation('shield','default');
+            }
+            if (input == "Speed") {
+                if(!movement){
+                    movement = true;
+                    player.speed = player.speed*2
+                }else{
+                    movement = false;
+                    player.speed = 4
+                }
             }
         }
     },
