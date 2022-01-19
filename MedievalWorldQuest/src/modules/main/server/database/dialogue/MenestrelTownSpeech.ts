@@ -107,11 +107,11 @@ export const speech = {
         "Sans oublier que je dois apporter un manuscrit à mon mentor... S'il te plaît, aide-moi à trouver une potion et je te récompenserai !"
     ],
     textEndQuest1: [
-        "Ha...Bon bah une prochaine fois...",
-        "N'oublies pas de m'apporter une potion de soin !",
-        "...!!! Oh tu en as trouvé une ! Voudrais-tu me la donner, s'il te plaît !",
-        "Merci beaucoup petit aventurier, voilà ta récompense !",
-        "Merci encore pour la potion, mon chat va bien mieux !"
+        "Ha...Bon bah une prochaine fois...", // on refuse
+        "N'oublies pas de m'apporter une potion de soin !", // on relance la discussion sans finir
+        "...!!! Oh tu en as trouvé une ! Voudrais-tu me la donner, s'il te plaît !", // si on a l'objet 
+        "Merci beaucoup petit aventurier, voilà ta récompense !", // si on accepte
+        "Merci encore pour la potion, mon chat va bien mieux !" // si on lui reparle et qu'on a termine la quete
         
     ],
 
