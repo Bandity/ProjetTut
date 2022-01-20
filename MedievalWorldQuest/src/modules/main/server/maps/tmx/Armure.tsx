@@ -6,4 +6,9 @@
    <property name="collision" type="bool" value="true"/>
   </properties>
  </tile>
+ <tile id="35">
+  <properties>
+   <property name="collision" type="bool" value="true"/>
+  </properties>
+ </tile>
 </tileset>
