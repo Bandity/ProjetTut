@@ -21,5 +21,5 @@ export default {
     SteleEvent,
     Garde,
     CombatTest,
-    //Monster
+    Monster
 }

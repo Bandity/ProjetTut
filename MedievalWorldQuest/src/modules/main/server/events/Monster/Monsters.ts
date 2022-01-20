@@ -1,13 +1,16 @@
-import { Enemy } from './monster'
-import { Presets, RpgEvent } from '@rpgjs/server'
+
 import { Shield } from '@rpgjs/starter-kit/src/server/database/armors/shield'
 import { Sword } from '@rpgjs/starter-kit/src/server/database/weapons/sword'
+
+
+import { Enemy } from '@rpgjs/database'
+import { RpgEnemy, Presets } from '@rpgjs/server'
 
 const { MAXHP, STR } = Presets
 
 @Enemy({
     name: 'Monster',
-    graphic: 'witch',
+    graphic: 'bird',
     parameters: {
        [MAXHP]: { start: 540, end: 1000},
        [STR]: { start: 41, end: 1000 }
@@ -16,13 +19,8 @@ const { MAXHP, STR } = Presets
         exp: 10,
         gold: 15
     },
-    startingEquipment: [Sword, Shield],
-    hitbox: {
-        width: 32,
-        height: 16
-    }
+    startingEquipment: [Sword, Shield]
 })
+export class Monster extends RpgEnemy {
 
-export class Monster extends RpgEvent  {
-
-}  
+}
