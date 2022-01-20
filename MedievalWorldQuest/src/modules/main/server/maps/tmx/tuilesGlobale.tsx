@@ -2193,7 +2193,7 @@
  </tile>
  <tile id="750">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
   </properties>
  </tile>
  <tile id="751">
