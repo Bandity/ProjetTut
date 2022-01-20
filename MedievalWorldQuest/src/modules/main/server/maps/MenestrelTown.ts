@@ -98,7 +98,7 @@ import events  from '../events/MenestrelTown/index'
         events.Garde({ name: 'garde9', text: speech.GardeVilleInterne, moove: true}),
         events.Garde({ name: 'garde10', text: speech.GardeVilleInterne, moove: true}),
         ////////////////////////////////////////////
-        events.Monster,
+        //events.Monster,
         //////////////////////////////////////////// PNJ BOURRAGE
         events.PnjGlobal({ 
             name: 'Pnj-2',
