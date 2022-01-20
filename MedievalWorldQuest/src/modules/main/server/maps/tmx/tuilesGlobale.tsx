@@ -119,6 +119,11 @@
    <property name="z" type="int" value="0"/>
   </properties>
  </tile>
+ <tile id="70">
+  <properties>
+   <property name="collision" type="bool" value="true"/>
+  </properties>
+ </tile>
  <tile id="155">
   <properties>
    <property name="collision" type="bool" value="true"/>
