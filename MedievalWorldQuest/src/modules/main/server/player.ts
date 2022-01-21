@@ -36,7 +36,7 @@ export const player: RpgPlayerHooks = {
     },
     async onConnected(player: RpgPlayer) {
         player.gold += 6000;
-        player.speed =2;
+        player.speed =6;
         player.name = "Olgus"
         player.setClass(Thief)
         console.log(player._class.name)
