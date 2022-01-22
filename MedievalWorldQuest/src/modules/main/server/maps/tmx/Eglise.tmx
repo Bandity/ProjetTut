@@ -14,6 +14,15 @@
     <object id="2" x="0.510367" y="14.2052" width="31.5577" height="18.033"/>
    </objectgroup>
   </tile>
+  <tile id="211">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="3.75" y="0.25" width="28" height="26.75">
+     <properties>
+      <property name="collision" type="bool" value="false"/>
+     </properties>
+    </object>
+   </objectgroup>
+  </tile>
  </tileset>
  <tileset firstgid="1265" name="Eglise1" tilewidth="32" tileheight="32" tilecount="609" columns="21">
   <image source="../../../client/maps/assets/Eglise1.jpg" width="672" height="928"/>

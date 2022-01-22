@@ -59,6 +59,14 @@
    <property name="collision" type="bool" value="true"/>
   </properties>
  </tile>
+ <tile id="212">
+  <properties>
+   <property name="collision" type="bool" value="false"/>
+  </properties>
+  <objectgroup draworder="index" id="2">
+   <object id="1" x="0" y="0.25" width="32.5" height="21.75"/>
+  </objectgroup>
+ </tile>
  <tile id="228">
   <properties>
    <property name="collision" type="bool" value="true"/>
@@ -69,6 +77,4 @@
    <property name="collision" type="bool" value="true"/>
   </properties>
  </tile>
-</tileset>
-
 </tileset>
