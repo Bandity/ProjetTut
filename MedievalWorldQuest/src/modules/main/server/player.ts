@@ -49,10 +49,10 @@ export const player: RpgPlayerHooks = {
             //await player.setGraphic('base');
             await player.setGraphic('mageF');
             //await player.changeMap('citeOnirique');
-            //await player.changeMap('MenestrelTown');
+            await player.changeMap('MenestrelTown');
             //await player.changeMap('Eglise')
             //await player.changeMap('Sous_sol');
-            await player.changeMap('Forge');
+            //await player.changeMap('Forge');
         }
 
     },
