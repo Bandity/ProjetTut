@@ -71,10 +71,6 @@ export class Monster extends RpgEvent {
     async start(player: RpgPlayer) {
         
         while (this.getVariable("pv") > 0 && player.hp > 0) {
-            if(this.getVariable("pv") <=0){
-                player.teleport({x:3517,y:1094,z:0});
-                player.showNotification("Tu as ganger")
-            }
             const choice = await player.showChoices("Attack ou Defense", 
             [
                 {text: "Attack", value: 'att'}, 
@@ -98,13 +94,17 @@ export class Monster extends RpgEvent {
                 console.log("Player hp: " + player.hp)
             }
             else if (choice?.value === "def"){
-                let damage= (player.param.def*2) - Math.round(this.getVariable("parameters").str * Math.random() * (1   - 0.10) + 0.1);
+                let damage= Math.round(this.getVariable("parameters").str.start * Math.random() * (1   - 0.10) + 0.1)-(player.param.dex*2) ;
                 if (damage < 0) {
                     player.hp +=0 ;
                 }else{
                     player.hp -= damage;
                 }
                 console.log("Player hp: " + player.hp)
+            }
+            if(this.getVariable("pv") <=0){
+                player.teleport({x:3517,y:1094,z:0});
+                player.showNotification("Tu as ganger")
             }
         }
         Combats.isHeDead(player, this)
