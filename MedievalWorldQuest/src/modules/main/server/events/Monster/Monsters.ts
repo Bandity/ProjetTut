@@ -42,11 +42,12 @@ export class Monster extends RpgEvent {
                 str: { start: 41, end: 1000 },
                 int: { start: 36, end: 1000 },
                 dex: { start: 54, end: 564 },
-                agi: { start: 58, end: 582 }
+                agi: { start: 58, end: 582 },
+
             }
         )
-        this.parameters = this.getVariable("parameters");
-        this.hp = 540
+        this.setVariable("pv", Math.floor(Math.random() * (1000-540) + 540))
+        this.getVariable("parameters");
     }
     async onAction(player: RpgPlayer) {
         await player.showText("Je vais te niquer")
@@ -68,21 +69,46 @@ export class Monster extends RpgEvent {
 
 
     async start(player: RpgPlayer) {
-        this.hp = 540
-        while (this.hp > 0 || player.hp > 0) {
-            Combats.isHeDead(this)
-            Combats.isHeDead(player)
+        
+        while (this.getVariable("pv") > 0 && player.hp > 0) {
+            if(this.getVariable("pv") <=0){
+                player.teleport({x:3517,y:1094,z:0});
+                player.showNotification("Tu as ganger")
+            }
             const choice = await player.showChoices("Attack ou Defense", 
             [
                 {text: "Attack", value: 'att'}, 
                 {text: "Defense", value: 'def'}
             ])
             if(choice?.value === "att") {
-                console.log(player.param.str);
-                this.hp -= Math.round(player.param.str * Math.random()* (0.10 - 0.01) + 0.1);
-                console.log(this.hp);
+                console.log(this.getVariable("pv"))
+                console.log(Math.round(player.param.str * Math.random()* (0.90 - 0.1) + 0.1))
+                let monsterDamage = this.getVariable("parameters").dex.start -Math.round(player.param.str * Math.random()* (1 - 0.1) + 0.1)
+                this.setVariable("pv", this.getVariable("pv") );
+                let damage= (player.param.dex) - Math.round(this.getVariable("parameters").str.start * Math.random() * (1 - 0.10) + 0.1);
+                if (damage < 0) {
+                    player.hp +=0 ;
+                }else{
+                    player.hp -= damage;
+                }
+                if (monsterDamage >0) {
+                    this.setVariable("pv", this.getVariable("pv")- monsterDamage);
+                }
+                console.log("Monster HP: " + this.getVariable("pv"))
+                console.log("Player hp: " + player.hp)
+            }
+            else if (choice?.value === "def"){
+                let damage= (player.param.def*2) - Math.round(this.getVariable("parameters").str * Math.random() * (1   - 0.10) + 0.1);
+                if (damage < 0) {
+                    player.hp +=0 ;
+                }else{
+                    player.hp -= damage;
+                }
+                console.log("Player hp: " + player.hp)
+            }
         }
-        }
+        Combats.isHeDead(player, this)
+        this.teleport({x:3517,y:1094,z:0})
         
     }
 }

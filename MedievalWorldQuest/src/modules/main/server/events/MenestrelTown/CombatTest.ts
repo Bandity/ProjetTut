@@ -19,7 +19,7 @@ export class CombatTest extends RpgEvent {
 
     async onAction(player: RpgPlayer) {
        player.hp =-1
-       Combats.isHeDead(player)
+       //ombats.isHeDead(player,this)
 
     }
 
