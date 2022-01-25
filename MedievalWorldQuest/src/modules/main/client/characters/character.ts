@@ -26,7 +26,7 @@ const { RMSpritesheet } = Presets
         craftman: require('./assets/craftman.png'),
         noble: require('./assets/noble.png'),
         bucheron: require('./assets/bucheron.png'),
-        alchimiste: require('./assets/alchimiste.png'),
+        maitresse_mage: require('./assets/maitresse_mage.png'),
         femme_agee: require('./assets/femme_agee.png'),
         tavernier: require('./assets/tavernier.png'),
         

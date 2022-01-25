@@ -13,6 +13,9 @@ import events  from '../events/Eglise/index'
         teleportX: 493,
         teleportY:1110
         }),
+
+        events.Maitresse_Mage,
+        events.Aimee,
     ],
 })
 export class Eglise extends RpgMap { }

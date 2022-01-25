@@ -36,10 +36,9 @@ export const player: RpgPlayerHooks = {
     },
     async onConnected(player: RpgPlayer) {
         player.gold += 6000;
-        player.speed =6;
+        player.speed =2;
         player.name = "Olgus"
         player.setClass(Thief)
-        console.log(player._class.name)
         //player.skills.push(BouleDeFeu);
         //console.log(player.skills[0])
 
@@ -49,8 +48,8 @@ export const player: RpgPlayerHooks = {
             //await player.setGraphic('base');
             await player.setGraphic('mageF');
             //await player.changeMap('citeOnirique');
-            await player.changeMap('MenestrelTown');
-            //await player.changeMap('Eglise')
+            //await player.changeMap('MenestrelTown');
+            await player.changeMap('Eglise')
             //await player.changeMap('Sous_sol');
             //await player.changeMap('Forge');
         }
