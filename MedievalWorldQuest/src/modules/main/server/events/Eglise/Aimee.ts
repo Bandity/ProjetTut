@@ -1,6 +1,7 @@
 import { RpgEvent, EventData, RpgPlayer, Move, EventMode } from '@rpgjs/server'
 import { speech } from '../../database/dialogue/EgliseSpeech'
-import { Talisman_Institut } from '../../database/items/Talisman_Institut'
+import { Talisman_Guilde } from '../../database/items/Talisman_Guilde'
+
 @EventData({
     name: 'Aimee',
     //mode: EventMode.Scenario,
@@ -36,7 +37,7 @@ export class Aimee extends RpgEvent {
                 await { text: 'Non', value: 'non' },
             ]);
             if (choice != null && choice.value == 'oui') {
-                await player.callShop([Talisman_Institut])
+                await player.callShop([Talisman_Guilde])
             }
         }
     }
