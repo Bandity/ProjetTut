@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="3">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="5">
  <tileset firstgid="1" source="forge1.tsx"/>
  <tileset firstgid="97" source="forge2.tsx"/>
  <tileset firstgid="353" source="forge_tuiles.tsx"/>
@@ -63,6 +63,12 @@
   <object id="2" name="Start Position" type="start" x="391" y="577">
    <point/>
   </object>
+  <object id="3" name="Gordon" type="event" x="102" y="513">
+   <point/>
+  </object>
+  <object id="4" name="Maitre_Institut" type="event" x="546" y="215">
+   <point/>
+  </object>
  </objectgroup>
  <layer id="7" name="Armure" width="20" height="20">
   <properties>
@@ -84,9 +90,9 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,2147484190,2147484189,0,0,0,0,0,0,0,0,669,686,670,688,671,0,0,
-0,0,0,2147484210,2147484209,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2147484230,2147484229,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2147484250,2147484249,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,2147484209,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,2147484229,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,2147484249,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>

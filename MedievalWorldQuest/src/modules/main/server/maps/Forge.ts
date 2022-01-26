@@ -6,6 +6,8 @@ import events  from '../events/Forge/index'
     file: require('./tmx/Forge.tmx'),
     name : 'Forge',       
     events :[ 
+        events.Gordon,
+        events.Maitre_Institut,
         events.Teleporteur({
         name: "sortie",
         nameMap: "MenestrelTown", 
