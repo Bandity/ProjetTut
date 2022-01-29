@@ -1,13 +1,13 @@
 import { CiteOnirique } from './CiteOnirique'
 import { Eglise } from './Eglise'
 import { Forge } from './Forge'
-import { MaisonZoneDepMap } from './maisonZoneDep'
+import { MaisonJoueur } from './MaisonJoueur'
 import { MenestrelTown } from './MenestrelTown'
 import { Sous_sol } from './Sous_sol'
 
 export default {
     CiteOnirique,
-    MaisonZoneDepMap,
+    MaisonJoueur,
     MenestrelTown,
     Eglise,
     Forge,

@@ -6,7 +6,7 @@ import databaseList from './database/items/'
     maps: [
         Maps.CiteOnirique,
         Maps.MenestrelTown,
-        Maps.MaisonZoneDepMap,
+        Maps.MaisonJoueur,
         Maps.Eglise,
         Maps.Forge,
         Maps.Sous_sol

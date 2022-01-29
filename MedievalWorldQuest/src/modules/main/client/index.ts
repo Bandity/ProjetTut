@@ -14,7 +14,7 @@ import hpbar from '../../../assets/hpbar/client/gui/hpbar.vue';
 @RpgModule<RpgClient>({
     spritesheets: [
         Tilesets.TilesetsMenestrelTown,
-        Tilesets.TilesetMaison,
+        Tilesets.TilesetsMaisonJoueur,
         Tilesets.TilesetsCiteOnirique, 
         Tilesets.TilesetsEglise,
         Tilesets.TilesetsForge,

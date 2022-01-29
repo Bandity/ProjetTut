@@ -24,6 +24,10 @@ import events  from '../events/MenestrelTown/index'
             name: "forgeTp",
             nameMap: "Forge", 
         }),
+        events.Teleporteur({
+            name: "maisonJoueurTp",
+            nameMap: "MaisonJoueur", 
+        }),
         events.SteleEvent({
             name: 'Stele_1',
         }),

@@ -5,10 +5,12 @@ import { TilesetsCiteOnirique} from './CiteOnirique'
 import { TilesetsEglise } from './Eglise'
 import { TilesetsForge } from './Forge'
 import { TilesetsSous_sol } from './Sous_sol'
+import { TilesetsMaisonJoueur } from './MaisonJoueur'
 
 export default {
     TilesetsCiteOnirique,
     TilesetsMenestrelTown,
+    TilesetsMaisonJoueur,
     TilesetMaison,
     TilesetsEglise,
     TilesetsForge,

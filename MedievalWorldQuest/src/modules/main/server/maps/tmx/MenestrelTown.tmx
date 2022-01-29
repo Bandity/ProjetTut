@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="75">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="76">
  <tileset firstgid="1" source="tuilesGlobale.tsx"/>
  <tileset firstgid="1001" source="MenestrelTown.tsx"/>
  <tileset firstgid="1551" source="eauAnime.tsx"/>
@@ -1063,7 +1063,7 @@
   <object id="3" name="Barde_1" type="event" x="2102.34" y="1946.42">
    <point/>
   </object>
-  <object id="5" name="Start Position" type="start" x="3643.36" y="1111.18">
+  <object id="5" name="Start Position" type="start" x="326.027" y="3657.18">
    <point/>
   </object>
   <object id="10" name="Stele_1" type="event" x="1789.62" y="3611.71">
@@ -1202,6 +1202,9 @@
    <point/>
   </object>
   <object id="74" name="Monster" type="event" x="3517.83" y="1094.8">
+   <point/>
+  </object>
+  <object id="75" name="maisonJoueurTp" type="event" x="327.829" y="3647.8">
    <point/>
   </object>
  </objectgroup>

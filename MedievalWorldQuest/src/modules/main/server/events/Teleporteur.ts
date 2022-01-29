@@ -27,7 +27,7 @@ export function Teleporteur(options): object {
             }
             else {
                 await player.changeMap(options.nameMap);
-                await timeout(100)  
+                await timeout(1000)  
             }
             
 
