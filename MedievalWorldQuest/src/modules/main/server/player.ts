@@ -7,6 +7,7 @@ import { PotionSoin } from './database/items/PotionSoin'
 
 
 import { BouleDeFeu }  from './database/skills/Mage/BouleDeFeu'
+import { Talisman_Guilde } from './database/items/Talisman_Guilde';
 
 
 const timeout = (ms) =>  new Promise(resolve => setTimeout(resolve, ms));
@@ -39,6 +40,7 @@ export const player: RpgPlayerHooks = {
         player.speed =2;
         player.name = "Olgus"
         player.setClass(Thief)
+        player.addItem(Talisman_Guilde);
         //player.skills.push(BouleDeFeu);
         //console.log(player.skills[0])
 
@@ -48,8 +50,8 @@ export const player: RpgPlayerHooks = {
             //await player.setGraphic('base');
             await player.setGraphic('mageF');
             //await player.changeMap('citeOnirique');
-            //await player.changeMap('MenestrelTown');
-            await player.changeMap('Eglise')
+            await player.changeMap('MenestrelTown');
+            //await player.changeMap('Eglise')
             //await player.changeMap('Sous_sol');
             //await player.changeMap('Forge');
         }

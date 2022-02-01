@@ -8,7 +8,7 @@ import { PotionSoin } from '../database/items/PotionSoin';
 
 @EventData({
     name: 'Noble_1',
-    mode: EventMode.Scenario,
+   //mode: EventMode.Scenario,
     hitbox: {
         width: 32,
         height: 16

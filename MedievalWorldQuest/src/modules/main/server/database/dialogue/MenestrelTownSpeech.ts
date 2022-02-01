@@ -2,8 +2,8 @@
 export const speech = {
     textcinematic1: [
         "De la main du héros naitra l'avenir.",
-        "Elle tiendra alors le pouvoir légué par les dieux, et elle délivrera le royaume du roi cupide et avare.", 
-        "De ce héros, Elpis renaîtra." 
+        "Elle tiendra alors le pouvoir légué par les dieux, et elle délivrera le royaume du roi cupide et avare.",
+        "De ce héros, Elpis renaîtra."
     ],
     textBarde: [
         "Salut ... ? Tu m'as l'air complètement perdu, dis-moi ! La ville est assez grande, fais attention !",
@@ -15,8 +15,8 @@ export const speech = {
     ],
     textPnj3: [
         "Je ne me lasserais jamais de voir cette place, elle est le c\u0153ur de cette ville.",
-        "La voir me rapelle ce qu'il s'est passé il y a 50 ans ...", 
-        "... Oh? Tu ne sais pas ce qu'il s'est passé ? Tu devrais aller lire les stèles dissimulées un peu partout dans la ville, un morceau de la tragédie y est écrit." 
+        "La voir me rapelle ce qu'il s'est passé il y a 50 ans ...",
+        "... Oh? Tu ne sais pas ce qu'il s'est passé ? Tu devrais aller lire les stèles dissimulées un peu partout dans la ville, un morceau de la tragédie y est écrit."
     ],
     textPnj4: [
         "Je sais plus ou j'ai garé ma voiture.",
@@ -66,7 +66,7 @@ export const speech = {
     ],
     textPnj16: [
         "La gérante de l'auberge est magnifique.",
-        "Mais j'ai trop peur pour aller lui parler..." 
+        "Mais j'ai trop peur pour aller lui parler..."
     ],
     textChat: [
         "Miaou"
@@ -112,7 +112,7 @@ export const speech = {
         "...!!! Oh tu en as trouvé une ! Voudrais-tu me la donner, s'il te plaît !", // si on a l'objet 
         "Merci beaucoup petit aventurier, voilà ta récompense !", // si on accepte
         "Merci encore pour la potion, mon chat va bien mieux !" // si on lui reparle et qu'on a termine la quete
-        
+
     ],
 
     textStartQuest2: [
@@ -126,7 +126,7 @@ export const speech = {
         "Vous les avez récupéré ?! Donnez les moi s'il vous plaît !",
         "Merci infiniment, avec ça je pourrais tenir jusqu'à ce soir, tenez voici un cadeau !",
         "Merci encore pour les potions !"
-        
+
     ],
 
     textStartQuest3: [
@@ -142,14 +142,33 @@ export const speech = {
         "C'était vachement bon, la prochaine fois je t'en demanderais plus, p'tit bébé."
     ],
 
+
+    textGeolierStart: [
+        "Quoi ? ",
+        "Tu veux descendre dans les égouts ? C’est strictement interdit, c’est trop dangereux pour les enfants.",
+        "Sinon, ramène-moi un des talismans des guildes qui confirme que tu n’es plus un enfant.",
+        "Ordre du roi."
+    ],
+
+    textGeolierEnd: [
+        "Tu as récupéré un talisman de guilde ? ",
+        "Il donne vraiment ça à tout le monde…",
+        "Bah, je ne peux rien dire, vas-y, tu peux descendre si tu veux."
+
+    ],
+
+    textGeolierClassic: [
+        "Quoi ?"
+    ],
+
     ArmesMagieShop: "Salut p'tite pousse, je vends surtout des équipements pour la magie, quelques potions entre autres, tu veux y jeter un oeil ?",
     TavernierShop: "Quoi ? T'un client ? Bah... Je vends quelques bouteilles si tu veux.",
     MarchandRareShop: "Toi là... J'ai avec moi quelques objets que même le roi tuerait pour avoir, tu veux voir ?",
     AlchimisteShop: "Nous vendons toutes sortes d'objets ou d'aliments nécéssaires à l'alchimie ou pour la cuisine, celà vous intéresse ?",
 
-    GardeEntree : "Faîte attention à l'extérieur, ça grouille de monstre.",
+    GardeEntree: "Faîte attention à l'extérieur, ça grouille de monstre.",
     GardePalais: "Halte là ! Interdiction formelle de pénétrer dans le palais, veuillez faire demi-tour",
-    GardeVilleInterne : "Si vous remarquez quoi que ce soit de suspect, prévenez nous.",
+    GardeVilleInterne: "Si vous remarquez quoi que ce soit de suspect, prévenez nous.",
 
 
 } 

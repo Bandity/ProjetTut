@@ -5,7 +5,7 @@ export function QuestSimple(options): object {
 
     @EventData({
         name: options.name,
-        mode: EventMode.Scenario,
+        //mode: EventMode.Scenario,
         hitbox: {
             width: 32,
             height: 16

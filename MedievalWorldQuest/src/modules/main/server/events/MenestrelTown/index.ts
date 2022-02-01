@@ -9,6 +9,7 @@ import { PnjGlobal } from '../pnjGlobal'
 import { Garde } from './Garde'
 import { CombatTest} from './CombatTest'
 import {Monster} from '../Monster/Monsters'
+import { Geolier } from './Geolier'
 
 export default {
     Craftman,
@@ -20,6 +21,7 @@ export default {
     Teleporteur,
     SteleEvent,
     Garde,
+    Geolier,
     CombatTest,
     Monster
 }

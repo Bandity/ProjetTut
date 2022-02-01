@@ -13,7 +13,6 @@ export function Teleporteur(options): object {
         hitbox: {
             width: options.widthHitbox,
             height: 10
-
         },
     })
 

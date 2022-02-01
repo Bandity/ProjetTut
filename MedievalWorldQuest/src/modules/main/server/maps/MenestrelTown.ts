@@ -16,6 +16,7 @@ import events  from '../events/MenestrelTown/index'
         events.Witch,
         events.Craftman,
         events.Barde_1,
+        events.Geolier,
         events.Teleporteur({
             name: "egliseTp",
             nameMap: "Eglise", 
@@ -27,6 +28,14 @@ import events  from '../events/MenestrelTown/index'
         events.Teleporteur({
             name: "maisonJoueurTp",
             nameMap: "MaisonJoueur", 
+        }),
+        events.Teleporteur({
+            name: "tpSous_sol1",
+            nameMap: "Sous_sol", 
+        }),
+        events.Teleporteur({
+            name: "tpSous_Sol2",
+            nameMap: "Sous_sol", 
         }),
         events.SteleEvent({
             name: 'Stele_1',
