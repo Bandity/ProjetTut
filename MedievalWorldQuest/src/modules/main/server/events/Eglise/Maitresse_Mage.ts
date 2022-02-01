@@ -5,7 +5,7 @@ import { speech } from '../../database/dialogue/EgliseSpeech'
     //mode: EventMode.Scenario,
     hitbox: {
         width: 32,
-        height: 16
+        height: 72
 
     }
 })
@@ -23,7 +23,7 @@ export class Maitresse_Mage extends RpgEvent {
             }
             player.setVariable("maitresse_mageQ1", 1)
         }
-        else {
+        else { 
             for (let msg of speech.textMaitresse_MageClassique) {
                 await player.showText(msg, {
                     talkWith: this

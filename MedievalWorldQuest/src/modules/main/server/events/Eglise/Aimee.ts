@@ -7,13 +7,14 @@ import { Talisman_Guilde } from '../../database/items/Talisman_Guilde'
     //mode: EventMode.Scenario,
     hitbox: {
         width: 32,
-        height: 48
+        height: 16
 
     }
 })
 export class Aimee extends RpgEvent {
     async onInit(player: RpgPlayer) {
         this.setGraphic('youngLady')
+        await this.moveRoutes([Move.left()])
     }
 
     async onAction(player: RpgPlayer) {
