@@ -109,6 +109,7 @@ export class Monster extends RpgEvent {
         }
         Combats.isHeDead(player, this)
         this.teleport({x:3517,y:1094,z:0})
+
         
     }
 }

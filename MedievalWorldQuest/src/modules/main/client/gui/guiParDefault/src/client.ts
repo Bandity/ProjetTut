@@ -8,6 +8,7 @@ import DisconnectUi from './notifications/disconnected.vue'
 import NotificationUi from './notifications/alert.vue'
 import { GuiSounds } from './assets/sounds'
 import BattleUi from './battle/main.vue';
+import CombatUi from './combat/combat.vue';
 
 @RpgModule<RpgClient>({
     gui: [
@@ -18,7 +19,8 @@ import BattleUi from './battle/main.vue';
         DisconnectUi,
         ShopUi,
         NotificationUi,
-        BattleUi
+        BattleUi,
+        CombatUi
     ],
     sounds: [
         GuiSounds
