@@ -7,7 +7,6 @@ import gamepad from '@rpgjs/gamepad'
 import chat from '../assets/chat/index'
 import titleScreen from '@rpgjs/title-screen'
 import save from '@rpgjs/save' // optional
-import combatGUI from './main/client/gui/combatsGUI/src/App.vue';
 
 export default [
     //titleScreen, 

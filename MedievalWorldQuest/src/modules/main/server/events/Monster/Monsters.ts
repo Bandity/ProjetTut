@@ -6,6 +6,7 @@ import { EventData, EventMode } from '@rpgjs/server'
 import { Presets, RpgPlayer,RpgEvent } from '@rpgjs/server'
 import { Enemys } from './Enemys'
 import Combats from '../Combats'
+import { RpgGui } from '@rpgjs/client'
 
 const { MAXHP, STR } = Presets
 /*
@@ -69,7 +70,11 @@ export class Monster extends RpgEvent {
 
 
     async start(player: RpgPlayer) {
-        
+        const gui = player.gui("rpg-battle");
+        gui.on('accept', () => {
+            player.allRecovery()
+       })
+
         while (this.getVariable("pv") > 0 && player.hp > 0) {
             const choice = await player.showChoices("Attack ou Defense", 
             [
