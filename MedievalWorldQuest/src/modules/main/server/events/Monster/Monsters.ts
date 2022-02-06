@@ -38,16 +38,16 @@ export class Monster extends RpgEvent {
         this.setVariable("startingEquipment", [Sword, Shield])
         this.setVariable("parameters",
             {
-                maxHp: { start: 540, end: 1000 },
+                maxHp: { start: 440, end: 600 },
                 maxSp: { start: 534, end: 5500 },
-                str: { start: 41, end: 1000 },
-                int: { start: 36, end: 1000 },
-                dex: { start: 54, end: 564 },
-                agi: { start: 58, end: 582 },
+                str: { start: 31, end: 1000 },
+                int: { start: 26, end: 1000 },
+                dex: { start: 24, end: 564 },
+                agi: { start: 28, end: 582 },
 
             }
         )
-        this.setVariable("pv", Math.floor(Math.random() * (1000-540) + 540))
+        this.setVariable("pv", Math.floor(Math.random() * (600-440) + 540))
         this.getVariable("parameters");
     }
     async onAction(player: RpgPlayer) {
@@ -59,6 +59,7 @@ export class Monster extends RpgEvent {
         if(choice?.value === "oui"){
             this.teleport({x: 50,y: 50,z: 0});
             player.teleport({x: 50,y: 100,z: 0});
+            console.log(player.skills)
             await this.start(player);
         }
         else{
@@ -82,11 +83,9 @@ export class Monster extends RpgEvent {
                 {text: "Defense", value: 'def'}
             ])
             if(choice?.value === "att") {
-                console.log(this.getVariable("pv"))
-                console.log(Math.round(player.param.str * Math.random()* (0.90 - 0.1) + 0.1))
-                let monsterDamage = this.getVariable("parameters").dex.start -Math.round(player.param.str * Math.random()* (1 - 0.1) + 0.1)
+                let monsterDamage =(Math.round(player.param.str*8 * Math.random()* (1 - 0.1) + 0.1))  - this.getVariable("parameters").dex.start 
                 this.setVariable("pv", this.getVariable("pv") );
-                let damage= (player.param.dex) - Math.round(this.getVariable("parameters").str.start * Math.random() * (1 - 0.10) + 0.1);
+                let damage= (player.param.dex) - (Math.round(this.getVariable("parameters").str.start * (Math.random() * (0.2 - 0.10) + 0.1)));
                 if (damage < 0) {
                     player.hp +=0 ;
                 }else{
@@ -108,7 +107,7 @@ export class Monster extends RpgEvent {
                 console.log("Player hp: " + player.hp)
             }
             if(this.getVariable("pv") <=0){
-                player.teleport({x:3517,y:1094,z:0});
+                player.teleport({x:3517,y:1100,z:0});
                 player.showNotification("Tu as ganger")
             }
         }

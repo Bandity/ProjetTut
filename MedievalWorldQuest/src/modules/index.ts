@@ -7,6 +7,7 @@ import gamepad from '@rpgjs/gamepad'
 import chat from '../assets/chat/index'
 import titleScreen from '@rpgjs/title-screen'
 import save from '@rpgjs/save' // optional
+import combatGui from './main/client/gui/combatsGUI/'
 
 export default [
     //titleScreen, 
@@ -18,5 +19,5 @@ export default [
     gamepad, 
     chat,
     save,
-    
+    combatGui
 ]
