@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="4">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="6">
  <tileset firstgid="1" name="eauAnime" tilewidth="32" tileheight="32" tilecount="3072" columns="64">
   <image source="../../../client/maps/assets/eauAnime.png" width="2048" height="1536"/>
   <tile id="0">
@@ -16394,10 +16394,13 @@
 </data>
  </layer>
  <objectgroup id="8" name="evenements">
-  <object id="1" name="MiniBoss" type="event" x="2258.67" y="228">
+  <object id="1" name="Tavana" type="event" x="2258.67" y="228">
    <point/>
   </object>
   <object id="3" name="Start Postion" type="start" x="1120" y="3076">
+   <point/>
+  </object>
+  <object id="5" name="Surt" x="1543" y="65">
    <point/>
   </object>
  </objectgroup>
