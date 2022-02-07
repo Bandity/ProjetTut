@@ -5,7 +5,7 @@ import { Presets } from '@rpgjs/server'
 const { STR,AGI } = Presets
 @Skill({  
     name: "Incision",
-    description: "Compétence 1ere de l'assassin ",
+    description: "CompÃ©tence 1ere de l'assassin ",
     spCost: 10,
     power: 75,
     variance: 0,

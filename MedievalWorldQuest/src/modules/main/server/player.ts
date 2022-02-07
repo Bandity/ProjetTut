@@ -41,8 +41,10 @@ export const player: RpgPlayerHooks = {
         player.name = "Olgus"
         player.setClass(Thief)
         player.addItem(Talisman_Guilde);
-        //player.skills.push(BouleDeFeu);
-        //console.log(player.skills[0])
+        player.level+=2000
+        //player.exp = 0;
+        console.log(player.skills)
+        console.log(player.skills[0].spCost)
 
         player.addItem(PotionSoin);
         await player.setHitbox(20, 16) 
@@ -51,6 +53,7 @@ export const player: RpgPlayerHooks = {
             await player.setGraphic('mageF');
             //await player.changeMap('citeOnirique');
             await player.changeMap('MenestrelTown');
+            
             //await player.changeMap('Eglise')
             //await player.changeMap('Sous_sol');
             //await player.changeMap('Forge');
