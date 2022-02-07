@@ -21,7 +21,7 @@ export const player: RpgPlayerHooks = {
     onJoinMap(player: RpgPlayer, map: RpgMap) {
         
         sendMessage({
-            message: `${player.name} join this map`, 
+            message: `${player.name} a entrée dans la map`, 
             map, 
             player,
             type: 'info'
@@ -40,7 +40,7 @@ export const player: RpgPlayerHooks = {
         
         sendMessage({
             
-            message: `${player.name} left this map`, 
+            message: `${player.name} a sortie de la map`, 
             map, 
             player,
             type: 'info'
