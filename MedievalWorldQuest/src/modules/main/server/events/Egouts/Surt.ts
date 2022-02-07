@@ -6,7 +6,7 @@ import { speech } from '../../database/dialogue/EgoutSpeech'
     hitbox: {
         width: 32,
         height: 16
-
+ 
     }
 })
 export class Surt extends RpgEvent {
