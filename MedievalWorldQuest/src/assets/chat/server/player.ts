@@ -47,3 +47,4 @@ export const player: RpgPlayerHooks = {
         })
     }
 }
+
