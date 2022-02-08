@@ -1,13 +1,12 @@
 import { RpgMap, MapData } from '@rpgjs/server'
-//import { speech } from '../database/dialogue/Sous_solSpeech'
-//import events from '../events/Sous_sol/index'
+import events from '../events/Sous_sol/'
 
 @MapData({
     id: 'Sous_sol',
     file: require('./tmx/Sous_sol.tmx'),    
     //sounds: ['musicSous_sol'],
     events : [
-
+        events.Egouts.Surt,
     ],
 })
 export class Sous_sol extends RpgMap { }
