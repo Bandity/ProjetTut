@@ -19,10 +19,10 @@
     "dependencies": {
         "@rpgjs/chat": "^3.0.0-beta.2",
         "@rpgjs/client": "^3.0.0-beta.2",
-        "@rpgjs/default-gui": "^3.0.0-beta.2",
+        "@rpgjs/default-gui": "^3.0.0-beta.4",
         "@rpgjs/gamepad": "^3.0.0-beta.2",
         "@rpgjs/mobile-gui": "^3.0.0-beta.2",
-        "@rpgjs/save": "^3.0.0-beta.2",
+        "@rpgjs/save": "^3.0.0-beta.4",
         "@rpgjs/server": "^3.0.0-beta.2",
         "@rpgjs/standalone": "^3.0.0-beta.2",
         "@rpgjs/starter-kit": "^3.0.0-beta.2",

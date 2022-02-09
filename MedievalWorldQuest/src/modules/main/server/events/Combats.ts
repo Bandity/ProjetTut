@@ -10,7 +10,7 @@ class Combats extends   RpgEvent {
         }
     }
 
-    async isHeDead(player: RpgPlayer, monster: RpgPlayer){
+    async isHeDead(player: RpgPlayer){
         if(player.hp<=0){
             player.teleport({x:300,y:300,z:0})
             player.showNotification("Tu es mort")

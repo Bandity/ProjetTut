@@ -1,4 +1,3 @@
-
 import { Shield } from '@rpgjs/starter-kit/src/server/database/armors/shield'
 import { Sword } from '@rpgjs/starter-kit/src/server/database/weapons/sword'
 //import { Enemy} from '../../../../../@types'
@@ -7,6 +6,7 @@ import { Presets, RpgPlayer,RpgEvent } from '@rpgjs/server'
 import { Enemys } from './Enemys'
 import Combats from '../Combats'
 import { RpgGui } from '@rpgjs/client'
+import { Choice } from '@rpgjs/server/lib/Gui/DialogGui'
 
 const { MAXHP, STR } = Presets
 /*
@@ -59,7 +59,6 @@ export class Monster extends RpgEvent {
         if(choice?.value === "oui"){
             this.teleport({x: 50,y: 50,z: 0});
             player.teleport({x: 50,y: 100,z: 0});
-            console.log(player.skills)
             await this.start(player);
         }
         else{
@@ -71,28 +70,37 @@ export class Monster extends RpgEvent {
 
 
     async start(player: RpgPlayer) {
-        const gui = player.gui("rpg-battle");
-        gui.on('accept', () => {
-            player.allRecovery()
-       })
-
+        let monsterDamageTook =0;
+        let playerDamageTook = 0;
         while (this.getVariable("pv") > 0 && player.hp > 0) {
-            const choice = await player.showChoices("Attack ou Defense", 
+            let choice = await player.showChoices("Attack ou Defense", 
             [
                 {text: "Attack", value: 'att'}, 
                 {text: "Defense", value: 'def'}
             ])
             if(choice?.value === "att") {
-                let monsterDamage =(Math.round(player.param.str*8 * Math.random()* (1 - 0.1) + 0.1))  - this.getVariable("parameters").dex.start 
-                this.setVariable("pv", this.getVariable("pv") );
-                let damage= (player.param.dex) - (Math.round(this.getVariable("parameters").str.start * (Math.random() * (0.2 - 0.10) + 0.1)));
-                if (damage < 0) {
-                    player.hp +=0 ;
-                }else{
-                    player.hp -= damage;
+                if (player.skills.length >0){
+                    let skills : Array<Choice> = [];
+                    for (let i = 0; i < player.skills.length; i++) {
+                        skills[i] = {
+                            text: player.skills[i].name,
+                            value: i
+                        } 
+                    }
+                    skills[skills.length] = {text: "Basic Attack", value: skills.length}
+                    choice =await player.showChoices("Quelle skill ?",skills)
+
                 }
-                if (monsterDamage >0) {
-                    this.setVariable("pv", this.getVariable("pv")- monsterDamage);
+                if(choice?.value == player.skills.length){
+                    monsterDamageTook = player.param.str - this.getVariable("parameters").dex.start  ;
+                    this.setVariable("pv", this.getVariable("pv") );
+                    playerDamageTook = this.getVariable("parameters").str.start - player.param.dex
+                }
+                if (monsterDamageTook >0) {
+                    this.setVariable("pv", (this.getVariable("pv")- monsterDamageTook));
+                }
+                if (playerDamageTook >0) {
+                    player.hp =0
                 }
                 console.log("Monster HP: " + this.getVariable("pv"))
                 console.log("Player hp: " + player.hp)
@@ -107,13 +115,12 @@ export class Monster extends RpgEvent {
                 console.log("Player hp: " + player.hp)
             }
             if(this.getVariable("pv") <=0){
-                player.teleport({x:3517,y:1100,z:0});
+                player.teleport({x:3517,y:1110,z:0});
                 player.showNotification("Tu as ganger")
             }
         }
-        Combats.isHeDead(player, this)
+        Combats.isHeDead(player)
         this.teleport({x:3517,y:1094,z:0})
-
-        
+        this.setVariable("pv", this.getVariable("parameters").maxHp.start)
     }
 }
