@@ -50,12 +50,12 @@ export const player: RpgPlayerHooks = {
         await player.setHitbox(20, 16) 
         if (player.getVariable("maitreClasses_speech") == null) { // debut du jeu
             //await player.setGraphic('base');
-            await player.setGraphic('mageF');
+            await player.setGraphic('mageF'); 
             //await player.changeMap('citeOnirique');
-            await player.changeMap('MenestrelTown');
-            
+            //await player.changeMap('MenestrelTown');
+             
             //await player.changeMap('Eglise')
-            //await player.changeMap('Sous_sol');
+            await player.changeMap('Sous_sol');
             //await player.changeMap('Forge');
         }
 

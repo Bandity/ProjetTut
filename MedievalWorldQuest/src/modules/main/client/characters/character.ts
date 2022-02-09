@@ -29,7 +29,9 @@ const { RMSpritesheet } = Presets
         maitresse_mage: require('./assets/maitresse_mage.png'),
         femme_agee: require('./assets/femme_agee.png'),
         tavernier: require('./assets/tavernier.png'),
-        
+        surt : require('./assets/surt.png'),
+        invisible: require('./assets/invisible.png'),
+
         man1: require('./assets/man1.png'),
         man2: require('./assets/man2.png'),
         man3: require('./assets/man3.png'),
@@ -43,7 +45,7 @@ const { RMSpritesheet } = Presets
         oldLady: require('./assets/oldLady.png'),
 
         blackCat: require('./assets/blackCat.png'),
-        whiteCat: require('./assets/whiteCat.png'),
+        whiteCat: require('./assets/whiteCat.png'), 
         yellowCat: require('./assets/yellowCat.png'),
         blackDog: require('./assets/blackDog.png'),
         whiteDog: require('./assets/whiteDog.png'),
