@@ -4,9 +4,9 @@ const to = () => {
     const array: any = []
     let k = 0;
 
-    for (let i=0 ; i < 4 ; i++) {
-        for (let j=0 ; j < 1 ; j++) {
-            array.push({ time: k * 20, frameX: j, frameY: i})
+    for (let i=0 ; i < 1 ; i++) {
+        for (let j=0 ; j < 5 ; j++) {
+            array.push({ time: k * 15, frameX: j, frameY: i})
             k++
         }
     }
@@ -16,12 +16,13 @@ const to = () => {
 @Spritesheet({
     id: 'dark_light',
     image: require('./assets/dark_light.png'),
-    framesWidth: 1,
-    framesHeight: 5,
-    width: 300,
-    height: 160,
+    framesWidth: 5,
+    framesHeight: 1,
+    width: 174,
+    height: 266,
     opacity: 1,
-    anchor: [0.8, 0.5],
+    //anchor: [0.8, 0.5],
+    anchor: [0.3, 1],
     textures: {
         default: {
             /*animations: [
