@@ -30,7 +30,7 @@ export const player: RpgPlayerHooks = {
                     player.speed = player.speed*2
                 }else{
                     movement = false;
-                    player.speed = 4
+                    player.speed = 2
                 }
             }
         }
@@ -41,7 +41,7 @@ export const player: RpgPlayerHooks = {
         player.name = "Olgus"
         player.setClass(Thief)
         player.addItem(Talisman_Guilde);
-        player.level+=2000
+        player.level+=100
         //player.exp = 0;
         console.log(player.skills)
         console.log(player.skills[0].spCost)

@@ -3,10 +3,9 @@ import { Sword } from '@rpgjs/starter-kit/src/server/database/weapons/sword'
 //import { Enemy} from '../../../../../@types'
 import { EventData, EventMode } from '@rpgjs/server'
 import { Presets, RpgPlayer,RpgEvent } from '@rpgjs/server'
-import { Enemys } from './Enemys'
 import Combats from '../Combats'
-import { RpgGui } from '@rpgjs/client'
 import { Choice } from '@rpgjs/server/lib/Gui/DialogGui'
+import { SkillOptions } from '../../../../../@types/skill'
 
 const { MAXHP, STR } = Presets
 /*
@@ -72,6 +71,7 @@ export class Monster extends RpgEvent {
     async start(player: RpgPlayer) {
         let monsterDamageTook =0;
         let playerDamageTook = 0;
+        let skillchoice
         while (this.getVariable("pv") > 0 && player.hp > 0) {
             let choice = await player.showChoices("Attack ou Defense", 
             [
@@ -79,6 +79,7 @@ export class Monster extends RpgEvent {
                 {text: "Defense", value: 'def'}
             ])
             if(choice?.value === "att") {
+                // Skills choice
                 if (player.skills.length >0){
                     let skills : Array<Choice> = [];
                     for (let i = 0; i < player.skills.length; i++) {
@@ -88,22 +89,41 @@ export class Monster extends RpgEvent {
                         } 
                     }
                     skills[skills.length] = {text: "Basic Attack", value: skills.length}
-                    choice =await player.showChoices("Quelle skill ?",skills)
+                    skillchoice =await player.showChoices("Quelle skill ?",skills)
 
                 }
-                if(choice?.value == player.skills.length){
-                    monsterDamageTook = player.param.str - this.getVariable("parameters").dex.start  ;
-                    this.setVariable("pv", this.getVariable("pv") );
-                    playerDamageTook = this.getVariable("parameters").str.start - player.param.dex
+                //Basic Attack
+                if(skillchoice?.value === player.skills.length){
+                    //Damage that the monster will take
+                    monsterDamageTook = player.param.str - this.getVariable("parameters").dex.start;
+                    //Damage that the player will take
+                    playerDamageTook = player.param.dex - this.getVariable("parameters").str.start*2;
                 }
+                else { //Skills
+                    let skillUsed:SkillOptions = player.skills[skillchoice?.value];
+                    console.log("Skill :"+ skillUsed.name);
+                    if(skillUsed.power!=undefined && skillUsed.variance!=undefined){
+                        monsterDamageTook =  skillUsed.power  * (Math.round(skillUsed.variance / 100) == 0 ? 1 : Math.round(skillUsed.variance / 100) );
+                        console.log("Skill damage :"+ monsterDamageTook);
+                    }
+                }
+
+                playerDamageTook = this.getVariable("parameters").str.start - player.param.dex;
+                
+
+
+                // Damage taken
                 if (monsterDamageTook >0) {
                     this.setVariable("pv", (this.getVariable("pv")- monsterDamageTook));
                 }
                 if (playerDamageTook >0) {
-                    player.hp =0
+                    player.hp -=playerDamageTook;
                 }
-                console.log("Monster HP: " + this.getVariable("pv"))
-                console.log("Player hp: " + player.hp)
+
+                console.log("Monster HP: " + this.getVariable("pv"));
+                console.log("Player hp: " + player.hp);
+                playerDamageTook = 0;
+                monsterDamageTook = 0;
             }
             else if (choice?.value === "def"){
                 let damage= Math.round(this.getVariable("parameters").str.start * Math.random() * (1   - 0.10) + 0.1)-(player.param.dex*2) ;

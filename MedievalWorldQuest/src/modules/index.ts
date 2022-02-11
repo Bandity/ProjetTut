@@ -6,7 +6,7 @@ import defaultGui from './main/client/gui/guiParDefault/src'
 import mobileGui from '@rpgjs/mobile-gui'
 import gamepad from '@rpgjs/gamepad'
 import chat from '../assets/chat/index'
-import combatGui from './main/client/gui/combats'
+//import combatGui from './main/client/gui/combats'
 
 export default [ 
     main,
