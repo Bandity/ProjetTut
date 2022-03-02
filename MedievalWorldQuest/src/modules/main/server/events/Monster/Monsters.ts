@@ -97,21 +97,23 @@ export class Monster extends RpgEvent {
                     //Damage that the monster will take
                     monsterDamageTook = player.param.str - this.getVariable("parameters").dex.start;
                     //Damage that the player will take
-                    playerDamageTook = player.param.dex - this.getVariable("parameters").str.start*2;
+                    playerDamageTook = this.getVariable("parameters").str.start*2-player.param.dex ;
+
                 }
                 else { //Skills
                     let skillUsed:SkillOptions = player.skills[skillchoice?.value];
                     console.log("Skill :"+ skillUsed.name);
-                    if(skillUsed.power!=undefined && skillUsed.variance!=undefined){
-                        monsterDamageTook =  skillUsed.power  * (Math.round(skillUsed.variance / 100) == 0 ? 1 : Math.round(skillUsed.variance / 100) );
-                        console.log("Skill damage :"+ monsterDamageTook);
-                    }
-                }
-
-                playerDamageTook = this.getVariable("parameters").str.start - player.param.dex;
+                    if(skillUsed.power!=undefined && skillUsed.variance!=undefined && skillUsed.hitRate){
+                        let alt = Math.random() * 1;
+                        if(alt <= skillUsed?.hitRate){
+                            monsterDamageTook =  ((skillUsed.power  + (Math.round(Math.random() * (2*skillUsed.variance )- skillUsed.variance)))/10) * player.level;
+                            console.log("Skill damage :"+ monsterDamageTook);
+                        }
+                        playerDamageTook = this.getVariable("parameters").str.start*2 - player.param.dex;
                 
-
-
+                    }
+                    
+                }
                 // Damage taken
                 if (monsterDamageTook >0) {
                     this.setVariable("pv", (this.getVariable("pv")- monsterDamageTook));

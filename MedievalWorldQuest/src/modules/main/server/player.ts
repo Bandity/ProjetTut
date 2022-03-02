@@ -41,7 +41,7 @@ export const player: RpgPlayerHooks = {
         player.name = "Olgus"
         player.setClass(Thief)
         player.addItem(Talisman_Guilde);
-        player.level+=100
+        player.level+=0
         //player.exp = 0;
         console.log(player.skills)
         console.log(player.skills[0].spCost)
@@ -63,7 +63,7 @@ export const player: RpgPlayerHooks = {
 
     async onJoinMap(player: RpgPlayer){
         //await timeout(500);
-        //player.gui('hpbar').open()
+        player.gui('hpbar').open()
         for (let msg of speech.textcinematic1) {
            // await player.showText(msg);
         }

@@ -3,6 +3,7 @@
         <p>{{ hp }} / {{ maxHp }}</p>
         <div class="bordureBarVie">
             <div class="inner-bar" :style="{ width }"></div>
+            <p>{{ hp }} / {{ maxHp }}</p>
         </div>
     </div>
 </template>

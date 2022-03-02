@@ -1,10 +1,14 @@
 <template>
+<div>
     <div class="health-bar">
-        <p>{{ hp}} HP/ {{ maxHp }} MAX HP</p>
+        <p>{{ hp }} HP/ {{ maxHp }} MAX HP</p>
         <div class="bar">
+            <p>{{ hp }} / {{ maxHp }}</p>
             <div class="inner-bar" :style="{ width }"></div>
         </div>
+        <p>{{ hp }} / {{ maxHp }}</p>
     </div>
+</div>
 </template>
 
 <script>
