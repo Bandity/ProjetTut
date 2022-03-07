@@ -6,7 +6,12 @@ import events from '../events/Sous_sol/'
     file: require('./tmx/Sous_sol.tmx'),    
     //sounds: ['musicSous_sol'],
     events : [
+        // PARTIE EGOUT
         events.Egouts.Surt,
+
+        // PARTIE JARDINS
+        events.JardinGaia.GardeJardins,
+        events.JardinGaia.Maire,
         events.JardinGaia.PnjEntrainement({
             text: ["Pousse toi ou tu vas te prendre un sort !"],
             name: "Pnj-E-1",
