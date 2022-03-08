@@ -19,6 +19,9 @@ import hpbar from '../../../assets/hpbar/client/gui/hpbar.vue';
         Tilesets.TilesetsEglise,
         Tilesets.TilesetsForge,
         Tilesets.TilesetsSous_sol,
+        Tilesets.TilesetsCombats.CombatCiel,
+        Tilesets.TilesetsCombats.CombatEgouts,
+
         ShieldAnimations,
         DarkLightAnimation,
         ...Characters,

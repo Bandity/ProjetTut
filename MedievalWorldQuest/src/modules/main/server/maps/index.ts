@@ -1,4 +1,6 @@
 import { CiteOnirique } from './CiteOnirique'
+import { CombatCiel } from './Combats/CombatCiel'
+import { CombatEgout } from './Combats/CombatEgout'
 import { Eglise } from './Eglise'
 import { Forge } from './Forge'
 import { MaisonJoueur } from './MaisonJoueur'
@@ -11,5 +13,7 @@ export default {
     MenestrelTown,
     Eglise,
     Forge,
-    Sous_sol
+    Sous_sol,
+    CombatCiel,
+    CombatEgout,
 }

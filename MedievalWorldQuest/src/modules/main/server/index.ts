@@ -9,7 +9,9 @@ import databaseList from './database/items/'
         Maps.MaisonJoueur,
         Maps.Eglise,
         Maps.Forge,
-        Maps.Sous_sol
+        Maps.Sous_sol,
+        Maps.CombatCiel,
+        Maps.CombatEgout,
 
     ],
     database : databaseList,

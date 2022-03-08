@@ -55,12 +55,12 @@ export class Monster extends RpgEvent {
             { text: 'Partir', value: 'non' },
         ]);
         if(choice?.value === "oui"){
-            this.teleport({x: 2100,y: 780,z: 0});
-            player.teleport({x: 2100,y: 830 ,z: 0});
-            await this.start(player);
+
+            player.changeMap("CombatEgout");
+            this.start(player);
         }
         else{
-            player.teleport({x: 300,y: 300,z: 0});
+            player.changeMap("MenestrelTown");
             await player.showNotification("Vous êtes mort");
             this.teleport({x:3517,y:1094,z:0})
         }
