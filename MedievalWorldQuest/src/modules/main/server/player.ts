@@ -43,8 +43,6 @@ export const player: RpgPlayerHooks = {
         player.addItem(Talisman_Guilde);
         player.level+=0
         //player.exp = 0;
-        console.log(player.skills)
-        console.log(player.skills[0].spCost)
 
         player.addItem(PotionSoin);
         await player.setHitbox(20, 16) 
@@ -52,10 +50,10 @@ export const player: RpgPlayerHooks = {
             //await player.setGraphic('base');
             await player.setGraphic('mageF'); 
             //await player.changeMap('citeOnirique');
-            //await player.changeMap('MenestrelTown');
+            await player.changeMap('MenestrelTown');
              
             //await player.changeMap('Eglise')
-            await player.changeMap('Sous_sol');
+            //await player.changeMap('Sous_sol');
             //await player.changeMap('Forge');
         }
 

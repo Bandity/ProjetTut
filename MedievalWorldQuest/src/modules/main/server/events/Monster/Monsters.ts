@@ -32,7 +32,7 @@ const { MAXHP, STR } = Presets
 })
 export class Monster extends RpgEvent {
     async onInit(player: RpgPlayer){
-        this.setGraphic("chara")
+        this.setGraphic("base")
         this.setVariable("gain", {exp: 10, gold: 15})
         this.setVariable("startingEquipment", [Sword, Shield])
         this.setVariable("parameters",
@@ -50,19 +50,18 @@ export class Monster extends RpgEvent {
         this.getVariable("parameters");
     }
     async onAction(player: RpgPlayer) {
-        await player.showText("Je vais te niquer")
-        const choice = await player.showChoices("Quoi FDP tu veux te battre ?", [
-            { text: 'Lest Go', value: 'oui' },
-            { text: 'Fuck you', value: 'non' },
+        const choice = await player.showChoices("Lancer le combat ?", [
+            { text: 'Prêt', value: 'oui' },
+            { text: 'Partir', value: 'non' },
         ]);
         if(choice?.value === "oui"){
-            this.teleport({x: 50,y: 50,z: 0});
-            player.teleport({x: 50,y: 100,z: 0});
+            this.teleport({x: 2100,y: 780,z: 0});
+            player.teleport({x: 2100,y: 830 ,z: 0});
             await this.start(player);
         }
         else{
             player.teleport({x: 300,y: 300,z: 0});
-            await player.showNotification("TU ES MORT");
+            await player.showNotification("Vous êtes mort");
             this.teleport({x:3517,y:1094,z:0})
         }
     }
@@ -73,9 +72,9 @@ export class Monster extends RpgEvent {
         let playerDamageTook = 0;
         let skillchoice
         while (this.getVariable("pv") > 0 && player.hp > 0) {
-            let choice = await player.showChoices("Attack ou Defense", 
+            let choice = await player.showChoices("Options :", 
             [
-                {text: "Attack", value: 'att'}, 
+                {text: "Attaque", value: 'att'}, 
                 {text: "Defense", value: 'def'}
             ])
             if(choice?.value === "att") {
@@ -88,8 +87,8 @@ export class Monster extends RpgEvent {
                             value: i
                         } 
                     }
-                    skills[skills.length] = {text: "Basic Attack", value: skills.length}
-                    skillchoice =await player.showChoices("Quelle skill ?",skills)
+                    skills[skills.length] = {text: "Attaque basique", value: skills.length}
+                    skillchoice =await player.showChoices("Quelle compétence utiliser ?",skills)
 
                 }
                 //Basic Attack
@@ -138,7 +137,7 @@ export class Monster extends RpgEvent {
             }
             if(this.getVariable("pv") <=0){
                 player.teleport({x:3517,y:1110,z:0});
-                player.showNotification("Tu as ganger")
+                player.showNotification("Vous avez gagner")
             }
         }
         Combats.isHeDead(player)

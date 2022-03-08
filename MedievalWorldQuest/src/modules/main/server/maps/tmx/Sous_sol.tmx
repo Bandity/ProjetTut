@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="18">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="19">
  <tileset firstgid="1" name="eauAnime" tilewidth="32" tileheight="32" tilecount="3072" columns="64">
   <image source="../../../client/maps/assets/eauAnime.png" width="2048" height="1536"/>
   <tile id="0">
@@ -16397,7 +16397,7 @@
   <object id="1" name="Tavana" type="event" x="2258.67" y="228">
    <point/>
   </object>
-  <object id="3" name="Start Postion" type="start" x="1604" y="2753.33">
+  <object id="3" name="Start Postion" type="start" x="1377.33" y="2710.66">
    <point/>
   </object>
   <object id="5" name="Surt" x="1650.67" y="599">
@@ -16434,6 +16434,9 @@
    <point/>
   </object>
   <object id="17" name="GardeJardins" type="event" x="116" y="2180">
+   <point/>
+  </object>
+  <object id="18" name="MonsterView" type="event" x="1378.67" y="2652">
    <point/>
   </object>
  </objectgroup>

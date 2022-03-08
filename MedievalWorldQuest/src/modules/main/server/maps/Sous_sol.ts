@@ -9,7 +9,6 @@ import events from '../events/Sous_sol/'
         // PARTIE EGOUT
         events.Egouts.Surt,
 
-        // PARTIE JARDINS
         events.JardinGaia.GardeJardins,
         events.JardinGaia.Maire,
         events.JardinGaia.PnjEntrainement({
@@ -57,11 +56,6 @@ import events from '../events/Sous_sol/'
             name: "Pnj-E-9",
             graphic: 'witch',
         }),
-        events.JardinGaia.PnjEntrainement({
-            text: ["Pousse toi ou tu vas te prendre un sort !"],
-            name: "Pnj-E-10",
-            graphic: 'witch',
-        })
     ],
 })
 export class Sous_sol extends RpgMap { }
