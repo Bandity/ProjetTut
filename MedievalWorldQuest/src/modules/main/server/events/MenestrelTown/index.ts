@@ -8,7 +8,7 @@ import { PnjShop } from '../PnjShop'
 import { PnjGlobal } from '../pnjGlobal'
 import { Garde } from './Garde'
 import { CombatTest} from './CombatTest'
-import {Monster} from '../Monster/Monsters'
+import  {MonsterGenerator}  from '../Monster/Monsters'
 import { Geolier } from './Geolier'
 
 export default {
@@ -23,5 +23,5 @@ export default {
     Garde,
     Geolier,
     CombatTest,
-    Monster
+    MonsterGenerator
 }
