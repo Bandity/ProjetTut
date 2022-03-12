@@ -7,30 +7,45 @@ import Combats from '../Combats'
 import { Choice } from '@rpgjs/server/lib/Gui/DialogGui'
 import { SkillOptions } from '../../../../../@types/skill'
 
-export function MonsterGenerator(options): object {
-    const { name, textStart, textEnd, itemRequired, quantity, graphic, gain } = options
+export function MonsterGenerator(options:{
+
+        gain : {exp: number, gold: number}
+        name: string,
+        graphic: string,
+        health: { start: number, end: number },
+        spells: { start: number, end: number },
+        str: { start: number, end: number },
+        int: { start: number, end: number },
+        dex: { start: number, end: number },
+        agi: { start: number, end: number },
+        playerSpRegener: { start: number, end: number}
+
+
+    
+}): object {
+    const { name, graphic, gain, spells,health,str,int,dex,agi, playerSpRegener } = options
 
     @EventData({
-        name: 'Monster',
+        name,
         hitbox: {
             width: 32,
             height: 16
         },
-        mode: EventMode.Scenario
+        mode: EventMode.Scenario,
     })
     class Monster extends RpgEvent {
         async onInit(player: RpgPlayer) {
-            this.setGraphic("base")
-            this.setVariable("gain", { exp: 10, gold: 15 })
+            this.setGraphic(graphic)
+            this.setVariable("gain", gain)
             this.setVariable("startingEquipment", [Sword, Shield])
             this.setVariable("parameters",
                 {
-                    maxHp: { start: 440, end: 600 },
-                    maxSp: { start: 534, end: 5500 },
-                    str: { start: 31, end: 1000 },
-                    int: { start: 26, end: 1000 },
-                    dex: { start: 24, end: 564 },
-                    agi: { start: 28, end: 582 },
+                    maxHp: health,
+                    maxSp: spells,
+                    str,
+                    int,
+                    dex,
+                    agi,
 
                 }
             )
@@ -58,8 +73,13 @@ export function MonsterGenerator(options): object {
         async start(player: RpgPlayer) {
             let monsterDamageTook = 0;
             let playerDamageTook = 0;
-            let skillchoice
+            let skillchoice;
+            let  manaMob = Math.floor(Math.random() * ( this.getVariable("parameters").maxSp.end - this.getVariable("parameters").maxSp.start ))+ this.getVariable("parameters").maxSp.start;
+            console.log(manaMob);
+            let count = 1;
+            let sp_regenerate =0
             while (this.getVariable("pv") > 0 && player.hp > 0) {
+                console.log("Round " + count)
                 let choice = await player.showChoices("Options :",
                     [
                         { text: "Attaque", value: 'att' },
@@ -90,14 +110,24 @@ export function MonsterGenerator(options): object {
                     else { //Skills
                         let skillUsed: SkillOptions = player.skills[skillchoice?.value];
                         console.log("Skill :" + skillUsed.name);
-                        if (skillUsed.power != undefined && skillUsed.variance != undefined && skillUsed.hitRate) {
-                            let alt = Math.random() * 1;
-                            if (alt <= skillUsed?.hitRate) {
-                                monsterDamageTook = ((skillUsed.power + (Math.round(Math.random() * (2 * skillUsed.variance) - skillUsed.variance))) / 10) * player.level;
-                                console.log("Skill damage :" + monsterDamageTook);
+                        
+                        if (skillUsed.power != undefined && skillUsed.variance != undefined && skillUsed.hitRate && skillUsed.spCost) {
+                            if(player.sp-skillUsed.spCost >= 0) {
+                                player.sp -= skillUsed.spCost;
+                                
+                                let alt = Math.random() * 1;
+                                if (alt <= skillUsed?.hitRate) {
+                                    monsterDamageTook = ((skillUsed.power + (Math.round(Math.random() * (2 * skillUsed.variance) - skillUsed.variance))) / 10) * player.level;
+                                    console.log("Skill damage :" + monsterDamageTook);
+                                }
+                                console.log("Skill costed SP :" + skillUsed.spCost);
+                                console.log("Player SP: " + player.sp);
+                            }else {
+                                await player.showText("Tu as plus de mana");
                             }
+                            
                             playerDamageTook = this.getVariable("parameters").str.start * 2 - player.param.dex;
-
+                            
                         }
 
                     }
@@ -113,6 +143,11 @@ export function MonsterGenerator(options): object {
                     console.log("Player hp: " + player.hp);
                     playerDamageTook = 0;
                     monsterDamageTook = 0;
+                    sp_regenerate = Math.round(Math.random() * (playerSpRegener.end-playerSpRegener.start)) + playerSpRegener.start;
+                    player.sp += sp_regenerate;
+                    console.log("Regenerated SP: " + sp_regenerate);
+                    count++;
+                    console.log(" ");
                 }
                 else if (choice?.value === "def") {
                     let damage = Math.round(this.getVariable("parameters").str.start * Math.random() * (1 - 0.10) + 0.1) - (player.param.dex * 2);
@@ -127,6 +162,8 @@ export function MonsterGenerator(options): object {
                     player.teleport({ x: 3517, y: 1110, z: 0 });
                     player.showNotification("Vous avez gagner")
                 }
+
+                console.log(" ")
             }
             Combats.isHeDead(player)
             this.teleport({ x: 3517, y: 1094, z: 0 })
