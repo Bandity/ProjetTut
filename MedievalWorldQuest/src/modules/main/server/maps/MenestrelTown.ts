@@ -143,7 +143,9 @@ import events  from '../events/MenestrelTown/index'
     playerSpRegener:{ 
         start: 0, 
         end: 10
-    }
+    },
+    mapCombat : "CombatEgout",
+    mapDepart : "MenestrelTown"
 }),
         //////////////////////////////////////////// PNJ BOURRAGE
         events.PnjGlobal({ 

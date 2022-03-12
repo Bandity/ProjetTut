@@ -6,7 +6,7 @@ const { STR,AGI } = Presets
 @Skill({  
     name: "Incision",
     description: "Compétence 1ere de l'assassin ",
-    spCost: 100,
+    spCost: 10,
     power: 75,
     variance: 0,
     hitRate: 1,

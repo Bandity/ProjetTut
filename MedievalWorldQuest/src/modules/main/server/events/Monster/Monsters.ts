@@ -18,12 +18,14 @@ export function MonsterGenerator(options:{
         int: { start: number, end: number },
         dex: { start: number, end: number },
         agi: { start: number, end: number },
-        playerSpRegener: { start: number, end: number}
+        playerSpRegener: { start: number, end: number},
+        mapDepart : string,
+        mapCombat : string,
 
 
     
 }): object {
-    const { name, graphic, gain, spells,health,str,int,dex,agi, playerSpRegener } = options
+    const { name, graphic, gain, spells,health,str,int,dex,agi, playerSpRegener, mapCombat, mapDepart} = options
 
     @EventData({
         name,
@@ -60,11 +62,11 @@ export function MonsterGenerator(options:{
             ]);
             if (choice?.value === "oui") {
 
-                player.changeMap("CombatEgout");
+                player.changeMap(mapCombat);
                 this.start(player);
             }
             else {
-                player.changeMap("MenestrelTown");
+                player.changeMap(mapDepart);
                 await player.showNotification("Vous êtes mort");
                 this.teleport({ x: 3517, y: 1094, z: 0 })
             }
@@ -159,14 +161,14 @@ export function MonsterGenerator(options:{
                     console.log("Player hp: " + player.hp)
                 }
                 if (this.getVariable("pv") <= 0) {
+                    await player.changeMap(mapDepart);
                     player.teleport({ x: 3517, y: 1110, z: 0 });
-                    player.showNotification("Vous avez gagner")
+                    await player.showText("Vous avez gagner")
                 }
 
                 console.log(" ")
             }
-            Combats.isHeDead(player)
-            this.teleport({ x: 3517, y: 1094, z: 0 })
+            Combats.isHeDead(player, mapDepart);
             this.setVariable("pv", this.getVariable("parameters").maxHp.start)
         }
     }
