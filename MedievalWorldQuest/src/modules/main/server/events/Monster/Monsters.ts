@@ -51,8 +51,7 @@ export function MonsterGenerator(options:{
 
                 }
             )
-            this.setVariable("pv", Math.floor(Math.random() * (600 - 440) + 540))
-            this.getVariable("parameters");
+            this.setVariable("pv", Math.floor(Math.random() * (600 - 440) + 540));
         }
 
         async onAction(player: RpgPlayer) {
@@ -76,10 +75,10 @@ export function MonsterGenerator(options:{
             let monsterDamageTook = 0;
             let playerDamageTook = 0;
             let skillchoice;
-            let  manaMob = Math.floor(Math.random() * ( this.getVariable("parameters").maxSp.end - this.getVariable("parameters").maxSp.start ))+ this.getVariable("parameters").maxSp.start;
-            console.log(manaMob);
+            let parameters = this.getVariable("parameters");
             let count = 1;
             let sp_regenerate =0
+            let animations = player.getVariable("animations");
             while (this.getVariable("pv") > 0 && player.hp > 0) {
                 console.log("Round " + count)
                 let choice = await player.showChoices("Options :",
@@ -104,10 +103,10 @@ export function MonsterGenerator(options:{
                     //Basic Attack
                     if (skillchoice?.value === player.skills.length) {
                         //Damage that the monster will take
-                        monsterDamageTook = player.param.str - this.getVariable("parameters").dex.start;
+                        monsterDamageTook = player.param.str - parameters.dex.start;
                         //Damage that the player will take
-                        playerDamageTook = this.getVariable("parameters").str.start * 2 - player.param.dex;
-
+                        playerDamageTook = parameters.str.start * 2 - player.param.dex;
+                        player.showAnimation("shield","default");
                     }
                     else { //Skills
                         let skillUsed: SkillOptions = player.skills[skillchoice?.value];
@@ -124,11 +123,12 @@ export function MonsterGenerator(options:{
                                 }
                                 console.log("Skill costed SP :" + skillUsed.spCost);
                                 console.log("Player SP: " + player.sp);
+                                player.showAnimation(animations[skillchoice?.value],"default");
                             }else {
                                 await player.showText("Tu as plus de mana");
                             }
                             
-                            playerDamageTook = this.getVariable("parameters").str.start * 2 - player.param.dex;
+                            playerDamageTook = parameters.str.start * 2 - player.param.dex;
                             
                         }
 
@@ -152,7 +152,7 @@ export function MonsterGenerator(options:{
                     console.log(" ");
                 }
                 else if (choice?.value === "def") {
-                    let damage = Math.round(this.getVariable("parameters").str.start * Math.random() * (1 - 0.10) + 0.1) - (player.param.dex * 2);
+                    let damage = Math.round(parameters.str.start * Math.random() * (1 - 0.10) + 0.1) - (player.param.dex * 2);
                     if (damage < 0) {
                         player.hp += 0;
                     } else {
@@ -163,13 +163,13 @@ export function MonsterGenerator(options:{
                 if (this.getVariable("pv") <= 0) {
                     await player.changeMap(mapDepart);
                     player.teleport({ x: 3517, y: 1110, z: 0 });
-                    await player.showText("Vous avez gagner")
+                    await player.showText("Vous avez gagné!")
                 }
 
                 console.log(" ")
             }
             Combats.isHeDead(player, mapDepart);
-            this.setVariable("pv", this.getVariable("parameters").maxHp.start)
+            this.setVariable("pv", parameters.maxHp.start)
         }
     }
     return Monster;

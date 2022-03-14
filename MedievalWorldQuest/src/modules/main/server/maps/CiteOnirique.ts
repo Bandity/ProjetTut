@@ -22,7 +22,8 @@ const maitre = events.MaitreClasses
             classe: classes.Mage,
             textInit: speech.textInitMage,
             textAccept: speech.textAcceptMage,
-            textReject: speech.textRejectMage
+            textReject: speech.textRejectMage,
+            animations: [ "incision","bouleDeFeu","coeurDeGlace","morsureDuFroid","ouragan"]
         }) ,
         events.GeneratorClass({
             name: 'priestClass',
@@ -30,7 +31,8 @@ const maitre = events.MaitreClasses
             classe: classes.Priest,
             textInit: speech.textInitPriest,
             textAccept: speech.textAcceptPriest,
-            textReject: speech.textRejectPriest
+            textReject: speech.textRejectPriest,
+            animations: [ ]
         }),
         events.GeneratorClass({
             name: 'thiefClass',
@@ -38,7 +40,8 @@ const maitre = events.MaitreClasses
             classe: classes.Thief,
             textInit: speech.textInitThief,
             textAccept: speech.textAcceptThief,
-            textReject: speech.textRejectThief
+            textReject: speech.textRejectThief,
+            animations: []
         }),
         events.GeneratorClass({
             name: 'warriorClass',
@@ -46,7 +49,8 @@ const maitre = events.MaitreClasses
             classe: classes.Warrior,
             textInit: speech.textInitWarrior,
             textAccept: speech.textAcceptWarrior,
-            textReject: speech.textRejectWarrior
+            textReject: speech.textRejectWarrior,
+            animations:[]
         }),
         //events.Combat
 

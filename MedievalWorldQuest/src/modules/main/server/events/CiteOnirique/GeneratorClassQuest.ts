@@ -1,7 +1,16 @@
 import { RpgEvent, EventData, RpgPlayer, Move, EventMode } from '@rpgjs/server'
 
-export function GeneratorClass(options): object {
-    const { name,graphic,classe, textInit, textAccept, textReject } = options
+export function GeneratorClass(options:{
+    name: string,
+    graphic: string,
+    classe: object,
+    textInit : Array<string>,
+    textAccept: Array<string>
+    textReject : Array<string>
+    animations : Array<string>
+
+}): object {
+    const { name,graphic,classe, textInit, textAccept, textReject, animations } = options
     @EventData({
         name: name,
         //mode: EventMode.Scenario,
@@ -43,6 +52,7 @@ export function GeneratorClass(options): object {
                     player.setGraphic(graphicPerso); // on change le visuel du perso
                 }
                 player.setClass(classe);
+                player.setVariable("animations",animations);
                 for (let msg of textAccept) {
                     await player.showText(msg, {
                         talkWith: this
