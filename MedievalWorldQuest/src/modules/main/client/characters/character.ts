@@ -23,6 +23,7 @@ const { RMSpritesheet } = Presets
         mageF: require('./assets/mageF.png'),
         mageG: require('./assets/mageG.png'),
 
+        mere : require('./assets/youngLady.png'),
         craftman: require('./assets/craftman.png'),
         noble: require('./assets/noble.png'),
         bucheron: require('./assets/bucheron.png'),

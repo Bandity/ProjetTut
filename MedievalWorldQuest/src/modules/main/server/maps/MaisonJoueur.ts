@@ -19,7 +19,11 @@ import events  from '../events/MaisonJoueur/'
             name: "stairsDown",
             teleportX: 50,
             teleportY: 110
-        })
+        }),
+        events.Mere,
+        events.Lettre,
+        //events.RedLine,
+
     ],
 })
 export class MaisonJoueur extends RpgMap { }
