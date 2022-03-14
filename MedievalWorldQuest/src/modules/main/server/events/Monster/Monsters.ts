@@ -125,7 +125,7 @@ export function MonsterGenerator(options:{
                                 console.log("Player SP: " + player.sp);
                                 player.showAnimation(animations[skillchoice?.value],"default");
                             }else {
-                                await player.showText("Tu as plus de mana");
+                                await player.showText("Tu n'as plus de mana");
                             }
                             
                             playerDamageTook = parameters.str.start * 2 - player.param.dex;
@@ -152,21 +152,42 @@ export function MonsterGenerator(options:{
                     console.log(" ");
                 }
                 else if (choice?.value === "def") {
-                    let damage = Math.round(parameters.str.start * Math.random() * (1 - 0.10) + 0.1) - (player.param.dex * 2);
-                    if (damage < 0) {
-                        player.hp += 0;
-                    } else {
-                        player.hp -= damage;
+                    let damage =0;
+                    if(player.sp >0){
+                        player.showAnimation("shield","default");
+                        damage = Math.round(parameters.str.start * Math.random() * (1 - 0.10) + 0.1) - (player.param.dex * 2);
+                        if (damage < 0) {
+                            player.hp += 0;
+                        } else {
+                            player.hp -= damage;
+                        }
+                        console.log("Skill name :" + "Defense");
+                        console.log("Skill costed SP :" + player.level * 50);
+                        player.sp -= player.level * 50
+                        
+                    
+                    }else {
+                        await player.showText("Tu n'as plus de mana");
                     }
-                    console.log("Player hp: " + player.hp)
+                    
+                    count++;
+                    damage =0
+                    console.log("Player SP: " + player.sp);
+                    console.log("Monster HP: " + this.getVariable("pv"));
+                    console.log("Player hp: " + player.hp);
+                    
+                    sp_regenerate = Math.round(Math.random() * (playerSpRegener.end-playerSpRegener.start)) + playerSpRegener.start;
+                    player.sp += sp_regenerate;
+                    console.log("Regenerated SP: " + sp_regenerate);
+                    console.log(" ");
+                    
                 }
                 if (this.getVariable("pv") <= 0) {
                     await player.changeMap(mapDepart);
                     player.teleport({ x: 3517, y: 1110, z: 0 });
                     await player.showText("Vous avez gagné!")
                 }
-
-                console.log(" ")
+                
             }
             Combats.isHeDead(player, mapDepart);
             this.setVariable("pv", parameters.maxHp.start)

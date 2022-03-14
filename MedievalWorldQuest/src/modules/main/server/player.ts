@@ -56,12 +56,13 @@ export const player: RpgPlayerHooks = {
             //await player.changeMap('Sous_sol');
             //await player.changeMap('Forge');
         }
+        player.gui('hpbar').open();
 
     },
 
     async onJoinMap(player: RpgPlayer){
         //await timeout(500);
-        player.gui('hpbar').open()
+        
         for (let msg of speech.textcinematic1) {
            // await player.showText(msg);
         }
