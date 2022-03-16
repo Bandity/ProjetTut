@@ -25,20 +25,6 @@ const to = () => {
     anchor: [0.3, 1],
     textures: {
         default: {
-            /*animations: [
-                [ 
-                    { time: 0, frameX: 0, frameY: 0 },
-                    { time: 20, frameX: 0, frameY: 1 } ,
-                    { time: 40, frameX: 0, frameY: 2 } ,
-                    { time: 60, frameX: 0, frameY: 3 },
-                    { time: 80, frameX: 0, frameY: 4},
-                    //
-                    
-
-                    
-                    // etc...
-                ]
-            ] */
             
             animations: [ to() ]
         }

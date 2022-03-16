@@ -32,7 +32,7 @@ const maitre = events.MaitreClasses
             textInit: speech.textInitPriest,
             textAccept: speech.textAcceptPriest,
             textReject: speech.textRejectPriest,
-            animations: [ ]
+            animations: ["incision","dark_light","faux_d_ankou","litanieDivine","monde_de_tenebre"]
         }),
         events.GeneratorClass({
             name: 'thiefClass',
@@ -41,7 +41,7 @@ const maitre = events.MaitreClasses
             textInit: speech.textInitThief,
             textAccept: speech.textAcceptThief,
             textReject: speech.textRejectThief,
-            animations: []
+            animations: ["incision","hemorragie","incision","roncesNoires","croixSanglante"]
         }),
         events.GeneratorClass({
             name: 'warriorClass',
@@ -50,7 +50,7 @@ const maitre = events.MaitreClasses
             textInit: speech.textInitWarrior,
             textAccept: speech.textAcceptWarrior,
             textReject: speech.textRejectWarrior,
-            animations:[]
+            animations:["incision","croixSanglante","jugementDivin","pointeFuneste","hemorragie"]
         }),
         //events.Combat
 

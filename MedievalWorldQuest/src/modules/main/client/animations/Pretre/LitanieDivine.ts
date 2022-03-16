@@ -14,7 +14,7 @@ const to = () => {
 }
 
 @Spritesheet({
-    id: 'litanie_divine',
+    id: 'litanieDivine',
     image: require('../assets/pretre/litanieDivine.png'),
     framesWidth: 5,
     framesHeight: 6,
