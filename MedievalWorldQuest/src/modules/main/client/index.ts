@@ -6,10 +6,10 @@ import Tilesets  from './maps/'
 import Musics from './sounds'
 import Characters from './characters'
 import Monsters  from './characters'
-import { ShieldAnimations } from './animations/ShieldAnimation'
-import { DarkLightAnimation } from './animations/DarkLightAnimation'
+import  Animations  from './animations/Animations'
 
 import hpbar from '../../../assets/hpbar/client/gui/hpbar.vue';
+import { ShieldAnimations } from './animations/ShieldAnimation'
 
 @RpgModule<RpgClient>({
     spritesheets: [
@@ -23,7 +23,26 @@ import hpbar from '../../../assets/hpbar/client/gui/hpbar.vue';
         Tilesets.TilesetsCombats.CombatEgouts,
 
         ShieldAnimations,
-        DarkLightAnimation,
+        // PRETRE //
+        Animations.Pretre.DarkLight,
+        Animations.Pretre.MondeDeTenebre,
+        Animations.Pretre.LitanieDivine,
+        Animations.Pretre.FauxDAnkou,
+        //MAGE //
+        Animations.Mage.Ouragan,
+        Animations.Mage.MorsureDuFroid,
+        Animations.Mage.CoeurDeGlace,
+        Animations.Mage.BouleDeFeu,
+        //ASSASSIN
+        Animations.Thief.Incision,
+        Animations.Thief.Hemorragie,
+        Animations.Thief.RoncesNoires,
+        //GUERRIER
+        Animations.Warrior.CroixSanglante,
+        Animations.Warrior.JugementDivin,
+        Animations.Warrior.PointeFuneste,
+
+
         ...Characters,
         ...Monsters,
     ],

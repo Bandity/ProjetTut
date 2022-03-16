@@ -19,7 +19,7 @@ export const player: RpgPlayerHooks = {
         }
         if (player._class != null){
             if (input == "Spell1") {
-                if (player._class.name == "Mage")await player.showAnimation('dark_light','default');
+                await player.showAnimation('pointeFuneste','default');
             }
             if (input == "Spell2") {
                 if (player._class.name == "Mage") await player.showAnimation('shield','default');

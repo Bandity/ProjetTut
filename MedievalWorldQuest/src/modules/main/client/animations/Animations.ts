@@ -1,7 +1,17 @@
-import { DarkLightAnimation } from './DarkLightAnimation';
+import Pretre  from './Pretre';
+import Mage  from './Mage';
+import Thief  from './Thief';
 import { ShieldAnimations } from './ShieldAnimation';
+import Warrior from './Warrior';
 
-export const Animations = [
+
+export default {
     ShieldAnimations,
-    DarkLightAnimation
-]
+    Pretre,
+    Mage,
+    Thief,
+    Warrior,
+    
+
+
+}

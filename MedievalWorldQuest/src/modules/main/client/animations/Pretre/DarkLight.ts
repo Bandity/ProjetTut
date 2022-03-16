@@ -15,7 +15,7 @@ const to = () => {
 
 @Spritesheet({
     id: 'dark_light',
-    image: require('./assets/dark_light.png'),
+    image: require('../assets/pretre/dark_light.png'),
     framesWidth: 5,
     framesHeight: 1,
     width: 174,
@@ -44,5 +44,5 @@ const to = () => {
         }
     }
 })
-export class DarkLightAnimation {}
+export class DarkLight {}
 
