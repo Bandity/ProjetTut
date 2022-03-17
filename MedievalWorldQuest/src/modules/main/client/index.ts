@@ -19,6 +19,7 @@ import { ShieldAnimations } from './animations/ShieldAnimation'
         Tilesets.TilesetsEglise,
         Tilesets.TilesetsForge,
         Tilesets.TilesetsSous_sol,
+        Tilesets.TilesetsMontagneChione,
         Tilesets.TilesetsCombats.CombatCiel,
         Tilesets.TilesetsCombats.CombatEgouts,
 
