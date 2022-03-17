@@ -1,6 +1,7 @@
 import { CiteOnirique } from './CiteOnirique'
 import { CombatCiel } from './Combats/CombatCiel'
 import { CombatEgout } from './Combats/CombatEgout'
+import { TavanaEgout } from './Combats/TavanaEgout'
 import { Eglise } from './Eglise'
 import { Forge } from './Forge'
 import { MaisonJoueur } from './MaisonJoueur'
@@ -16,4 +17,6 @@ export default {
     Sous_sol,
     CombatCiel,
     CombatEgout,
+    TavanaEgout,
+    
 }

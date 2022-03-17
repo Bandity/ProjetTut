@@ -54,6 +54,7 @@ const { RMSpritesheet } = Presets
 
         slime: require('./assets/slime.png'),
         chara: require('./assets/chara.png'),
+        prince_des_glaces: require('./assets/prince_des_glaces.png'),
 
     },
     width: 96,

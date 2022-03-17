@@ -12,6 +12,7 @@ import databaseList from './database/items/'
         Maps.Sous_sol,
         Maps.CombatCiel,
         Maps.CombatEgout,
+        Maps.TavanaEgout,
 
     ],
     database : databaseList,

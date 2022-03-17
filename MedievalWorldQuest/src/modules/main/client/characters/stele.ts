@@ -10,7 +10,7 @@ import { Spritesheet, Animation, Direction,RpgSprite,Presets } from '@rpgjs/clie
     framesHeight: 4,
     textures: {
         [Animation.Stand]: {
-            animations: direction => [[ {time: 0, frameX: 0, frameY: direction == Direction.Up ? 0 : 1 } ]]
+            animations: direction => [[ {time: 0, frameX: 0, frameY: direction == Direction.Up ? 0 : 10 } ]]
         }
     }
 })

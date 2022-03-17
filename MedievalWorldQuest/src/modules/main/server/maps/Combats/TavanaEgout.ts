@@ -1,17 +1,16 @@
 import { RpgMap, MapData } from '@rpgjs/server'
 import {PnjGlobal} from '../../events/pnjGlobal'
 @MapData({
-    id: 'CombatEgout',
+    id: 'TavanaEgout',
     file: require('../tmx/CombatEgout.tmx'),
-    name : 'CombatEgout',       
+    name : 'TavanaEgout',       
     events :[ 
         PnjGlobal({ 
             name: 'Monster',
             text: [],
-            graphic: 'base',
+            graphic: 'tavana',
             moveRandom: false
         }),
     ],
 })
-export class CombatEgout extends RpgMap { }
- 
+export class TavanaEgout extends RpgMap { }
