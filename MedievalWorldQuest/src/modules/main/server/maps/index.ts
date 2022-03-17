@@ -6,6 +6,7 @@ import { Eglise } from './Eglise'
 import { Forge } from './Forge'
 import { MaisonJoueur } from './MaisonJoueur'
 import { MenestrelTown } from './MenestrelTown'
+import { MontagneChione } from './MontagneChione'
 import { Sous_sol } from './Sous_sol'
 
 export default {
@@ -15,6 +16,7 @@ export default {
     Eglise,
     Forge,
     Sous_sol,
+    MontagneChione,
     CombatCiel,
     CombatEgout,
     TavanaEgout,

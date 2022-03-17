@@ -4089,7 +4089,7 @@
   <object id="1" name="Start Position" type="start" x="3905" y="3225">
    <point/>
   </object>
-  <object id="2" name="Prince_des_glaces" type="event" x="3890" y="2992">
+  <object id="2" name="Prince_des_glaces" type="event" x="3872" y="2990">
    <point/>
   </object>
  </objectgroup>

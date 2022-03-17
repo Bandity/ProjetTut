@@ -53,7 +53,7 @@ export const player: RpgPlayerHooks = {
             //await player.changeMap('MenestrelTown');
             //await player.changeMap('MaisonJoueur')
             //await player.changeMap('Eglise')
-            await player.changeMap('Sous_sol');
+            await player.changeMap('MontagneChione');
             //await player.changeMap('Forge');
         }
         player.gui('hpbar').open();
