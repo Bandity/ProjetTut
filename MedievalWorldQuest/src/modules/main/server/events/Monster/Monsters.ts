@@ -140,7 +140,6 @@ export function MonsterGenerator(options:{
                     if (playerDamageTook > 0) {
                         player.hp -= playerDamageTook;
                     }
-
                     console.log("Monster HP: " + this.getVariable("pv"));
                     console.log("Player hp: " + player.hp);
                     playerDamageTook = 0;
