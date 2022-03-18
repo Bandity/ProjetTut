@@ -8,7 +8,7 @@ export const speech = {
     textMaitreJardins : [ 
    " Il semblerait que vous soyez finalement venu.",
     "Pour répondre à quelques-unes de vos questions, sachez qu’aucun être vivant ne peut percevoir cet endroit.",
-    "Avant que l’attaque du roi n’atteigne son but, un inconnu nommé Surt est apparu et a usé d’une magie étrange pour nous protéger." ,
+    "Durant l'ancienne guerre, avant que l’attaque du roi n’atteigne son but, un inconnu nommé Surt est apparu et a usé d’une magie étrange pour nous protéger." ,
     "Cette magie a fragmenté les Jardins en plusieurs parties et les a téléportées partout sur la surface de la planète, tout en les rendant invisible et impossible d’accès.",
     "Ce genre de magie dépassait l’entendement, et avec cette force, l’inconnu aurait pu tuer le roi en un rien de temps.",
     "Cependant… Il n’a rien fait de tel. Il avait tout de même anticipé que le roi ne s’arrêterais pas là, et a donc proclamé ceci : ",

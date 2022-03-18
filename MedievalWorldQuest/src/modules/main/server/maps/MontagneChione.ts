@@ -6,13 +6,15 @@ import events  from '../events/MontagneChione/'
     file: require('./tmx/MontagneChione.tmx'),
     name : 'MontagneChione',       
     events :[ 
+        events.Cinematique,
+        events.TeleporteurBoss,
         events.MonsterGenerator({
             name: 'Prince_des_glaces',
             gain: { gold: 100, exp: 100 },
             graphic: 'Prince_des_glaces',
             health: {
-                start: 440,
-                end: 600
+                start: 1,
+                end: 1
             },
             spells: {
                 start: 534,
@@ -39,7 +41,8 @@ import events  from '../events/MontagneChione/'
                 end: 10
             },
             mapCombat: "TavanaEgout",
-            mapDepart: "MontagneChione"
+            mapDepart: "MontagneChione",
+            boss: true
         }),
     ],
 })
