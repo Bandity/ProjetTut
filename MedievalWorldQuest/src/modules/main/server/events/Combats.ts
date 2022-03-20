@@ -13,7 +13,7 @@ class Combats extends   RpgEvent {
     async isHeDead(player: RpgPlayer, map: string){
         if(player.hp<=0){
             await player.changeMap(map);
-            player.teleport({x:300,y:300,z:0})
+            //player.teleport({x:300,y:300,z:0})
             player.hp = Math.round( player.param.maxHp * 0.10)
             await player.showText("Vous êtes mort")
             
