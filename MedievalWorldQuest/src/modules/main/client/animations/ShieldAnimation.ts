@@ -20,7 +20,7 @@ const to = () => {
     width: 960,
     height: 768,
     opacity: 1,
-    anchor: [0.5],
+    anchor: [0.45],
     textures: {
         default: {
             /*

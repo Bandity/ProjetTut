@@ -10,8 +10,11 @@ import databaseList from './database/items/'
         Maps.Eglise,
         Maps.Forge,
         Maps.Sous_sol,
+        Maps.MontagneChione,
         Maps.CombatCiel,
         Maps.CombatEgout,
+        Maps.TavanaEgout,
+
 
     ],
     database : databaseList,

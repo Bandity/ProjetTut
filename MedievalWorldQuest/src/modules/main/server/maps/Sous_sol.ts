@@ -3,12 +3,46 @@ import events from '../events/Sous_sol/'
 
 @MapData({
     id: 'Sous_sol',
-    file: require('./tmx/Sous_sol.tmx'),    
+    file: require('./tmx/Sous_sol.tmx'),
     //sounds: ['musicSous_sol'],
-    events : [
+    events: [
         // PARTIE EGOUT
         events.Egouts.Surt,
-
+        events.MonsterGenerator({
+            name: 'Tavana',
+            gain: { gold: 100, exp: 100 },
+            graphic: 'tavana',
+            health: {
+                start: 440,
+                end: 600
+            },
+            spells: {
+                start: 534,
+                end: 550
+            },
+            str: {
+                start: 31,
+                end: 1000
+            },
+            int: {
+                start: 26,
+                end: 1000
+            },
+            dex: {
+                start: 24,
+                end: 564
+            },
+            agi: {
+                start: 28,
+                end: 582
+            },
+            playerSpRegener: {
+                start: 0,
+                end: 10
+            },
+            mapCombat: "TavanaEgout",
+            mapDepart: "Sous_sol"
+        }),
         events.JardinGaia.GardeJardins,
         events.JardinGaia.Maire,
         events.JardinGaia.PnjEntrainement({

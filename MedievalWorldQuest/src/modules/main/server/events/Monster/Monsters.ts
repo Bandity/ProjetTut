@@ -21,6 +21,7 @@ export function MonsterGenerator(options:{
         playerSpRegener: { start: number, end: number},
         mapDepart : string,
         mapCombat : string,
+        boss?: boolean,
 
 
     
@@ -33,7 +34,7 @@ export function MonsterGenerator(options:{
             width: 32,
             height: 16
         },
-        mode: EventMode.Scenario,
+        //mode: EventMode.Scenario,
     })
     class Monster extends RpgEvent {
         async onInit(player: RpgPlayer) {
@@ -51,7 +52,8 @@ export function MonsterGenerator(options:{
 
                 }
             )
-            this.setVariable("pv", Math.floor(Math.random() * (600 - 440) + 540));
+            //this.setVariable("pv", Math.floor(Math.random() * (600 - 440) + 540));
+             this.setVariable("pv", 1);
         }
 
         async onAction(player: RpgPlayer) {
@@ -68,6 +70,7 @@ export function MonsterGenerator(options:{
                 player.changeMap(mapDepart);
                 await player.showNotification("Vous êtes mort");
                 this.teleport({ x: 3517, y: 1094, z: 0 })
+
             }
         }
 
@@ -182,9 +185,18 @@ export function MonsterGenerator(options:{
                     
                 }
                 if (this.getVariable("pv") <= 0) {
+                    if (options.boss == true){
+                        this.setGraphic("invisible")
+                        this.teleport({x:0,y:0, z:0});
+                        if (options.name == "Prince_des_glaces"){
+                            player.setVariable("PDGlaces", 1);
+                        }
+                    }
                     await player.changeMap(mapDepart);
-                    player.teleport({ x: 3517, y: 1110, z: 0 });
+                    player.teleport({ x: 3905, y: 3225, z: 0 })
+                    //player.teleport({ x: 3517, y: 1110, z: 0 });
                     await player.showText("Vous avez gagné!")
+                    console.log(options.boss)
                 }
                 
             }

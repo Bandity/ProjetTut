@@ -10,6 +10,7 @@ import  Animations  from './animations/Animations'
 
 import hpbar from '../../../assets/hpbar/client/gui/hpbar.vue';
 import { ShieldAnimations } from './animations/ShieldAnimation'
+import { Surt_spell } from './animations/Surt_spell'
 
 @RpgModule<RpgClient>({
     spritesheets: [
@@ -19,6 +20,7 @@ import { ShieldAnimations } from './animations/ShieldAnimation'
         Tilesets.TilesetsEglise,
         Tilesets.TilesetsForge,
         Tilesets.TilesetsSous_sol,
+        Tilesets.TilesetsMontagneChione,
         Tilesets.TilesetsCombats.CombatCiel,
         Tilesets.TilesetsCombats.CombatEgouts,
 
@@ -42,6 +44,7 @@ import { ShieldAnimations } from './animations/ShieldAnimation'
         Animations.Warrior.JugementDivin,
         Animations.Warrior.PointeFuneste,
 
+        Surt_spell,
 
         ...Characters,
         ...Monsters,
