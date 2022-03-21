@@ -6,6 +6,7 @@ import events  from '../events/MontagneChione/'
     file: require('./tmx/MontagneChione.tmx'),
     name : 'MontagneChione',       
     events :[ 
+        events.Andre,
         events.Cinematique,
         events.TeleporteurBoss,
         events.MonsterGenerator({

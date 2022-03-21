@@ -1,5 +1,5 @@
 export const speech = {
-    textPnjPrincipal : [
+    textAndre : [
         "Oh, salutation aventurier ! On m’a dit que tu viendrais d’ici peu… ",
     "Tu te demandes où sommes-nous ? ",
     "Eh bien comme tu le sais déjà, nous voici dans les Montagnes de Chione.",

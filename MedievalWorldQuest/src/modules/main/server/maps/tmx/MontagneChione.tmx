@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="27">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="28">
  <tileset firstgid="1" name="tuilesGlobale" tilewidth="32" tileheight="32" tilecount="1000" columns="8">
   <image source="../../../client/maps/assets/tuilesGlobale.png" width="256" height="4000"/>
   <tile id="8">
@@ -4086,7 +4086,7 @@
 </data>
  </layer>
  <objectgroup id="7" name="evenements">
-  <object id="1" name="Start Position" type="start" x="3889" y="3650.33">
+  <object id="1" name="Start Position" type="start" x="851" y="1892.33">
    <point/>
   </object>
   <object id="2" name="Prince_des_glaces" type="event" x="3873" y="2994">
@@ -4102,6 +4102,9 @@
    <point/>
   </object>
   <object id="6" name="TeleporteurBoss" type="event" x="3888.67" y="2976.67">
+   <point/>
+  </object>
+  <object id="27" name="Andre" type="event" x="1109" y="1838">
    <point/>
   </object>
  </objectgroup>
