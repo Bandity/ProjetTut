@@ -62,9 +62,8 @@ export function MonsterGenerator(options:{
                 { text: 'Partir', value: 'non' },
             ]);
             if (choice?.value === "oui") {
-
                 player.changeMap(mapCombat);
-                this.start(player);
+                this.start(player,player.position);
             }
             else {
                 player.changeMap(mapDepart);
@@ -74,7 +73,12 @@ export function MonsterGenerator(options:{
             }
         }
 
-        async start(player: RpgPlayer) {
+        async start(player: RpgPlayer, player_pos:{
+            x:number,
+            y:number,
+            z:number
+        }){
+            
             let monsterDamageTook = 0;
             let playerDamageTook = 0;
             let skillchoice;
@@ -143,7 +147,6 @@ export function MonsterGenerator(options:{
                     if (playerDamageTook > 0) {
                         player.hp -= playerDamageTook;
                     }
-
                     console.log("Monster HP: " + this.getVariable("pv"));
                     console.log("Player hp: " + player.hp);
                     playerDamageTook = 0;
@@ -194,7 +197,7 @@ export function MonsterGenerator(options:{
                         }
                     }
                     await player.changeMap(mapDepart);
-                    player.teleport({ x: 3905, y: 3225, z: 0 })
+                    player.teleport(player_pos)
                     //player.teleport({ x: 3517, y: 1110, z: 0 });
                     await player.showText("Vous avez gagné!")
                     console.log(options.boss)
