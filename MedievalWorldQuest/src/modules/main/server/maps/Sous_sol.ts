@@ -48,7 +48,7 @@ import events from '../events/Sous_sol/'
         events.MonsterGenerator({
             name: 'SlimeEg1',
             gain: { gold: 20, exp: 20 },
-            graphic: 'slime',
+            graphic: 'surt',
             health: {
                 start: 70,
                 end: 600

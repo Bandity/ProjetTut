@@ -14,6 +14,7 @@ import databaseList from './database/items/'
         Maps.CombatCiel,
         Maps.CombatEgout,
         Maps.TavanaEgout,
+        Maps.SlimeEgout
 
     ],
     database : databaseList,

@@ -21,7 +21,5 @@ export class Andre extends RpgEvent {
         }
 
     }
-
-
 }
 
