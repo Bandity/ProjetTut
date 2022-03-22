@@ -7,4 +7,4 @@ import { Spritesheet } from '@rpgjs/client'
         // here, you can add other tileset
     }
 })
-export class CombatEgout { }
+export class SlimeEgout { }

@@ -142,6 +142,55 @@ export const speech = {
         "C'était vachement bon, la prochaine fois je t'en demanderais plus, p'tit bébé."
     ],
 
+    textStartQuest4: [
+        "Bonjour mon petit, je te serais reconnaissant si tu pouvais me rapporter 2 morceau de bois",
+        "J'en ai besoin mais je ne peux plus me rendre au marché à mon âge..",
+        "Je te recompenserai bien entendu."
+    ],
+    textEndQuest4: [
+        "Oh...", // on refuse
+        "N'oublies pas de me ramener du bois.", // on relance la discussion sans finir
+        "Oh... Tu m'as ramené du bois ! Pourrais-tu m'en donner, s'il te plaît ?", // si on a l'objet 
+        "Merci bien mon petit, voilà pour toi !", // si on accepte
+        "Encore merci pour le bois." // si on lui reparle et qu'on a termine la quete
+    ],
+
+    textStartQuest5: [
+        "Bonjour ! Je suis à la recherche de lavande pour ma nouvelle recette, mais je ne peux pas laisser mon enfant tout seul.",
+        "Pourrais-tu en chercher pour moi s'il te plait ? 10 exemplaires suffiront.",
+    ],
+    textEndQuest5: [
+        "Ah... Dommage...", // on refuse
+        "N'oublies pas de m'apporter de la lavande !", // on relance la discussion sans finir
+        "Tu m'as ramené de la lavande ! C'est pour moi ?", // si on a l'objet 
+        "Merci beaucoup, tiens c'est pour toi !", // si on accepte
+        "Merci encore pour ton aide !" // si on lui reparle et qu'on a termine la quete
+    ],
+
+    textStartQuest6: [
+        "Bonjour ! Je cherche une bouteille de vin pour mon prochain repas.",
+        "Pourrais-tu en chercher une pour moi ? Je te payerai bien sûr.",
+    ],
+    textEndQuest6: [
+        "Ah... Tant pis...", // on refuse
+        "Oublies pas ma bouteille !", // on relance la discussion sans finir
+        "C'est pour moi ?", // si on a l'objet 
+        "Merci, voilà toi !", // si on accepte
+        "Merci encore." // si on lui reparle et qu'on a termine la quete
+    ],
+
+    textStartQuest7: [
+        "Je ne sais pas quoi faire, ma femme m'a demandé de pêcher deux truites pour manger ce soir mais impossible d'en trouver.",
+        "Ça serait génial si tu pouvais m'en trouver et me les ramener.",
+    ],
+    textEndQuest7: [
+        "Ah... Pas grave...", // on refuse
+        "Tu as trouvés deux truites ?", // on relance la discussion sans finir
+        "Tu les as ramenées pour moi ?!", // si on a l'objet 
+        "Merci beaucoup ! Voici ta récompense !", // si on accepte
+        "Merci encore !" // si on lui reparle et qu'on a termine la quete
+    ],
+
 
     textGeolierStart: [
         "Quoi ? ",
