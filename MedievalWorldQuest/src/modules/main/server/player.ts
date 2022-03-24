@@ -57,7 +57,7 @@ export const player: RpgPlayerHooks = {
             await player.changeMap('MontagneChione');
             //await player.changeMap('Forge');
         }
-        player.gui('hpbar').open();
+        //player.gui('hpbar').open();
 
     },
 

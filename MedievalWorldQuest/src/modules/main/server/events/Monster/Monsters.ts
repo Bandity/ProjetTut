@@ -1,7 +1,7 @@
 import { Shield } from '@rpgjs/starter-kit/src/server/database/armors/shield'
 import { Sword } from '@rpgjs/starter-kit/src/server/database/weapons/sword'
 //import { Enemy} from '../../../../../@types'
-import { EventData, EventMode } from '@rpgjs/server'
+import { EventData, Move} from '@rpgjs/server'
 import { Presets, RpgPlayer, RpgEvent } from '@rpgjs/server'
 import Combats from '../Combats'
 import { Choice } from '@rpgjs/server/lib/Gui/DialogGui'
@@ -22,11 +22,12 @@ export function MonsterGenerator(options:{
         mapDepart : string,
         mapCombat : string,
         boss?: boolean,
+        randomMove?: boolean,
 
 
     
 }): object {
-    const { name, graphic, gain, spells,health,str,int,dex,agi, playerSpRegener, mapCombat, mapDepart} = options
+    const { name, graphic, gain, spells,health,str,int,dex,agi, playerSpRegener, mapCombat, mapDepart,randomMove} = options
 
     @EventData({
         name,
@@ -54,6 +55,8 @@ export function MonsterGenerator(options:{
             )
             //this.setVariable("pv", Math.floor(Math.random() * (600 - 440) + 540));
              this.setVariable("pv", 1);
+             if(randomMove)
+                this.infiniteMoveRoute([ Move.tileRandom() ])
         }
 
         async onAction(player: RpgPlayer) {
@@ -66,12 +69,10 @@ export function MonsterGenerator(options:{
                 this.start(player,player.position);
             }
             else {
-                player.changeMap(mapDepart);
-                await player.showNotification("Vous êtes mort");
-                this.teleport({ x: 3517, y: 1094, z: 0 })
-
+                await player.showNotification("Lache");
             }
         }
+
 
         async start(player: RpgPlayer, player_pos:{
             x:number,
@@ -87,6 +88,7 @@ export function MonsterGenerator(options:{
             let sp_regenerate =0
             let animations = player.getVariable("animations");
             while (this.getVariable("pv") > 0 && player.hp > 0) {
+                this.infiniteMoveRoute([ Move.tileRandom() ])
                 console.log("Round " + count)
                 let choice = await player.showChoices("Options :",
                     [
