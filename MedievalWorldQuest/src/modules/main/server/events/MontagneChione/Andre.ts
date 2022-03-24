@@ -19,7 +19,6 @@ export class Andre extends RpgEvent {
         for (let msg of speech.textAndre) {
             await player.showText(msg, {talkWith: this })  
         }
-
     }
 }
 
