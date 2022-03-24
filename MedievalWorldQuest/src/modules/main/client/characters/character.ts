@@ -52,7 +52,8 @@ const { RMSpritesheet } = Presets
         whiteDog: require('./assets/whiteDog.png'),
         yellowDog: require('./assets/yellowDog.png'),
 
-        slime: require('./assets/slime.png'),
+        slimeVert: require('./assets/slimeVert.png'),
+        squeletteSansEpee: require('./assets/squeletteSansEpee.png'),
         chara: require('./assets/chara.png'),
 
     },

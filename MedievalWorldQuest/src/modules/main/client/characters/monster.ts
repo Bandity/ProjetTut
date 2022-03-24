@@ -4,7 +4,7 @@ const { RMSpritesheet } = Presets
 
 @Spritesheet({
     images: {
-        slime: require('./assets/slime.png'),
+        
     },
     width: 112,
     height: 22,

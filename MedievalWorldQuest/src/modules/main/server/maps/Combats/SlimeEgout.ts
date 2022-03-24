@@ -8,7 +8,7 @@ import {PnjGlobal} from '../../events/pnjGlobal'
         PnjGlobal({ 
             name: 'Monster',
             text: [],
-            graphic: 'slime',
+            graphic: 'slimeVert',
             moveRandom: false
         }),
     ],

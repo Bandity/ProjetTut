@@ -48,7 +48,7 @@ import events from '../events/Sous_sol/'
         events.MonsterGenerator({
             name: 'SlimeEg1',
             gain: { gold: 20, exp: 20 },
-            graphic: 'surt',
+            graphic: 'slimeVert',
             health: {
                 start: 70,
                 end: 600
@@ -84,7 +84,7 @@ import events from '../events/Sous_sol/'
         events.MonsterGenerator({
             name: 'SlimeEg2',
             gain: { gold: 20, exp: 20 },
-            graphic: 'slime',
+            graphic: 'slimeVert',
             health: {
                 start: 70,
                 end: 600
@@ -120,7 +120,7 @@ import events from '../events/Sous_sol/'
         events.MonsterGenerator({
             name: 'SlimeEg3',
             gain: { gold: 20, exp: 20 },
-            graphic: 'slime',
+            graphic: 'slimeVert',
             health: {
                 start: 70,
                 end: 600
@@ -156,7 +156,7 @@ import events from '../events/Sous_sol/'
         events.MonsterGenerator({
             name: 'SlimeEg4',
             gain: { gold: 20, exp: 20 },
-            graphic: 'slime',
+            graphic: 'slimeVert',
             health: {
                 start: 70,
                 end: 600
@@ -192,7 +192,7 @@ import events from '../events/Sous_sol/'
         events.MonsterGenerator({
             name: 'SlimeEg5',
             gain: { gold: 20, exp: 20 },
-            graphic: 'slime',
+            graphic: 'slimeVert',
             health: {
                 start: 70,
                 end: 600
@@ -228,7 +228,7 @@ import events from '../events/Sous_sol/'
         events.MonsterGenerator({
             name: 'SlimeEg6',
             gain: { gold: 20, exp: 20 },
-            graphic: 'slime',
+            graphic: 'slimeVert',
             health: {
                 start: 70,
                 end: 600
@@ -264,7 +264,7 @@ import events from '../events/Sous_sol/'
         events.MonsterGenerator({
             name: 'SlimeEg7',
             gain: { gold: 20, exp: 20 },
-            graphic: 'slime',
+            graphic: 'slimeVert',
             health: {
                 start: 70,
                 end: 600
@@ -300,7 +300,7 @@ import events from '../events/Sous_sol/'
         events.MonsterGenerator({
             name: 'SlimeEg8',
             gain: { gold: 20, exp: 20 },
-            graphic: 'slime',
+            graphic: 'slimeVert',
             health: {
                 start: 70,
                 end: 600
@@ -336,7 +336,7 @@ import events from '../events/Sous_sol/'
         events.MonsterGenerator({
             name: 'SlimeEg9',
             gain: { gold: 20, exp: 20 },
-            graphic: 'slime',
+            graphic: 'slimeVert',
             health: {
                 start: 70,
                 end: 600
@@ -372,7 +372,7 @@ import events from '../events/Sous_sol/'
         events.MonsterGenerator({
             name: 'SlimeEg10',
             gain: { gold: 20, exp: 20 },
-            graphic: 'slime',
+            graphic: 'slimeVert',
             health: {
                 start: 70,
                 end: 600
