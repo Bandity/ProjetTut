@@ -2,6 +2,7 @@ import { CiteOnirique } from './CiteOnirique'
 import { CombatCiel } from './Combats/CombatCiel'
 import { CombatEgout } from './Combats/CombatEgout'
 import { SlimeEgout } from './Combats/SlimeEgout'
+import { SqueletteEgout } from './Combats/SqueletteEgout'
 import { TavanaEgout } from './Combats/TavanaEgout'
 import { Eglise } from './Eglise'
 import { Forge } from './Forge'
@@ -22,5 +23,6 @@ export default {
     CombatEgout,
     TavanaEgout,
     SlimeEgout,
+    SqueletteEgout
     
 }

@@ -404,6 +404,183 @@ import events from '../events/Sous_sol/'
             mapCombat: "SlimeEgout",
             mapDepart: "Sous_sol"
         }),
+
+        //Squelettes
+        events.MonsterGenerator({
+            name: 'SqueletteEg1',
+            gain: { gold: 40, exp: 30 },
+            graphic: 'squeletteSansEpee',
+            health: {
+                start: 70,
+                end: 600
+            },
+            spells: {
+                start: 534,
+                end: 550
+            },
+            str: {
+                start: 31,
+                end: 1000
+            },
+            int: {
+                start: 26,
+                end: 1000
+            },
+            dex: {
+                start: 24,
+                end: 564
+            },
+            agi: {
+                start: 28,
+                end: 582
+            },
+            playerSpRegener: {
+                start: 0,
+                end: 10
+            },
+            mapCombat: "SqueletteEgout",
+            mapDepart: "Sous_sol"
+        }),
+        events.MonsterGenerator({
+            name: 'SqueletteEg2',
+            gain: { gold: 40, exp: 30 },
+            graphic: 'squeletteSansEpee',
+            health: {
+                start: 70,
+                end: 600
+            },
+            spells: {
+                start: 534,
+                end: 550
+            },
+            str: {
+                start: 31,
+                end: 1000
+            },
+            int: {
+                start: 26,
+                end: 1000
+            },
+            dex: {
+                start: 24,
+                end: 564
+            },
+            agi: {
+                start: 28,
+                end: 582
+            },
+            playerSpRegener: {
+                start: 0,
+                end: 10
+            },
+            mapCombat: "SqueletteEgout",
+            mapDepart: "Sous_sol"
+        }),
+        events.MonsterGenerator({
+            name: 'SqueletteEg3',
+            gain: { gold: 40, exp: 30 },
+            graphic: 'squeletteSansEpee',
+            health: {
+                start: 70,
+                end: 600
+            },
+            spells: {
+                start: 534,
+                end: 550
+            },
+            str: {
+                start: 31,
+                end: 1000
+            },
+            int: {
+                start: 26,
+                end: 1000
+            },
+            dex: {
+                start: 24,
+                end: 564
+            },
+            agi: {
+                start: 28,
+                end: 582
+            },
+            playerSpRegener: {
+                start: 0,
+                end: 10
+            },
+            mapCombat: "SqueletteEgout",
+            mapDepart: "Sous_sol"
+        }),
+        events.MonsterGenerator({
+            name: 'SqueletteEg4',
+            gain: { gold: 40, exp: 30 },
+            graphic: 'squeletteSansEpee',
+            health: {
+                start: 70,
+                end: 600
+            },
+            spells: {
+                start: 534,
+                end: 550
+            },
+            str: {
+                start: 31,
+                end: 1000
+            },
+            int: {
+                start: 26,
+                end: 1000
+            },
+            dex: {
+                start: 24,
+                end: 564
+            },
+            agi: {
+                start: 28,
+                end: 582
+            },
+            playerSpRegener: {
+                start: 0,
+                end: 10
+            },
+            mapCombat: "SqueletteEgout",
+            mapDepart: "Sous_sol"
+        }),
+        events.MonsterGenerator({
+            name: 'SqueletteEg5',
+            gain: { gold: 40, exp: 30 },
+            graphic: 'squeletteSansEpee',
+            health: {
+                start: 70,
+                end: 600
+            },
+            spells: {
+                start: 534,
+                end: 550
+            },
+            str: {
+                start: 31,
+                end: 1000
+            },
+            int: {
+                start: 26,
+                end: 1000
+            },
+            dex: {
+                start: 24,
+                end: 564
+            },
+            agi: {
+                start: 28,
+                end: 582
+            },
+            playerSpRegener: {
+                start: 0,
+                end: 10
+            },
+            mapCombat: "SqueletteEgout",
+            mapDepart: "Sous_sol"
+        }),
         
         //Jardins
         events.JardinGaia.GardeJardins,
