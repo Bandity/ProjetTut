@@ -18,6 +18,5 @@ export default {
     TilesetsSous_sol,
     TilesetsCombats,
     TilesetsMontagneChione,
-    
 
 }

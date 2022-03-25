@@ -7,7 +7,7 @@ import {PnjGlobal} from '../../events/pnjGlobal'
     events :[ 
         PnjGlobal({ 
             name: 'Monster',
-            text: [],
+            text: [], 
             graphic: 'tavana',
             moveRandom: false
         }),

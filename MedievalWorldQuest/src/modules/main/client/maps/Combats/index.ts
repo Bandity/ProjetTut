@@ -1,12 +1,9 @@
 import { CombatCiel } from "./CombatCiel";
 import { CombatEgout } from "./CombatEgout";
-import { SlimeEgout } from "./SlimeEgout";
-import { SqueletteEgout } from "./SqueletteEgout";
-
-
+import { CombatMontagnes } from "./CombatMontagnes";
 export default {
     CombatCiel,
     CombatEgout,
-    SlimeEgout,
-    SqueletteEgout
+    CombatMontagnes,
+    
 }

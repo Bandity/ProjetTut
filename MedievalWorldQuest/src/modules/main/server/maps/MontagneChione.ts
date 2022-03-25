@@ -41,7 +41,7 @@ import events  from '../events/MontagneChione/'
                 start: 0,
                 end: 10
             },
-            mapCombat: "TavanaEgout",
+            mapCombat: "Prince_des_Glaces_MontagneChione",
             mapDepart: "MontagneChione",
             boss: true
         }),

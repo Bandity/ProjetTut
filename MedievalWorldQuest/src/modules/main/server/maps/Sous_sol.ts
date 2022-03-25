@@ -41,7 +41,8 @@ import events from '../events/Sous_sol/'
                 end: 10
             },
             mapCombat: "TavanaEgout",
-            mapDepart: "Sous_sol"
+            mapDepart: "Sous_sol",
+            boss: true
         }),
 
         //Slimes 

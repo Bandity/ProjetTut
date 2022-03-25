@@ -20,7 +20,7 @@ export class Cinematique extends RpgEvent {
     async onAction(player: RpgPlayer) {
         if (player.getVariable("PDGlaces") != 1){
             await player.showAnimation("shield","default")
-            await this.teleport({ x: 3873, y: 567890, z: 0 }); // on superpose les 2 boss
+            await this.teleport({ x: 3873, y: 2990, z: 0 }); // on superpose les 2 boss
             await player.teleport({x: 3873, y: 3147, z:0})
   
             for (let msg of speech.textPrinceDesGlacesAvantMort) {

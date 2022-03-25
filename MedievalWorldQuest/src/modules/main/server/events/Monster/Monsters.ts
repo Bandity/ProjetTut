@@ -55,8 +55,10 @@ export function MonsterGenerator(options:{
             )
             //this.setVariable("pv", Math.floor(Math.random() * (600 - 440) + 540));
              this.setVariable("pv", 1);
-             if(randomMove)
+             if(options.boss != true)
                 this.infiniteMoveRoute([ Move.tileRandom() ])
+                this.speed = 2
+                this.frequency = 2
         }
 
         async onAction(player: RpgPlayer) {

@@ -1,6 +1,7 @@
 import { CiteOnirique } from './CiteOnirique'
 import { CombatCiel } from './Combats/CombatCiel'
 import { CombatEgout } from './Combats/CombatEgout'
+import { Prince_des_Glaces_MontagneChione } from './Combats/Prince_des_glaces'
 import { SlimeEgout } from './Combats/SlimeEgout'
 import { SqueletteEgout } from './Combats/SqueletteEgout'
 import { TavanaEgout } from './Combats/TavanaEgout'
@@ -23,6 +24,7 @@ export default {
     CombatEgout,
     TavanaEgout,
     SlimeEgout,
-    SqueletteEgout
+    SqueletteEgout,
+    Prince_des_Glaces_MontagneChione,
     
 }
