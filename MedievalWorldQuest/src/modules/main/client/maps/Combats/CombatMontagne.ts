@@ -8,4 +8,4 @@ import { Spritesheet } from '@rpgjs/client'
         // here, you can add other tileset
     }
 })
-export class CombatMontagnes { } 
+export class CombatMontagne { } 

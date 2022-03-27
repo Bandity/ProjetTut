@@ -1,9 +1,9 @@
 import { CombatCiel } from "./CombatCiel";
 import { CombatEgout } from "./CombatEgout";
-import { CombatMontagnes } from "./CombatMontagnes";
+import { CombatMontagne } from "./CombatMontagne";
 export default {
     CombatCiel,
     CombatEgout,
-    CombatMontagnes,
+    CombatMontagne,
     
 }
