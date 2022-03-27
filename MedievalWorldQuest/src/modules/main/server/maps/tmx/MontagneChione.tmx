@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="28">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="51">
  <tileset firstgid="1" name="tuilesGlobale" tilewidth="32" tileheight="32" tilecount="1000" columns="8">
   <image source="../../../client/maps/assets/tuilesGlobale.png" width="256" height="4000"/>
   <tile id="8">
@@ -4105,6 +4105,75 @@
    <point/>
   </object>
   <object id="27" name="Andre" type="event" x="1109" y="1838">
+   <point/>
+  </object>
+  <object id="28" name="SqueletteMont1" type="event" x="1802" y="1658">
+   <point/>
+  </object>
+  <object id="29" name="SqueletteMont2" type="event" x="2182" y="1974">
+   <point/>
+  </object>
+  <object id="30" name="SqueletteMont3" type="event" x="2450" y="1496">
+   <point/>
+  </object>
+  <object id="31" name="SqueletteMont4" type="event" x="2674" y="1808">
+   <point/>
+  </object>
+  <object id="32" name="SqueletteMont6" type="event" x="3156" y="2058">
+   <point/>
+  </object>
+  <object id="33" name="SqueletteMont5" type="event" x="2672" y="2188">
+   <point/>
+  </object>
+  <object id="34" name="SqueletteMont7" type="event" x="3042" y="1400">
+   <point/>
+  </object>
+  <object id="35" name="SqueletteMont8" type="event" x="3426" y="1660">
+   <point/>
+  </object>
+  <object id="36" name="SqueletteMont9" type="event" x="1578" y="2134">
+   <point/>
+  </object>
+  <object id="37" name="FantomeMont1" type="event" x="3884" y="2536">
+   <point/>
+  </object>
+  <object id="38" name="FantomeMont2" type="event" x="3224" y="2490">
+   <point/>
+  </object>
+  <object id="39" name="FantomeMont3" type="event" x="2616" y="2770">
+   <point/>
+  </object>
+  <object id="40" name="FantomeMont4" type="event" x="2342" y="2418">
+   <point/>
+  </object>
+  <object id="41" name="FantomeMont5" type="event" x="2192" y="2720">
+   <point/>
+  </object>
+  <object id="42" name="FantomeMont6" type="event" x="1836" y="2400">
+   <point/>
+  </object>
+  <object id="43" name="FantomeMont7" type="event" x="1538" y="2686">
+   <point/>
+  </object>
+  <object id="44" name="FantomeMont8" type="event" x="1496" y="2512">
+   <point/>
+  </object>
+  <object id="45" name="FantomeMont9" type="event" x="2798" y="2512">
+   <point/>
+  </object>
+  <object id="46" name="FantomeGMont1" type="event" x="236" y="1112">
+   <point/>
+  </object>
+  <object id="47" name="FantomeGMont2" type="event" x="498" y="1234">
+   <point/>
+  </object>
+  <object id="48" name="FantomeGMont3" type="event" x="876" y="1084">
+   <point/>
+  </object>
+  <object id="49" name="FantomeGMont4" type="event" x="902" y="1292">
+   <point/>
+  </object>
+  <object id="50" name="FantomeGMont5" type="event" x="1222" y="1144">
    <point/>
   </object>
  </objectgroup>
