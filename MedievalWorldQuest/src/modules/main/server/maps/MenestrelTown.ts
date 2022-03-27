@@ -147,42 +147,6 @@ import events  from '../events/MenestrelTown/index'
         events.Garde({ name: 'garde9', text: speech.GardeVilleInterne, moove: true}),
         events.Garde({ name: 'garde10', text: speech.GardeVilleInterne, moove: true}),
         ////////////////////////////////////////////
-        events.MonsterGenerator({
-    name: 'Monster',
-    gain: { gold: 100, exp: 100 },
-    graphic: 'base',
-
-    health: { 
-        start: 440, 
-        end: 600 
-    },
-    spells: { 
-        start: 534, 
-        end: 550 
-    },
-    str: {
-         start: 31, 
-         end: 1000 
-    },
-    int: { 
-        start: 26, 
-        end: 1000 
-    },
-    dex: { 
-        start: 24, 
-        end: 564 
-    },
-    agi: { 
-        start: 28, 
-        end: 582 
-    },
-    playerSpRegener:{ 
-        start: 0, 
-        end: 10
-    },
-    mapCombat : "CombatEgout",
-    mapDepart : "MenestrelTown"
-}),
         //////////////////////////////////////////// PNJ BOURRAGE
         events.PnjGlobal({ 
             name: 'Pnj-2',
