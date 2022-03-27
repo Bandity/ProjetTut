@@ -54,11 +54,15 @@ const { RMSpritesheet } = Presets
 
         slimeVert: require('./assets/slimeVert.png'),
         squeletteSansEpee: require('./assets/squeletteSansEpee.png'),
+        squeletteAvecEpee: require('./assets/squeletteAvecEpee.png'),
+        squeletteSombre: require('./assets/squeletteSombre.png'),
+        fantome: require('./assets/fantome.png'),
+        fantomeDeGlace: require('./assets/fantomeDeGlace.png'),
         chara: require('./assets/chara.png'),
 
     },
     width: 96,
-    height: 128,
+    height: 128, 
     ...RMSpritesheet(3, 4)
 })
 export class Characters { }

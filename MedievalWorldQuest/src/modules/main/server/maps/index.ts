@@ -4,6 +4,9 @@ import { CombatEgout } from './Combats/CombatEgout'
 import { Prince_des_Glaces_MontagneChione } from './Combats/Prince_des_glaces'
 import { SlimeEgout } from './Combats/SlimeEgout'
 import { SqueletteEgout } from './Combats/SqueletteEgout'
+import { SqueletteMontagne } from './Combats/SqueletteMontagne'
+import { FantomeMontagne } from './Combats/FantomeMontagne'
+import { FantomeGlaceMontagne } from './Combats/FantomeGlaceMontagne'
 import { TavanaEgout } from './Combats/TavanaEgout'
 import { Eglise } from './Eglise'
 import { Forge } from './Forge'
@@ -25,6 +28,9 @@ export default {
     TavanaEgout,
     SlimeEgout,
     SqueletteEgout,
+    SqueletteMontagne,
+    FantomeMontagne,
+    FantomeGlaceMontagne,
     Prince_des_Glaces_MontagneChione,
     
 }

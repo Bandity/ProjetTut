@@ -23,6 +23,7 @@ import { Surt_spell } from './animations/Surt_spell'
         Tilesets.TilesetsMontagneChione,
         Tilesets.TilesetsCombats.CombatCiel,
         Tilesets.TilesetsCombats.CombatEgout,
+        Tilesets.TilesetsCombats.CombatMontagne,
 
         ShieldAnimations,
         // PRETRE //
