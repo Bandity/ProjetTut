@@ -337,7 +337,7 @@ import events  from '../events/MontagneChione/'
 
         //Squelettes sombres
         events.MonsterGenerator({
-            name: 'squeletteSMont1',
+            name: 'SqueletteSMont1',
             gain: { gold: 20, exp: 20 },
             graphic: 'squeletteSombre',
             health: {
@@ -373,7 +373,7 @@ import events  from '../events/MontagneChione/'
         }),
 
         events.MonsterGenerator({
-            name: 'squeletteSMont2',
+            name: 'SqueletteSMont2',
             gain: { gold: 20, exp: 20 },
             graphic: 'squeletteSombre',
             health: {
@@ -409,7 +409,7 @@ import events  from '../events/MontagneChione/'
         }),
 
         events.MonsterGenerator({
-            name: 'squeletteSMont3',
+            name: 'SqueletteSMont3',
             gain: { gold: 20, exp: 20 },
             graphic: 'squeletteSombre',
             health: {
@@ -445,7 +445,7 @@ import events  from '../events/MontagneChione/'
         }),
 
         events.MonsterGenerator({
-            name: 'squeletteSMont4',
+            name: 'SqueletteSMont4',
             gain: { gold: 20, exp: 20 },
             graphic: 'squeletteSombre',
             health: {
@@ -481,7 +481,7 @@ import events  from '../events/MontagneChione/'
         }),
 
         events.MonsterGenerator({
-            name: 'squeletteSMont5',
+            name: 'SqueletteSMont5',
             gain: { gold: 20, exp: 20 },
             graphic: 'squeletteSombre',
             health: {

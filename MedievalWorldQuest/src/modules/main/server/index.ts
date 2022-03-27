@@ -17,7 +17,9 @@ import databaseList from './database/items/'
         Maps.SlimeEgout,
         Maps.SqueletteEgout,
         Maps.SqueletteMontagne,
+        Maps.SqueletteSombreMontagne,
         Maps.FantomeMontagne,
+        Maps.FantomeGlaceMontagne,
         Maps.Prince_des_Glaces_MontagneChione,
 
     ],
