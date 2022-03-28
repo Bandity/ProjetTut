@@ -4,7 +4,7 @@ import { Presets } from '@rpgjs/server'
 
 const { ATK,PDEF,SDEF } = Presets
 @Skill({  
-    name: 'Pointe_Funeste',
+    name: 'Pointe Funeste',
     description: 'Compétence 3 du guerrier',
     spCost: 35,
     power: 350,

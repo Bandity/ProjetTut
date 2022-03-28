@@ -4,7 +4,7 @@ import { Presets } from '@rpgjs/server'
 
 const { INT } = Presets
 @Skill({  
-    name: "Faux_d'Ankou",
+    name: "Faux d'Ankou",
     description: 'Compétence 2nde du prêtre',
     spCost: 30,
     power: 200,

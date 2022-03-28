@@ -4,7 +4,7 @@ import { Presets } from '@rpgjs/server'
 
 const { INT } = Presets
 @Skill({  
-    name: "Monde_de_tenebre",
+    name: "Monde de tenebre",
     description: 'Compétence 3eme du prêtre',
     spCost: 180,
     power: 400,

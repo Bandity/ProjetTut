@@ -4,7 +4,7 @@ import { Presets } from '@rpgjs/server'
 
 const { ATK } = Presets
 @Skill({  
-    name: 'Croix_Sanglante',
+    name: 'Croix Sanglante',
     description: 'Compétence 2nde du guerrier',
     spCost: 22,
     power: 200,

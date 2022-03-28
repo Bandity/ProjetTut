@@ -4,7 +4,7 @@ import { Presets } from '@rpgjs/server'
 
 const { ATK,AGI } = Presets
 @Skill({  
-    name: 'Hirondelle_Noire',
+    name: 'Hirondelle Noire',
     description: 'Compétence de base du guerrier',
     spCost: 10,
     power: 100,

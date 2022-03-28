@@ -3,7 +3,7 @@ import { Skill } from '@rpgjs/database'
 import { Presets } from '@rpgjs/server'
 const { INT } = Presets
 @Skill({  
-    name: 'Boule_de_feu',
+    name: 'Boule de feu',
     description: 'Compétence de base du mage',
     spCost: 10,
     power: 250,

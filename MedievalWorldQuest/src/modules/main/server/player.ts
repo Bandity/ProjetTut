@@ -8,6 +8,7 @@ import { PotionSoin } from './database/items/PotionSoin'
 
 import { BouleDeFeu }  from './database/skills/Mage/BouleDeFeu'
 import { Talisman_Guilde } from './database/items/Talisman_Guilde';
+import { Priest } from './database/classes/Priest';
 
 
 const timeout = (ms) =>  new Promise(resolve => setTimeout(resolve, ms));
@@ -39,21 +40,18 @@ export const player: RpgPlayerHooks = {
         player.gold += 6000;
         player.speed =2;
         player.name = "LeCraneChauveDePerrot"
-        player.setClass(Thief)
         player.addItem(Talisman_Guilde);
-        player.level+=0
         //player.exp = 0;
 
         player.addItem(PotionSoin);
         await player.setHitbox(20, 16) 
         if (player.getVariable("maitreClasses_speech") == null) { // debut du jeu
-            //await player.setGraphic('base');
-            await player.setGraphic('mageF'); 
+            await player.setGraphic('base');
             //await player.changeMap('citeOnirique');
-            await player.changeMap('MenestrelTown');
+            //await player.changeMap('MenestrelTown');
             //await player.changeMap('MaisonJoueur')
             //await player.changeMap('Eglise')
-            //await player.changeMap('Sous_sol')
+            await player.changeMap('Sous_sol')
             //await player.changeMap('MontagneChione');
             //await player.changeMap('Forge');
         }
@@ -62,8 +60,14 @@ export const player: RpgPlayerHooks = {
     },
 
     async onJoinMap(player: RpgPlayer){
+
         //await timeout(500);
-        
+        player.setClass(Priest)
+        player.exp += 51
+        player.setVariable("animations",["dark_light","faux_d_ankou","litanieDivine","monde_de_tenebre"]);
+        console.log()
+        console.log("classe : ", player._class)
+        console.log("skills : ", player.skills)
         for (let msg of speech.textcinematic1) {
            // await player.showText(msg);
         }

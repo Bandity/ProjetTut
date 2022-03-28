@@ -32,7 +32,7 @@ const maitre = events.MaitreClasses
             textInit: speech.textInitPriest,
             textAccept: speech.textAcceptPriest,
             textReject: speech.textRejectPriest,
-            animations: ["incision","dark_light","faux_d_ankou","litanieDivine","monde_de_tenebre"]
+            animations: ["dark_light","faux_d_ankou","litanieDivine","monde_de_tenebre"]
         }),
         events.GeneratorClass({
             name: 'thiefClass',

@@ -6,7 +6,7 @@ import { Presets, RpgPlayer, RpgEvent } from '@rpgjs/server'
 import Combats from '../Combats'
 import { Choice } from '@rpgjs/server/lib/Gui/DialogGui'
 import { SkillOptions } from '../../../../../@types/skill'
-
+const timeout = (ms) =>  new Promise(resolve => setTimeout(resolve, ms));
 export function MonsterGenerator(options:{
 
         gain : {exp: number, gold: number}
@@ -67,7 +67,9 @@ export function MonsterGenerator(options:{
                 { text: 'Partir', value: 'non' },
             ]);
             if (choice?.value === "oui") {
+                
                 player.changeMap(mapCombat);
+                await timeout(150)
                 this.start(player,player.position);
             }
             else {
@@ -89,6 +91,7 @@ export function MonsterGenerator(options:{
             let count = 1;
             let sp_regenerate =0
             let animations = player.getVariable("animations");
+
             while (this.getVariable("pv") > 0 && player.hp > 0) {
                 this.infiniteMoveRoute([ Move.tileRandom() ])
                 console.log("Round " + count)
@@ -117,7 +120,8 @@ export function MonsterGenerator(options:{
                         monsterDamageTook = player.param.str - parameters.dex.start;
                         //Damage that the player will take
                         playerDamageTook = parameters.str.start * 2 - player.param.dex;
-                        player.showAnimation("shield","default");
+                        player.showAnimation("incision","default");
+                        await timeout(75);
                     }
                     else { //Skills
                         let skillUsed: SkillOptions = player.skills[skillchoice?.value];
@@ -135,6 +139,8 @@ export function MonsterGenerator(options:{
                                 console.log("Skill costed SP :" + skillUsed.spCost);
                                 console.log("Player SP: " + player.sp);
                                 player.showAnimation(animations[skillchoice?.value],"default");
+                                console.log(animations[skillchoice?.value])
+                                await timeout(75);
                             }else {
                                 await player.showText("Tu n'as plus de mana");
                             }
@@ -200,8 +206,10 @@ export function MonsterGenerator(options:{
                             player.setVariable("PDGlaces", 1);
                         }
                     }
+                    await timeout(150)
                     await player.changeMap(mapDepart);
-                    player.teleport(player_pos)
+
+                    await player.teleport(player_pos)
                     //player.teleport({ x: 3517, y: 1110, z: 0 });
                     await player.showText("Vous avez gagné!")
                     console.log(options.boss)
