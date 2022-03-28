@@ -69,8 +69,10 @@ export function MonsterGenerator(options:{
             if (choice?.value === "oui") {
                 
                 player.changeMap(mapCombat);
+                let pos_player = player.position
                 await timeout(150)
-                this.start(player,player.position);
+                this.start(player,pos_player);
+
             }
             else {
                 await player.showNotification("Lache");
@@ -93,7 +95,6 @@ export function MonsterGenerator(options:{
             let animations = player.getVariable("animations");
 
             while (this.getVariable("pv") > 0 && player.hp > 0) {
-                this.infiniteMoveRoute([ Move.tileRandom() ])
                 console.log("Round " + count)
                 let choice = await player.showChoices("Options :",
                     [
@@ -138,9 +139,8 @@ export function MonsterGenerator(options:{
                                 }
                                 console.log("Skill costed SP :" + skillUsed.spCost);
                                 console.log("Player SP: " + player.sp);
-                                player.showAnimation(animations[skillchoice?.value],"default");
-                                console.log(animations[skillchoice?.value])
-                                await timeout(75);
+                                await player.showAnimation(animations[skillchoice?.value],"default");
+                                await timeout(player.getVariable('tempsAnim')[skillchoice?.value]);
                             }else {
                                 await player.showText("Tu n'as plus de mana");
                             }
@@ -165,7 +165,6 @@ export function MonsterGenerator(options:{
                     player.sp += sp_regenerate;
                     console.log("Regenerated SP: " + sp_regenerate);
                     count++;
-                    console.log(" ");
                 }
                 else if (choice?.value === "def") {
                     let damage =0;
@@ -195,7 +194,6 @@ export function MonsterGenerator(options:{
                     sp_regenerate = Math.round(Math.random() * (playerSpRegener.end-playerSpRegener.start)) + playerSpRegener.start;
                     player.sp += sp_regenerate;
                     console.log("Regenerated SP: " + sp_regenerate);
-                    console.log(" ");
                     
                 }
                 if (this.getVariable("pv") <= 0) {
@@ -206,12 +204,11 @@ export function MonsterGenerator(options:{
                             player.setVariable("PDGlaces", 1);
                         }
                     }
-                    await timeout(150)
-                    await player.changeMap(mapDepart);
 
+                    await player.changeMap(mapDepart); 
                     await player.teleport(player_pos)
-                    //player.teleport({ x: 3517, y: 1110, z: 0 });
                     await player.showText("Vous avez gagné!")
+
                     console.log(options.boss)
                 }
                 

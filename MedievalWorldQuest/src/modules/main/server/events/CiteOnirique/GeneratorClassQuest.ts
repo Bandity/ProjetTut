@@ -8,12 +8,13 @@ export function GeneratorClass(options:{
     textAccept: Array<string>
     textReject : Array<string>
     animations : Array<string>
+    tempsAnim : Array<number>
 
 }): object {
-    const { name,graphic,classe, textInit, textAccept, textReject, animations } = options
+    const { name,graphic,classe, textInit, textAccept, textReject, animations,tempsAnim } = options
     @EventData({
         name: name,
-        //mode: EventMode.Scenario,
+        //mode: EventMode.Scenario, 
         hitbox: {
             width: 32,
             height: 16
@@ -53,6 +54,7 @@ export function GeneratorClass(options:{
                 }
                 player.setClass(classe);
                 player.setVariable("animations",animations);
+                player.setVariable("tempsAnim",tempsAnim);
                 for (let msg of textAccept) {
                     await player.showText(msg, {
                         talkWith: this
