@@ -7,8 +7,8 @@ import { QuestSimple } from '../ItemRequiredQuest'
 import { PnjShop } from '../PnjShop'
 import { PnjGlobal } from '../pnjGlobal'
 import { Garde } from './Garde'
-import { CombatTest} from './CombatTest'
-import  {MonsterGenerator}  from '../Monster/Monsters'
+import { CombatTest } from './CombatTest'
+import { MonsterGenerator }  from '../Monster/Monsters'
 import { Geolier } from './Geolier'
 
 export default {

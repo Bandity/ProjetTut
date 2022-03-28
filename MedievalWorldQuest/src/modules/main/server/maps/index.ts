@@ -5,6 +5,7 @@ import { Prince_des_Glaces_MontagneChione } from './Combats/Prince_des_glaces'
 import { SlimeEgout } from './Combats/SlimeEgout'
 import { SqueletteEgout } from './Combats/SqueletteEgout'
 import { SqueletteMontagne } from './Combats/SqueletteMontagne'
+import { SqueletteSombreMontagne } from './Combats/SqueletteSombreMontagne'
 import { FantomeMontagne } from './Combats/FantomeMontagne'
 import { FantomeGlaceMontagne } from './Combats/FantomeGlaceMontagne'
 import { TavanaEgout } from './Combats/TavanaEgout'
@@ -29,6 +30,7 @@ export default {
     SlimeEgout,
     SqueletteEgout,
     SqueletteMontagne,
+    SqueletteSombreMontagne,
     FantomeMontagne,
     FantomeGlaceMontagne,
     Prince_des_Glaces_MontagneChione,
