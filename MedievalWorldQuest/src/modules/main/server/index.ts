@@ -21,6 +21,7 @@ import databaseList from './database/items/'
         Maps.FantomeMontagne,
         Maps.FantomeGlaceMontagne,
         Maps.Prince_des_Glaces_MontagneChione,
+        Maps.FaiblesseCiel,
 
     ],
     database : databaseList,

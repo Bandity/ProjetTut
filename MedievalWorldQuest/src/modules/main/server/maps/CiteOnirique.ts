@@ -15,7 +15,7 @@ const maitre = events.MaitreClasses
         events.MonsterGenerator({
             name: 'MonstreEntrainement',
             gain: { gold: 0, exp: 0 },
-            graphic: 'Prince_des_glaces',
+            graphic: 'Faiblesse',
             health: {
                 start: 1,
                 end: 1
@@ -44,7 +44,7 @@ const maitre = events.MaitreClasses
                 start: 0,
                 end: 10
             },
-            mapCombat: "Prince_des_Glaces_MontagneChione",
+            mapCombat: "FaiblesseCiel",
             mapDepart: "citeOnirique",
             boss: false,
             randomMove : false

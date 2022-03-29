@@ -1,4 +1,5 @@
 import { Characters } from './character'
+import { FaiblesseSprite } from './Faiblesse'
 import { Monsters } from './monster'
 import { PrinceDesGlacesSprite } from './Princes_des_glaces'
 import { Stele } from './stele'
@@ -10,4 +11,5 @@ export default [
     Stele,
     TavanaSprite,
     PrinceDesGlacesSprite,
+    FaiblesseSprite,
 ]  

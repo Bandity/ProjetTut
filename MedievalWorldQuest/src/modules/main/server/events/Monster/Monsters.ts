@@ -206,7 +206,7 @@ export function MonsterGenerator(options: {
                             player.setVariable("PDGlaces", 1);
                         }
                     }
-
+                    player.exp+= options.gain.exp;
                     await player.changeMap(mapDepart);
                     await player.teleport(player_pos)
                     await player.showText("Vous avez gagné!")
