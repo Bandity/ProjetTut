@@ -21,12 +21,12 @@ export function Teleporteur(options): object {
         }
 
         async onPlayerTouch(player: RpgPlayer) {
-            if (player.getVariable("nbTb") != 1){
+            if (player.getVariable("nbTp") != 1){
                 for (let i = 0; i < player.getVariable("listSkill").length;i++){
                     player.forgetSkill(player.getVariable("listSkill")[i])
                 }
                 player.exp +=51
-                player.setVariable("nbTb", 1)
+                player.setVariable("nbTp", 1)
                 console.log(player.skills)
 
             }

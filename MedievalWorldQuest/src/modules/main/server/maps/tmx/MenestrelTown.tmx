@@ -1063,7 +1063,7 @@
   <object id="3" name="Barde_1" type="event" x="2102.34" y="1946.42">
    <point/>
   </object>
-  <object id="5" name="Start Position" type="start" x="3643.36" y="1111.18">
+  <object id="5" name="Start Position" type="start" x="332.36" y="3660.18">
    <point/>
   </object>
   <object id="10" name="Stele_1" type="event" x="1789.62" y="3611.71">
@@ -1135,7 +1135,7 @@
   <object id="45" name="garde4" type="event" x="2107.83" y="291.799">
    <point/>
   </object>
-  <object id="47" name="geolier" type="event" x="3793.83" y="281.799">
+  <object id="47" name="geolier" type="event" x="3774.58" y="296.799">
    <point/>
   </object>
   <object id="49" name="ArmesMagieShop" type="event" x="3265.5" y="3618.13">

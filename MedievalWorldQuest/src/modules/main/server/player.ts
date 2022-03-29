@@ -40,7 +40,7 @@ export const player: RpgPlayerHooks = {
     async onConnected(player: RpgPlayer) {
         player.gold += 6000;
         player.speed =2;
-        player.name = "LeCraneChauveDePerrot"
+        player.name = "Olgus"
         player.addItem(Talisman_Guilde);
         //player.exp = 0;
 
@@ -48,8 +48,8 @@ export const player: RpgPlayerHooks = {
         await player.setHitbox(20, 16) 
         if (player.getVariable("maitreClasses_speech") == null) { // debut du jeu
             await player.setGraphic('base');
-            await player.changeMap('citeOnirique');
-            //await player.changeMap('MenestrelTown');
+            //await player.changeMap('citeOnirique');
+            await player.changeMap('MenestrelTown');
             //await player.changeMap('MaisonJoueur')
             //await player.changeMap('Eglise')
             //await player.changeMap('Sous_sol')
@@ -63,6 +63,8 @@ export const player: RpgPlayerHooks = {
     async onJoinMap(player: RpgPlayer){
 
         //await timeout(500);
+        console.log(player.getVariable("nbTp"))
+        console.log(player.getVariable("cineDepart1"))
         if (player.getVariable("nbTp") == 1 && player.getVariable("cineDepart1") != 1 ){
             for (let msg of speech.textcinematic1) { 
                 await player.showText(msg);
