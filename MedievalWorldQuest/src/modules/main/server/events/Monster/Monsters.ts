@@ -54,7 +54,7 @@ export function MonsterGenerator(options: {
                 }
             )
             //this.setVariable("pv", Math.floor(Math.random() * (600 - 440) + 540));
-            this.setVariable("pv", 1);
+            this.setVariable("pv", 50);
             if (options.boss != true && options.randomMove != false) 
                 this.infiniteMoveRoute([Move.tileRandom()])
             this.speed = 2

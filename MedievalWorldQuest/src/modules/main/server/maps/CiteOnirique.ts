@@ -17,7 +17,7 @@ const maitre = events.MaitreClasses
             gain: { gold: 0, exp: 0 },
             graphic: 'Faiblesse',
             health: {
-                start: 1,
+                start: 100,
                 end: 1
             },
             spells: {
@@ -53,7 +53,7 @@ const maitre = events.MaitreClasses
         maitre,
         events.Teleporteur({
             name: 'Teleporteur',
-            nameMap: 'MenestrelTown',
+            nameMap: 'MaisonJoueur',
             pnjs : [ maitre ]
         }),
         events.GeneratorClass({

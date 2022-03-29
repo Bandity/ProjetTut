@@ -22,7 +22,7 @@ import events  from '../events/MaisonJoueur/'
         }),
         events.Mere,
         events.Lettre,
-        //events.RedLine,
+        events.RedLine,
 
     ],
 })

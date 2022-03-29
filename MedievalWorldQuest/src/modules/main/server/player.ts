@@ -63,8 +63,11 @@ export const player: RpgPlayerHooks = {
     async onJoinMap(player: RpgPlayer){
 
         //await timeout(500);
-        for (let msg of speech.textcinematic1) { 
-           // await player.showText(msg);
+        if (player.getVariable("nbTp") == 1 && player.getVariable("cineDepart1") != 1 ){
+            for (let msg of speech.textcinematic1) { 
+                await player.showText(msg);
+            }
+            player.setVariable("cineDepart1", 1)
         }
     },
 }
