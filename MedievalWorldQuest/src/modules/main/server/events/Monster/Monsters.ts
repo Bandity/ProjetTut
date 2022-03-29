@@ -205,6 +205,9 @@ export function MonsterGenerator(options: {
                         if (options.name == "Prince_des_glaces") {
                             player.setVariable("PDGlaces", 1);
                         }
+                        if (options.name == "Tavana") {
+                            player.setVariable("tavanaKill", 1);
+                        }
                     }
                     player.exp+= options.gain.exp;
                     await player.changeMap(mapDepart);

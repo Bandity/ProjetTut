@@ -4,6 +4,7 @@ export function PnjEntrainement(options: {
     text: string | string[],
     name: string,
     graphic: string,
+    animation : string
 }): object {
     @EventData({
         name: options.name, 
@@ -17,7 +18,7 @@ export function PnjEntrainement(options: {
             this.setGraphic(options.graphic)
             await this.moveRoutes(Move.up());
             while (true){
-                await this.showAnimation('dark_light', 'default');
+                await this.showAnimation(options.animation, 'default');
                 await(timeout(2000));
             }
             

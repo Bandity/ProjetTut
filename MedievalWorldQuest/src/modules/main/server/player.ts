@@ -49,10 +49,10 @@ export const player: RpgPlayerHooks = {
         if (player.getVariable("maitreClasses_speech") == null) { // debut du jeu
             await player.setGraphic('base');
             //await player.changeMap('citeOnirique');
-            await player.changeMap('MenestrelTown');
+            //await player.changeMap('MenestrelTown');
             //await player.changeMap('MaisonJoueur')
             //await player.changeMap('Eglise')
-            //await player.changeMap('Sous_sol')
+            await player.changeMap('Sous_sol')
             //await player.changeMap('MontagneChione');
             //await player.changeMap('Forge');
         }
@@ -61,7 +61,7 @@ export const player: RpgPlayerHooks = {
     },
 
     async onJoinMap(player: RpgPlayer){
-
+        player.setVariable("tavanaKill", 1);
         //await timeout(500);
         console.log(player.getVariable("nbTp"))
         console.log(player.getVariable("cineDepart1"))

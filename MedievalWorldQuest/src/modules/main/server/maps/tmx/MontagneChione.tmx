@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="69">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="73">
  <tileset firstgid="1" name="tuilesGlobale" tilewidth="32" tileheight="32" tilecount="1000" columns="8">
   <image source="../../../client/maps/assets/tuilesGlobale.png" width="256" height="4000"/>
   <tile id="8">
@@ -4086,9 +4086,6 @@
 </data>
  </layer>
  <objectgroup id="7" name="evenements">
-  <object id="1" name="Start Position" type="start" x="3895" y="3696.33">
-   <point/>
-  </object>
   <object id="2" name="Prince_des_glaces" type="event" x="3873" y="2994">
    <point/>
   </object>
@@ -4228,6 +4225,12 @@
    <point/>
   </object>
   <object id="68" name="SqueletteSMont5" type="event" x="3972" y="142">
+   <point/>
+  </object>
+  <object id="69" name="Start Position" type="start" x="112.5" y="145">
+   <point/>
+  </object>
+  <object id="72" name="tpJardins" type="events" x="107.75" y="119">
    <point/>
   </object>
  </objectgroup>
