@@ -56,6 +56,12 @@ export function GeneratorClass(options:{
                 player.setClass(classe);
                 player.setVariable("animations",animations);
                 player.setVariable("tempsAnim",tempsAnim);
+                if (player.getVariable("listSkill") != null){
+                    for (let i = 0; i < player.getVariable("listSkill").length; i++){
+                        player.forgetSkill(player.getVariable("listSkill")[i])
+                    }
+                }
+                
                 player.setVariable("listSkill",listSkill);
                 for (let i = 0; i < listSkill.length; i++){
                     console.log(listSkill[i])
