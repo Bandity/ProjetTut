@@ -9,9 +9,10 @@ export function GeneratorClass(options:{
     textReject : Array<string>
     animations : Array<string>
     tempsAnim : Array<number>
+    listSkill : Array<Object>
 
 }): object {
-    const { name,graphic,classe, textInit, textAccept, textReject, animations,tempsAnim } = options
+    const { name,graphic,classe, textInit, textAccept, textReject, animations,tempsAnim, listSkill } = options
     @EventData({
         name: name,
         //mode: EventMode.Scenario, 
@@ -55,6 +56,12 @@ export function GeneratorClass(options:{
                 player.setClass(classe);
                 player.setVariable("animations",animations);
                 player.setVariable("tempsAnim",tempsAnim);
+                player.setVariable("listSkill",listSkill);
+                for (let i = 0; i < listSkill.length; i++){
+                    console.log(listSkill[i])
+                    player.learnSkill(listSkill[i])
+                }
+                console.log(player.skills)
                 for (let msg of textAccept) {
                     await player.showText(msg, {
                         talkWith: this

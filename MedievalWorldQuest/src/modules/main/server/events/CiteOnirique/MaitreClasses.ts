@@ -26,10 +26,9 @@ export class MaitreClasses extends RpgEvent {
             }
             if (player.getVariable('maitreClasses_speech') == null) { // mouvement unique
                 player.setVariable('maitreClasses_speech', 1);
-                player.exp+=51
-                player.exp = 0
                 await this.moveRoutes([Move.left(), Move.tileLeft(2)]);
                 await this.moveRoutes(Move.down());
+
             } 
         }
         else { 

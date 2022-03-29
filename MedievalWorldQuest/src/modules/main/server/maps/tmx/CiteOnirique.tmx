@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" width="53" height="60" tilewidth="32" tileheight="32" infinite="0" nextlayerid="26" nextobjectid="16">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="53" height="60" tilewidth="32" tileheight="32" infinite="0" nextlayerid="26" nextobjectid="17">
  <tileset firstgid="1" name="cloudCity" tilewidth="32" tileheight="32" tilecount="1260" columns="45">
   <image source="../../../client/maps/assets/cloudCity.png" width="1440" height="896"/>
   <tile id="46">
@@ -17845,13 +17845,16 @@
   <object id="12" name="maitreDesClasses" type="event" x="1567" y="135.75" visible="0">
    <point/>
   </object>
-  <object id="13" name="Start_position" type="start" x="149.726" y="1690.51">
+  <object id="13" name="Start_position" type="start" x="1575.06" y="826.51">
    <point/>
   </object>
   <object id="14" name="Pnj-info" type="event" x="465.667" y="1496.33">
    <point/>
   </object>
   <object id="15" name="Teleporteur" type="event" x="1582.33" y="122.583">
+   <point/>
+  </object>
+  <object id="16" name="MonstreEntrainement" type="event" x="1282.67" y="146.667">
    <point/>
   </object>
  </objectgroup>
