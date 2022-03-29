@@ -98,10 +98,10 @@
 </data>
  </layer>
  <objectgroup id="3" name="evenements">
-  <object id="1" name="Start Position" type="start" x="637.994" y="722.818">
+  <object id="1" name="Start Position" type="start" x="633.446" y="724">
    <point/>
   </object>
-  <object id="2" name="Monster" type="event" x="640.189" y="538.478">
+  <object id="2" name="Monster" type="event" x="632.189" y="602">
    <point/>
   </object>
  </objectgroup>

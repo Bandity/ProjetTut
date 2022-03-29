@@ -74,7 +74,7 @@ const maitre = events.MaitreClasses
             textInit: speech.textInitPriest,
             textAccept: speech.textAcceptPriest,
             textReject: speech.textRejectPriest,
-            animations: ["dark_light","faux_d_ankou","monde_de_tenebre","litanieDivine"],
+            animations: ["dark_light","faux_d_ankou","monde_de_tenebre","litanieDivine"], 
             tempsAnim: [500,560,400,2000],
             listSkill : [PriestSkills.LumiereDeLAurore,PriestSkills.FauxDAnkou,PriestSkills.MondeDeTenebre,PriestSkills.LitanieDivine],
         }),

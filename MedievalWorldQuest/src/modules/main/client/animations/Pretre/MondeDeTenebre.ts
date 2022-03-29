@@ -22,7 +22,7 @@ const to = () => {
     height: 63,
     opacity: 1,
     //anchor: [0.8, 0.5],
-    anchor: [0.3, 1],
+    anchor: [0.3, 3],
     textures: {
         default: {
             

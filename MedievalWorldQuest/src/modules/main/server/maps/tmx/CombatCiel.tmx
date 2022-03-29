@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="1">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="3">
  <tileset firstgid="1" name="cloudCity" tilewidth="32" tileheight="32" tilecount="1260" columns="45">
   <image source="../../../client/maps/assets/cloudCity.png" width="1440" height="896"/>
   <tile id="46">
@@ -1263,4 +1263,12 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="7" name="evenements">
+  <object id="1" name="Monster" x="631" y="566">
+   <point/>
+  </object>
+  <object id="2" name="Start Position" type="start" x="628" y="688">
+   <point/>
+  </object>
+ </objectgroup>
 </map>
