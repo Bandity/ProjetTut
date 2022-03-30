@@ -48,13 +48,13 @@ export const player: RpgPlayerHooks = {
         await player.setHitbox(20, 16) 
         if (player.getVariable("maitreClasses_speech") == null) { // debut du jeu
             await player.setGraphic('base');
-            //await player.changeMap('citeOnirique');
+            await player.changeMap('citeOnirique');
             //await player.changeMap('MenestrelTown');
             //await player.changeMap('MaisonJoueur')
             //await player.changeMap('Eglise')
             //await player.changeMap('Sous_sol')
             //await player.changeMap('Grange')
-            await player.changeMap('MontagneChione');
+            //await player.changeMap('MontagneChione');
             //await player.changeMap('Forge');
         }
         //player.gui('hpbar').open();
@@ -62,7 +62,6 @@ export const player: RpgPlayerHooks = {
     },
 
     async onJoinMap(player: RpgPlayer){
-        player.setVariable("tavanaKill", 1);
         //await timeout(500);
         if (player.getVariable("nbTp") == 1 && player.getVariable("cineDepart1") != 1 ){
             for (let msg of speech.textcinematic1) { 
