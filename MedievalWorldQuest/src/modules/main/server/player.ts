@@ -53,8 +53,8 @@ export const player: RpgPlayerHooks = {
             //await player.changeMap('MaisonJoueur')
             //await player.changeMap('Eglise')
             //await player.changeMap('Sous_sol')
-            await player.changeMap('Grange')
-            //await player.changeMap('MontagneChione');
+            //await player.changeMap('Grange')
+            await player.changeMap('MontagneChione');
             //await player.changeMap('Forge');
         }
         //player.gui('hpbar').open();
@@ -64,8 +64,6 @@ export const player: RpgPlayerHooks = {
     async onJoinMap(player: RpgPlayer){
         player.setVariable("tavanaKill", 1);
         //await timeout(500);
-        console.log(player.getVariable("nbTp"))
-        console.log(player.getVariable("cineDepart1"))
         if (player.getVariable("nbTp") == 1 && player.getVariable("cineDepart1") != 1 ){
             for (let msg of speech.textcinematic1) { 
                 await player.showText(msg);
