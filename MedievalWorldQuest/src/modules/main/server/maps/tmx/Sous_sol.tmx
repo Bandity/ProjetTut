@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="41">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="128" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="42">
  <tileset firstgid="1" name="eauAnime" tilewidth="32" tileheight="32" tilecount="3072" columns="64">
   <image source="../../../client/maps/assets/eauAnime.png" width="2048" height="1536"/>
   <tile id="0">
@@ -16497,6 +16497,9 @@
    <point/>
   </object>
   <object id="40" name="tpMontagne" x="3255" y="3946">
+   <point/>
+  </object>
+  <object id="41" name="tpGrange" type="event" x="447.333" y="3291.33">
    <point/>
   </object>
  </objectgroup>

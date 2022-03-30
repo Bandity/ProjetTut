@@ -10,18 +10,22 @@ import databaseList from './database/items/'
         Maps.Eglise,
         Maps.Forge,
         Maps.Sous_sol,
+        Maps.Grange,
         Maps.MontagneChione,
+
         Maps.CombatCiel,
+        Maps.FaiblesseCiel,
+        
         Maps.CombatEgout,
-        Maps.TavanaEgout,
         Maps.SlimeEgout,
         Maps.SqueletteEgout,
+        Maps.TavanaEgout,
+
         Maps.SqueletteMontagne,
         Maps.SqueletteSombreMontagne,
         Maps.FantomeMontagne,
         Maps.FantomeGlaceMontagne,
         Maps.Prince_des_Glaces_MontagneChione,
-        Maps.FaiblesseCiel,
 
     ],
     database : databaseList,

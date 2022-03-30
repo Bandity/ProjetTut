@@ -24,6 +24,7 @@ import { Surt_spell } from './animations/Surt_spell'
         Tilesets.TilesetsCombats.CombatCiel,
         Tilesets.TilesetsCombats.CombatEgout,
         Tilesets.TilesetsCombats.CombatMontagne,
+        Tilesets.TilesetsGrange,
 
         ShieldAnimations,
         // PRETRE //

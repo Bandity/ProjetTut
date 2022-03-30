@@ -15,10 +15,6 @@ import events from '../events/Sous_sol/'
             teleportY :214,
         }),
 
-        events.Teleporteur({
-            name: 'tpMontagne',
-            nameMap: 'MontagneChione',
-        }),
         events.MonsterGenerator({
             name: 'Tavana',
             gain: { gold: 100, exp: 100 },
@@ -595,6 +591,16 @@ import events from '../events/Sous_sol/'
         }),
         
         //Jardins
+        events.Teleporteur({
+            name: 'tpMontagne',
+            nameMap: 'MontagneChione',
+        }),
+
+        events.Teleporteur({
+            name: "tpGrange",
+            nameMap: "Grange", 
+        }),
+
         events.JardinGaia.GardeJardins,
         events.JardinGaia.Maire,
         events.JardinGaia.PnjEntrainement({

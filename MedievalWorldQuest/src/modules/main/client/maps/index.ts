@@ -8,6 +8,7 @@ import { TilesetsSous_sol } from './Sous_sol'
 import { TilesetsMaisonJoueur } from './MaisonJoueur'
 import TilesetsCombats  from './Combats'
 import { TilesetsMontagneChione } from './MontagneChione'
+import { TilesetsGrange } from './Grange'
 export default {
     TilesetsCiteOnirique,
     TilesetsMenestrelTown,
@@ -18,5 +19,7 @@ export default {
     TilesetsSous_sol,
     TilesetsCombats,
     TilesetsMontagneChione,
+    TilesetsGrange,
+    
 
 }
