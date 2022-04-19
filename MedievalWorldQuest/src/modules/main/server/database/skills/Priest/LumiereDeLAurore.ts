@@ -4,7 +4,7 @@ import { Presets } from '@rpgjs/server'
 
 const { INT } = Presets
 @Skill({  
-    name: "Lumiere_de_l'aurore",
+    name: "Lumiere de l'aurore",
     description: 'Compétence 1 ère du prêtre',
     spCost: 15,
     power: 100,

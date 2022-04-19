@@ -3,7 +3,7 @@ import { Skill } from '@rpgjs/database'
 import { Presets } from '@rpgjs/server'
 const { ATK } = Presets
 @Skill({  
-    name: 'Jugement_Divin',
+    name: 'Jugement Divin',
     description: 'Compétence ultime du guerrier',
     spCost: 50,
     power: 500,

@@ -3,7 +3,7 @@ import { Skill } from '@rpgjs/database'
 import { Presets } from '@rpgjs/server'
 const { INT } = Presets
 @Skill({  
-    name: 'Morsure_du_froid',
+    name: 'Morsure du froid',
     description: 'Compétence 2nde du mage',
     spCost: 30,
     power: 400,

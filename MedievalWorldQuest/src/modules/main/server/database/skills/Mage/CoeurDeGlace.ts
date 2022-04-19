@@ -3,7 +3,7 @@ import { Skill } from '@rpgjs/database'
 import { Presets } from '@rpgjs/server'
 const { INT } = Presets
 @Skill({  
-    name: 'Coeur_de_glace',
+    name: 'Coeur de glace',
     description: 'Compétence ultime du mage',
     spCost: 150,
     power: 1000,

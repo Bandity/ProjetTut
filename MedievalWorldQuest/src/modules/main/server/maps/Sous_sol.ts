@@ -8,6 +8,13 @@ import events from '../events/Sous_sol/'
     events: [
         // PARTIE EGOUT
         events.Egouts.Surt,
+        events.Teleporteur({
+            name: 'tpVille',
+            nameMap: 'MenestrelTown',
+            teleportX : 3786,
+            teleportY :214,
+        }),
+
         events.MonsterGenerator({
             name: 'Tavana',
             gain: { gold: 100, exp: 100 },
@@ -584,52 +591,95 @@ import events from '../events/Sous_sol/'
         }),
         
         //Jardins
+        events.Teleporteur({
+            name: 'tpMontagne',
+            nameMap: 'MontagneChione',
+        }),
+
+        events.Teleporteur({
+            name: "tpGrange",
+            nameMap: "Grange", 
+        }),
+
         events.JardinGaia.GardeJardins,
         events.JardinGaia.Maire,
         events.JardinGaia.PnjEntrainement({
             text: ["Pousse toi ou tu vas te prendre un sort !"],
             name: "Pnj-E-1",
-            graphic: 'witch'
+            graphic: 'barde',
+            animation : "faux_d_ankou",
         }),
         events.JardinGaia.PnjEntrainement({
             text: ["Pousse toi ou tu vas te prendre un sort !"],
             name: "Pnj-E-2",
-            graphic: 'witch'
+            graphic: 'witch',
+            animation : "bouleDeFeu",
         }),
         events.JardinGaia.PnjEntrainement({
             text: ["Pousse toi ou tu vas te prendre un sort !"],
             name: "Pnj-E-3",
-            graphic: 'witch'
+            graphic: 'noble',
+            animation : "monde_de_tenebre",
         }),
         events.JardinGaia.PnjEntrainement({
             text: ["Pousse toi ou tu vas te prendre un sort !"],
             name: "Pnj-E-4",
-            graphic: 'witch',
+            graphic: 'priestG',
+            animation : "dark_light"
         }),
         events.JardinGaia.PnjEntrainement({
             text: ["Pousse toi ou tu vas te prendre un sort !"],
             name: "Pnj-E-5",
-            graphic: 'witch',
+            graphic: 'man4',
+            animation : "incision"
         }),
         events.JardinGaia.PnjEntrainement({
             text: ["Pousse toi ou tu vas te prendre un sort !"],
             name: "Pnj-E-6",
-            graphic: 'witch'
+            graphic: 'man1',
+            animation : "hemorragie"
         }),
         events.JardinGaia.PnjEntrainement({
             text: ["Pousse toi ou tu vas te prendre un sort !"],
             name: "Pnj-E-7",
-            graphic: 'witch',
+            graphic: 'youngLady',
+            animation : "ouragan"
         }),
         events.JardinGaia.PnjEntrainement({
             text: ["Pousse toi ou tu vas te prendre un sort !"],
             name: "Pnj-E-8",
-            graphic: 'witch',
+            graphic: 'craftman',
+            animation : "jugementDivin"
         }),
         events.JardinGaia.PnjEntrainement({
             text: ["Pousse toi ou tu vas te prendre un sort !"],
             name: "Pnj-E-9",
-            graphic: 'witch',
+            graphic: 'bucheron',
+            animation : "croixSanglante"
+        }),
+        events.JardinGaia.PnjEntrainement({
+            text: ["Pousse toi ou tu vas te prendre un sort !"],
+            name: "Pnj-E-10",
+            graphic: 'maitresse_mage',
+            animation : "morsureDuFroid"
+        }),
+        events.JardinGaia.PnjEntrainement({
+            text: ["Pousse toi ou tu vas te prendre un sort !"],
+            name: "Pnj-E-11",
+            graphic: 'warriorF',
+            animation : "pointeFuneste"
+        }),
+        events.JardinGaia.PnjEntrainement({
+            text: ["Pousse toi ou tu vas te prendre un sort !"],
+            name: "Pnj-E-12",
+            graphic: 'moderator',
+            animation : "roncesNoires"
+        }),
+        events.JardinGaia.PnjEntrainement({
+            text: ["Pousse toi ou tu vas te prendre un sort !"],
+            name: "Pnj-E-13",
+            graphic: 'priestF',
+            animation : "litanieDivine"
         }),
     ],
 })

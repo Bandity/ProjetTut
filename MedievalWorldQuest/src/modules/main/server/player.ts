@@ -8,6 +8,8 @@ import { PotionSoin } from './database/items/PotionSoin'
 
 import { BouleDeFeu }  from './database/skills/Mage/BouleDeFeu'
 import { Talisman_Guilde } from './database/items/Talisman_Guilde';
+import { Priest } from './database/classes/Priest';
+import {Warrior} from './database/classes/Warrior';
 
 
 const timeout = (ms) =>  new Promise(resolve => setTimeout(resolve, ms));
@@ -38,23 +40,21 @@ export const player: RpgPlayerHooks = {
     async onConnected(player: RpgPlayer) {
         player.gold += 6000;
         player.speed =2;
-        player.name = "LeCraneChauveDePerrot"
-        player.setClass(Thief)
+        player.name = "Olgus"
         player.addItem(Talisman_Guilde);
-        player.level+=0
         //player.exp = 0;
 
         player.addItem(PotionSoin);
         await player.setHitbox(20, 16) 
         if (player.getVariable("maitreClasses_speech") == null) { // debut du jeu
-            //await player.setGraphic('base');
-            await player.setGraphic('mageF'); 
-            //await player.changeMap('citeOnirique');
+            await player.setGraphic('base');
+            await player.changeMap('citeOnirique');
             //await player.changeMap('MenestrelTown');
             //await player.changeMap('MaisonJoueur')
             //await player.changeMap('Eglise')
             //await player.changeMap('Sous_sol')
-            await player.changeMap('MontagneChione');
+            //await player.changeMap('Grange')
+            //await player.changeMap('MontagneChione');
             //await player.changeMap('Forge');
         }
         //player.gui('hpbar').open();
@@ -63,9 +63,11 @@ export const player: RpgPlayerHooks = {
 
     async onJoinMap(player: RpgPlayer){
         //await timeout(500);
-        
-        for (let msg of speech.textcinematic1) {
-           // await player.showText(msg);
+        if (player.getVariable("nbTp") == 1 && player.getVariable("cineDepart1") != 1 ){
+            for (let msg of speech.textcinematic1) { 
+                await player.showText(msg);
+            }
+            player.setVariable("cineDepart1", 1)
         }
     },
 }

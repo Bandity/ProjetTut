@@ -28,6 +28,7 @@ export class MaitreClasses extends RpgEvent {
                 player.setVariable('maitreClasses_speech', 1);
                 await this.moveRoutes([Move.left(), Move.tileLeft(2)]);
                 await this.moveRoutes(Move.down());
+
             } 
         }
         else { 

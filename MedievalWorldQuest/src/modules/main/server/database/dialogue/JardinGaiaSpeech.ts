@@ -1,17 +1,17 @@
 export const speech = {
 
     textGardeJardin : [
-        "… Vous êtes donc venu. Je vais vous guider à notre maître, il a énormément de chose à vous dire. "
+        "… Vous êtes donc venu. Notre maître a énormément de chose à vous dire, elle se trouve au centre de la ville, là où se trouve trois arbres, vestiges naturels des temps anciens. "
     ],
 
 
     textMaitreJardins : [ 
    " Il semblerait que vous soyez finalement venu.",
     "Pour répondre à quelques-unes de vos questions, sachez qu’aucun être vivant ne peut percevoir cet endroit.",
-    "Durant l'ancienne guerre, avant que l’attaque du roi n’atteigne son but, un inconnu nommé Surt est apparu et a usé d’une magie étrange pour nous protéger." ,
+    "Durant l'ancienne guerre, avant que l’attaque du futur roi n’atteigne son but, un inconnu nommé Surt est apparu et a usé d’une magie étrange pour nous protéger." ,
     "Cette magie a fragmenté les Jardins en plusieurs parties et les a téléportées partout sur la surface de la planète, tout en les rendant invisible et impossible d’accès.",
-    "Ce genre de magie dépassait l’entendement, et avec cette force, l’inconnu aurait pu tuer le roi en un rien de temps.",
-    "Cependant… Il n’a rien fait de tel. Il avait tout de même anticipé que le roi ne s’arrêterais pas là, et a donc proclamé ceci : ",
+    "Ce genre de magie dépassait l’entendement, et avec cette force, l’inconnu aurait pu tuer son adversaire en un rien de temps.",
+    "Cependant… Il n’a rien fait de tel. Il avait tout de même anticipé que le futur roi ne s’arrêterais pas là, et a donc proclamé ceci : ",
     "« En mon nom, Surt, je vais te dire quelques mots.",
     "Un jour, un enfant naîtra. A tous, il apportera un espoir, mais pour toi, cet espoir ne sera que peur.",
     "Dans ses yeux tu verras l’honnêteté et la naïveté de ce monde. Cet enfant en suivant son destin, grandira et te fera face plus d’une fois.",

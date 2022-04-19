@@ -4,7 +4,7 @@ import { Presets } from '@rpgjs/server'
 
 const { INT } = Presets
 @Skill({  
-    name: "Litanie_divine",
+    name: "Litanie divine",
     description: 'Compétence ultime du prêtre',
     spCost: 200,
     power: 100, // permettrais de soigner toute la vie de tout le monde donc pas vraiment de power

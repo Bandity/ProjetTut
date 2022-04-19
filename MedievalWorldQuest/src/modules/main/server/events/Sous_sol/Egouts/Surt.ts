@@ -5,19 +5,19 @@ import { speech } from '../../../database/dialogue/EgoutSpeech'
     //mode: EventMode.Scenario,
     hitbox: {
         width: 64,
-        height: 32
+        height: 64
     }
 })
 export class Surt extends RpgEvent {
     async onInit(player: RpgPlayer) {
-        this.setGraphic('')
+        this.setGraphic('invisible')
         this.speed = 2
         this.frequency = 0
-
     }
 
     async onPlayerTouch(player: RpgPlayer) {
-        if (player.getVariable("surtQ1") != 1) {
+        if (player.getVariable("tavanaKill") != 1) return;
+        else if (player.getVariable("surtQ1") != 1) {
             player.breakRoutes(); 
             await this.teleport({ x: 2145, y: 600, z: 0 })
             await this.moveRoutes(Move.left());

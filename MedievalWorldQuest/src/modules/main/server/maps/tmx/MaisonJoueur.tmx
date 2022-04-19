@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="51" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="13">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="15" height="51" tilewidth="32" tileheight="32" infinite="0" nextlayerid="16" nextobjectid="13">
  <tileset firstgid="1" source="mur.tsx"/>
  <tileset firstgid="225" source="maison1.tsx"/>
  <tileset firstgid="481" source="tuilesGlobale.tsx"/>
@@ -283,7 +283,7 @@
 </data>
  </layer>
  <objectgroup id="6" name="Calque d'Objets 1">
-  <object id="1" name="Start_Position" type="start" x="110.984" y="493.247">
+  <object id="1" name="Start_Position" type="start" x="70.984" y="1506.58">
    <point/>
   </object>
   <object id="3" name="sortie" type="event" x="112" y="510">

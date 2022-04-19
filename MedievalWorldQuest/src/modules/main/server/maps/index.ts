@@ -15,6 +15,8 @@ import { MaisonJoueur } from './MaisonJoueur'
 import { MenestrelTown } from './MenestrelTown'
 import { MontagneChione } from './MontagneChione'
 import { Sous_sol } from './Sous_sol'
+import { FaiblesseCiel } from './Combats/FaiblesseCiel'
+import { Grange } from './Grange'
 
 export default {
     CiteOnirique,
@@ -34,5 +36,6 @@ export default {
     FantomeMontagne,
     FantomeGlaceMontagne,
     Prince_des_Glaces_MontagneChione,
-    
+    FaiblesseCiel,
+    Grange,
 }

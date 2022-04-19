@@ -11,13 +11,13 @@ import { speech } from '../../database/dialogue/MaisonJoueurSpeech'
 })
 export class RedLine extends RpgEvent {
     async onInit(player: RpgPlayer) {
-        this.setGraphic('surt')
+        this.setGraphic('invisible')
         this.speed = 2
         this.frequency = 0
     }
 
     async onAction(player: RpgPlayer) {
-        if (player.getVariable("mereQ1") != 1) {
+        if (player.getVariable("mereQ1") == null) {
             for (let msg of speech.textRedLineMereQ1) {
                 await player.showText(msg, { talkWith: this })
             }
@@ -32,7 +32,11 @@ export class RedLine extends RpgEvent {
                 await player.showText(msg, { talkWith: this })
             }
         }
-        else (this.teleport({x:0,y:0,z:0}))
+    }
+    async onPlayerTouch(player: RpgPlayer){
+        if (player.getVariable("mereQ1") == 2){
+            this.teleport({x:0,y:0,z:0});
+        }
     }
 }
 

@@ -8,6 +8,12 @@ import events  from '../events/MontagneChione/'
     events :[ 
         events.Andre,
         events.Cinematique,
+        events.Teleporteur({
+            name: 'tpJardins',
+            nameMap: 'Sous_sol',
+            teleportX : 3245,
+            teleportY :3855,
+        }),
         events.TeleporteurBoss,
         events.MonsterGenerator({
             name: 'Prince_des_glaces',

@@ -2,18 +2,58 @@ import { RpgMap, MapData } from '@rpgjs/server'
 import { speech } from '../database/dialogue/CiteOniriqueSpeech'
 import classes from '../database/classes/index'
 import events from '../events/CiteOnirique/index'
-
+import MageSkills from '../database/skills/Mage'
+import PriestSkills from '../database/skills/Priest'
+import ThiefSkills from '../database/skills/Thief'
+import WarriorSkills from '../database/skills/Warrior'
 const maitre = events.MaitreClasses
 @MapData({
     id: 'citeOnirique',
     file: require('./tmx/CiteOnirique.tmx'),    
     sounds: ['musicCiteOnirique'],
     events : [
+        events.MonsterGenerator({
+            name: 'MonstreEntrainement',
+            gain: { gold: 0, exp: 0 },
+            graphic: 'Faiblesse',
+            health: {
+                start: 100,
+                end: 1
+            },
+            spells: {
+                start: 534,
+                end: 550
+            },
+            str: {
+                start: 31,
+                end: 1000
+            },
+            int: {
+                start: 26,
+                end: 1000
+            },
+            dex: {
+                start: 24,
+                end: 564
+            },
+            agi: {
+                start: 28,
+                end: 582
+            },
+            playerSpRegener: {
+                start: 0,
+                end: 10
+            },
+            mapCombat: "FaiblesseCiel",
+            mapDepart: "citeOnirique",
+            boss: false,
+            randomMove : false
+        }),
         events.Pnj_info,
         maitre,
         events.Teleporteur({
             name: 'Teleporteur',
-            nameMap: 'MenestrelTown',
+            nameMap: 'MaisonJoueur',
             pnjs : [ maitre ]
         }),
         events.GeneratorClass({
@@ -23,7 +63,9 @@ const maitre = events.MaitreClasses
             textInit: speech.textInitMage,
             textAccept: speech.textAcceptMage,
             textReject: speech.textRejectMage,
-            animations: [ "incision","bouleDeFeu","coeurDeGlace","morsureDuFroid","ouragan"]
+            animations: ["bouleDeFeu","morsureDuFroid","ouragan","coeurDeGlace"],
+            tempsAnim: [ 800,1667,800,800],
+            listSkill : [MageSkills.BouleDeFeu,MageSkills.MorsureDuFroid,MageSkills.Ouragan,MageSkills.CoeurDeGlace],
         }) ,
         events.GeneratorClass({
             name: 'priestClass',
@@ -32,7 +74,9 @@ const maitre = events.MaitreClasses
             textInit: speech.textInitPriest,
             textAccept: speech.textAcceptPriest,
             textReject: speech.textRejectPriest,
-            animations: ["incision","dark_light","faux_d_ankou","litanieDivine","monde_de_tenebre"]
+            animations: ["dark_light","faux_d_ankou","monde_de_tenebre","litanieDivine"], 
+            tempsAnim: [500,560,400,2000],
+            listSkill : [PriestSkills.LumiereDeLAurore,PriestSkills.FauxDAnkou,PriestSkills.MondeDeTenebre,PriestSkills.LitanieDivine],
         }),
         events.GeneratorClass({
             name: 'thiefClass',
@@ -41,7 +85,9 @@ const maitre = events.MaitreClasses
             textInit: speech.textInitThief,
             textAccept: speech.textAcceptThief,
             textReject: speech.textRejectThief,
-            animations: ["incision","hemorragie","incision","roncesNoires","croixSanglante"]
+            animations: ["incision","hemorragie","roncesNoires","croixSanglante"],
+            tempsAnim: [ 1667,1667,1667,1667],
+            listSkill : [ThiefSkills.Incision,ThiefSkills.Hemorragie,ThiefSkills.RoncesNoires,ThiefSkills.Hecatombe],
         }),
         events.GeneratorClass({
             name: 'warriorClass',
@@ -50,7 +96,9 @@ const maitre = events.MaitreClasses
             textInit: speech.textInitWarrior,
             textAccept: speech.textAcceptWarrior,
             textReject: speech.textRejectWarrior,
-            animations:["incision","croixSanglante","jugementDivin","pointeFuneste","hemorragie"]
+            animations:["hemorragie","croixSanglante","jugementDivin","pointeFuneste"],
+            tempsAnim: [ 1667,1667,1000,2000],
+            listSkill : [WarriorSkills.HirondelleNoire,WarriorSkills.CroixSanglante,WarriorSkills.JugementDivin,WarriorSkills.PointeFuneste],
         }),
         //events.Combat
 

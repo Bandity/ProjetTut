@@ -98,7 +98,7 @@ $hero-face: none !default;
 
 .hero-face .face-column > div {
     margin-left : 80px;
-    background-image: url("./mage.png");
+    background-image: url("./toad.png");
 }
 </style>
 

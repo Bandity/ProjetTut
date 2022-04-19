@@ -21,7 +21,7 @@ export const player: RpgPlayerHooks = {
     onJoinMap(player: RpgPlayer, map: RpgMap) {
         
         sendMessage({
-            message: `${player.name} a entrée dans la map`, 
+            message: `${player.name} est entré dans la map`, 
             map, 
             player,
             type: 'info'
